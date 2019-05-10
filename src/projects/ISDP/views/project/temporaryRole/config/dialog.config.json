@@ -1,0 +1,120 @@
+{
+  "dialogForm": {
+    "name": "project-survey-task-dialog-form",
+    "type": "form",
+    "title": "添加",
+    "width": "512px",
+    "formGroup": [{
+      "formItems": [{
+          "label": "姓名",
+          "prop": "displayName",
+          "type": "select",
+          "select": [],
+          "formItemOpts": {
+            "labelWidth": "100px",
+            "filterable": true,
+            "allowCreate": false,
+            "remote": true,
+            "size": "small",
+            "col": {
+              "span": 18,
+              "offset": 2
+            }
+          }
+        },
+        {
+          "label": "工号:",
+          "prop": "userName",
+          "formItemOpts": {
+            "labelWidth": "100px",
+            "size": "small",
+            "col": {
+              "span": 18,
+              "offset": 2
+            }
+          }
+        },
+        {
+          "label": "联系方式:",
+          "prop": "tel",
+          "formItemOpts": {
+            "labelWidth": "100px",
+            "size": "small",
+            "col": {
+              "span": 18,
+              "offset": 2
+            }
+          }
+        },
+        {
+          "label": "邮箱地址",
+          "prop": "email",
+          "formItemOpts": {
+            "labelWidth": "100px",
+            "size": "small",
+            "col": {
+              "span": 18,
+              "offset": 2
+            }
+          }
+        },
+        {
+          "label": "部门",
+          "prop": "depName",
+          "formItemOpts": {
+            "labelWidth": "100px",
+            "size": "small",
+            "col": {
+              "span": 18,
+              "offset": 2
+            }
+          }
+        }
+      ],
+      "dropList": [{
+          "label": "角色配置:",
+          "prop": "role",
+          "type": "switch",
+          "formItemOpts": {
+            "labelWidth": "100px",
+            "size": "small",
+            "col": {
+              "span": 18,
+              "offset": 2
+            }
+          }
+        },
+        {
+          "label": "",
+          "prop": "role1",
+          "type": "checkbox",
+          "formItemOpts": {
+            "labelWidth": "100px",
+            "checkbox": [{
+                "label": "运营管理员",
+                "trueLabel": "",
+                "falseLabel": "",
+                "value": "1",
+                "name": "1"
+              },
+              {
+                "label": "项目管理员",
+                "trueLabel": "",
+                "falseLabel": "",
+                "value": "2",
+                "name": "2"
+              }
+            ],
+            "col": {
+              "span": 18,
+              "offset": 2
+            }
+          }
+        }
+      ]
+    }]
+  },
+  "form": {
+    "width": 512
+  }
+}

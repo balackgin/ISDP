@@ -1,0 +1,182 @@
+{
+  "searchObj": {
+    "contractNo": "",
+    "contractName": "",
+    "projectLevel": "",
+    "projectPhase": "",
+    "projectModel": "",
+    "projectManagerNo": ""
+  },
+  "search": {
+    "formItems": [{
+        "label": "项目编号",
+        "prop": "contractNo"
+      },
+      {
+        "label": "项目名称",
+        "prop": "contractName"
+      },
+      {
+        "label": "交付等级",
+        "type": "select",
+        "prop": "projectLevel",
+        "formItemOpts": {
+          "className": "wid100",
+          "select": []
+        }
+      },
+      {
+        "label": "交付阶段",
+        "type": "select",
+        "prop": "projectPhase",
+        "formItemOpts": {
+          "className": "wid100",
+          "select": [{
+              "label": "请选择",
+              "value": ""
+            },
+            {
+              "label": "启动阶段",
+              "value": "0"
+            },
+            {
+              "label": "方案设计",
+              "value": "1"
+            },
+            {
+              "label": "项目实施",
+              "value": "2"
+            },
+            {
+              "label": "项目收尾",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      {
+        "label": "项目模式",
+        "prop": "projectModel",
+        "type": "select",
+        "formItemOpts": {
+          "className": "wid100",
+          "select": [{
+              "label": "请选择",
+              "value": ""
+            },
+            {
+              "label": "小项目",
+              "value": "SMALL"
+            },
+            {
+              "label": "大项目",
+              "value": "LARGE"
+            }
+          ]
+        }
+      },
+      {
+        "label": "项目经理",
+        "type": "select",
+        "prop": "projectManagerNo",
+        "formItemOpts": {
+          "remote": true,
+          "filterable": true,
+          "clearable": true,
+          "select": []
+        }
+      }
+    ],
+    "btns": [{
+      "text": "搜索",
+      "name": "search",
+      "type": "danger"
+    }]
+  },
+  "table": {
+    "name": "project-list",
+    "tableOpts": {
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [{
+        "label": "序号",
+        "type": "index",
+        "columnOpts": {
+          "width": 50,
+          "align": "center"
+        }
+      },
+      {
+        "label": "项目名称",
+        "prop": "contractName",
+        "type": "router-link",
+        "columnOpts": {
+          "minWidth": 260
+        }
+      },
+      {
+        "label": "项目编号",
+        "prop": "contractNo",
+        "columnOpts": {
+          "width": 120
+        }
+      },
+      {
+        "label": "客户",
+        "prop": "customer",
+        "columnOpts": {
+          "width": 260
+        }
+      },
+      {
+        "label": "交付等级",
+        "prop": "projectLevel",
+        "columnOpts": {
+          "width": 80,
+          "align": "center"
+        }
+      },
+      {
+        "label": "项目状态",
+        "prop": "projectStatus"
+      },
+      {
+        "label": "项目模式",
+        "prop": "projectModel",
+        "type": "obj",
+        "columnOpts": {
+          "width": 80,
+          "align": "center",
+          "obj": {
+            "SMALL": "小项目",
+            "LARGE": "大项目"
+          }
+        }
+      },
+      {
+        "label": "项目进度",
+        "prop": "projectProgress"
+      },
+      {
+        "label": "项目经理",
+        "prop": "projectManagerName"
+      },
+      {
+        "label": "项目经理部门",
+        "prop": "projectManagerDept",
+        "columnOpts": {
+          "width": 200
+        }
+      },
+      {
+        "label": "交付立项时间",
+        "prop": "projectTime",
+        "columnOpts": {
+          "width": 100,
+          "align": "center"
+        }
+      }
+    ]
+  }
+}

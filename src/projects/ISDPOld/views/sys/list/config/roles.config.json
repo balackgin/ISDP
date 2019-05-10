@@ -1,0 +1,51 @@
+{
+  "searchObj": {
+    "rolesname": ""
+  },
+  "formItems": [{
+    "label": "名称",
+    "prop": "roleName"
+  }],
+  "btns": [{
+    "text": "搜索",
+    "name": "search",
+    "type": "danger"
+  }],
+  "tableConfig": {
+    "name": "project-list",
+    "maxHeight": "500",
+    "highlightCurrentRow": true,
+    "isTableData": true,
+    "emptyText": "",
+    "columns": [{
+        "label": "序号",
+        "align": "center",
+        "prop": "index",
+        "columnOpts": {
+          "width": 50
+        }
+      },
+      {
+        "label": "角色",
+        "prop": "roleName",
+        "align": "left",
+        "sortable": true,
+        "columnOpts": {
+          "minWidth": 80
+        }
+      },
+      {
+        "label": "操作",
+        "prop": "operate",
+        "type": "action-icons",
+        "columnOpts": {
+          "width": 160,
+          "icons": [{
+            "name": "remove",
+            "text": "删除"
+          }]
+        }
+      }
+    ]
+  }
+}

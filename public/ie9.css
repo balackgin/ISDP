@@ -1,0 +1,59 @@
+.flex {
+  display: block !important;
+}
+
+.flex:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.flex-item,
+.flex-auto {
+  float: left !important;
+}
+
+.layout-wrap .layout-header .flex-item~.flex-auto {
+  float: right !important;
+}
+
+.layout-body-container {
+  display: block !important;
+}
+
+.layout-body-container .layout-aside {
+  float: left !important;
+  width: 200px;
+}
+
+.layout-body-container .layout-main {
+  float: left !important;
+  width: -ms-calc(100% - 200px);
+  width: calc(100% - 200px);
+}
+
+.model-detail-head .link-box {
+  width: 180px;
+}
+
+.model-detail-head .rt-box {
+  width: -ms-calc(100% - 180px);
+  width: calc(100% - 180px);
+}
+
+.model-detail .model-detail-item-wrap .col-label {
+  width: 100px;
+}
+
+.model-detail .model-detail-item-wrap .col-txt {
+  width: -ms-calc(100% - 100px);
+  width: calc(100% - 100px);
+}
+
+.el-date-editor--daterange {
+  line-height: 24px !important;
+}
+
+.project-detail-survey-wrap .horizontal-list .title-wrap .flex-item {
+  width: 50% !important;
+}

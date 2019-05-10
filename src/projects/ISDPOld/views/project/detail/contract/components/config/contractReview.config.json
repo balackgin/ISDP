@@ -1,0 +1,372 @@
+{
+  "customer": {
+    "detailOpts": {
+      "noneLine": true,
+      "noWrap": true,
+      "tooltip": true,
+      "col": {
+        "span": 6
+      }
+    },
+    "detailGroup": [
+      {
+        "detailItems": [
+          {
+            "label": "目前可用额度",
+            "prop": "atParsentedu",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "目前逾期款",
+            "prop": "presentAccounWithin",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "目前客户应收款",
+            "prop": "atParsenteysk",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "逾期天数",
+            "prop": "withinDays",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "逾期发货剩余额度",
+            "prop": "withine",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "临时授信剩余额度",
+            "prop": "remainingAmount",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "备注",
+            "prop": "descText",
+            "detailItemOpts": {
+              "col": {
+                "span": 12
+              }
+            }
+          },
+          {
+            "label": "信用特批",
+            "prop": "credittp",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              },
+              "objData": {
+                "Y": "是",
+                "N": "否"
+              }
+            }
+          },
+          {
+            "label": "客户PO",
+            "prop": "po",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "otherCost": {
+    "detailOpts": {
+      "noneLine": true,
+      "noWrap": true,
+      "tooltip": true,
+      "col": {
+        "span": 8
+      }
+    },
+    "detailGroup": [
+      {
+        "detailItems": [
+          {
+            "label": "运维年限（月份）",
+            "prop": "keepYears"
+          },
+          {
+            "label": "质保说明",
+            "prop": "robotText"
+          },
+          {
+            "label": "外购材料成本",
+            "prop": "materialCost"
+          },
+          {
+            "label": "外购材料开票类型",
+            "prop": "materialinvoiceType"
+          },
+          {
+            "label": "外购材料开票税率",
+            "prop": "materialinvoicetypes"
+          },
+          {
+            "label": "外购软件成本",
+            "prop": "softCost"
+          },
+          {
+            "label": "外购软件开票类型",
+            "prop": "softinvoicetype"
+          },
+          {
+            "label": "外购软件开票税率",
+            "prop": "softinvoicetypes"
+          }
+        ]
+      }
+    ]
+  },
+  "createInfo": {
+    "detailOpts": {
+      "noneLine": true,
+      "noWrap": true,
+      "tooltip": true,
+      "col": {
+        "span": 8
+      }
+    },
+    "detailGroup": [
+      {
+        "detailItems": [
+          {
+            "label": "创建者",
+            "prop": "creator"
+          },
+          {
+            "label": "业务部门",
+            "prop": "department"
+          },
+          {
+            "label": "创建日期",
+            "prop": "created"
+          }
+        ]
+      }
+    ]
+  },
+  "detail": {
+    "detailOpts": {
+      "noneLine": true,
+      "noWrap": true,
+      "tooltip": true,
+      "col": {
+        "span": 6
+      }
+    },
+    "detailGroup": [
+      {
+        "detailItems": [
+          {
+            "label": "合同编号:",
+            "prop": "agreeNum",
+            "type": "link"
+          },
+          {
+            "label": "甲方客户:",
+            "prop": "buyAccount"
+          },
+          {
+            "label": "下单客户:",
+            "prop": "crm"
+          },
+          {
+            "label": "中标客户",
+            "prop": "inchannel"
+          },
+          {
+            "label": "项目名称",
+            "prop": "contractProjectName"
+          },
+          {
+            "label": "行业一级",
+            "prop": "oneIndustry"
+          },
+          {
+            "label": "签单类型",
+            "prop": "billType"
+          },
+          {
+            "label": "单据状态",
+            "prop": "state"
+          },
+          {
+            "label": "业务归属人:",
+            "prop": "businessAffiliationPeople"
+          },
+          {
+            "label": "行业二级",
+            "prop": "twoIndustry"
+          },
+          {
+            "label": "黑名单类型:",
+            "prop": "blacklistType"
+          },
+          {
+            "label": "有效标志:",
+            "prop": "usefulIndicator",
+            "detailItemOpts": {
+              "objData": {
+                "Y": "是",
+                "N": "否"
+              }
+            }
+          },
+          {
+            "label": "归属人部门:",
+            "prop": "businessAffiliation"
+          },
+          {
+            "label": "行业三级",
+            "prop": "threeIndustry"
+          },
+          {
+            "label": "省份:",
+            "prop": "provinceName"
+          },
+          {
+            "label": "合同版本:",
+            "prop": "versions"
+          },
+          {
+            "label": "是否过单:",
+            "prop": "isSingle",
+            "detailItemOpts": {
+              "objData": {
+                "Y": "是",
+                "N": "否"
+              }
+            }
+          },
+          {
+            "label": "行业四级",
+            "prop": "fourIndustry"
+          },
+          {
+            "label": "城市:",
+            "prop": "cityName"
+          },
+          {
+            "label": "价格表:",
+            "prop": "price"
+          },
+          {
+            "label": "过单类型:",
+            "prop": "orderType"
+          },
+          {
+            "label": "业务类型:",
+            "prop": "businesstType"
+          },
+          {
+            "label": "县区:",
+            "prop": "countyName"
+          },
+          {
+            "label": "业务实体:",
+            "prop": "entity"
+          },
+          {
+            "label": "是否长期合同:",
+            "prop": "isLongPeriodContract",
+            "detailItemOpts": {
+              "objData": {
+                "Y": "是",
+                "N": "否"
+              }
+            }
+          },
+          {
+            "label": "大屏业务员",
+            "prop": "imageSalesmanName"
+          },
+          {
+            "label": "合同类型:",
+            "prop": "agreemnetType"
+          },
+          {
+            "label": "合同基准交货期",
+            "prop": "isConstruction"
+          },
+          {
+            "label": "用章类型",
+            "prop": "sealType"
+          },
+          {
+            "label": "销售合同模板类型",
+            "prop": "agreementTempletType"
+          },
+          {
+            "label": "非标合同备注",
+            "prop": "agreementTempletDesc"
+          },
+          {
+            "label": "过单原因",
+            "prop": "danText",
+            "detailItemOpts": {
+              "col": {
+                "span": 12
+              }
+            }
+          },
+          {
+            "label": "竞争情况说明",
+            "prop": "raceCondition",
+            "detailItemOpts": {
+              "col": {
+                "span": 12
+              }
+            }
+          },
+          {
+            "label": "集成类型",
+            "prop": "integrationType"
+          },
+          {
+            "label": "集成项目分类",
+            "prop": "integrationCft"
+          },
+          {
+            "label": "售前技术",
+            "prop": "proPersonLiable"
+          },
+          {
+            "label": "项目经理",
+            "prop": "operationsyers"
+          }
+        ]
+      }
+    ]
+  }
+}

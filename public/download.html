@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>download</title>
+</head>
+
+<body>
+
+
+
+
+  <script>
+    function download(args, fileName) {
+      // 下载文件 设置文件名
+      const content = new Blob([args]);
+      if (navigator.msSaveOrOpenBlob) {
+        //IE兼容
+        navigator.msSaveOrOpenBlob(content, fileName);
+      } else {
+        let url = URL.createObjectURL(content);
+        let link = document.createElement('a');
+        link.href = url;
+        // link.target = '_blank';
+        link.download = fileName; //设置文件名
+        document.body.appendChild(link);
+        link.click();
+        URL.revokeObjectURL(url); // 让链接失效
+        document.body.removeChild(link);
+      }
+    }
+    download('abc', 'a.txt');
+  </script>
+</body>
+
+</html>

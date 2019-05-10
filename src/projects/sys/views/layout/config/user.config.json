@@ -1,0 +1,7 @@
+[{
+  "label": "权限管理",
+  "childNodes": [{
+    "label": "角色管理",
+    "route": "/sys/permission/roles"
+  }]
+}]

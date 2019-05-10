@@ -1,0 +1,139 @@
+{
+  "taskFeedbackDialog": {
+    "comments": "企业资质信息  enterpriseCertificateArray",
+    "type": "form",
+    "name": "dialog-taskFeedbackDialog",
+    "title": "项目任务反馈单",
+    "data": {
+      "_name": "dialog-taskFeedbackDialog",
+      "_index": 1,
+      "id": "",
+      "taskLevel": "",
+      "taskStatus": "",
+      "taskReciver": "",
+      "daysFeedback": "",
+      "taskQuest": ""
+    },
+    "form": {
+      "labelPosition": "right",
+      "labelWidth": "120px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "group": [
+      {
+        "title": "",
+        "name": "dialog-taskFeedbackDialog",
+        "formConfig": [
+          {
+            "label": "任务名称：",
+            "prop": "taskName",
+            "type": "text",
+            "col": {
+              "span": 24
+            }
+          },
+          {
+            "label": "任务要求：",
+            "prop": "taskQuest",
+            "type": "text",
+            "col": {
+              "span": 24
+            }
+          },
+          {
+            "label": "任务级别：",
+            "prop": "taskLevel",
+            "type": "text",
+            "col": {
+              "span": 6
+            }
+          },
+          {
+            "label": "任务状态：",
+            "prop": "status",
+            "type": "text",
+            "col": {
+              "span": 6
+            }
+          },
+          {
+            "label": "任务周期：",
+            "prop": "taskCircle",
+            "type": "text",
+            "col": {
+              "span": 6
+            }
+          },
+          {
+            "label": "反馈频率：",
+            "prop": "taskPinglu",
+            "type": "text",
+            "col": {
+              "span": 6
+            }
+          },
+          {
+            "label": "完成度：",
+            "prop": "progress",
+            "required": true,
+            "col": {
+              "span": 6
+            }
+          },
+          {
+            "label": "计划完成时间：",
+            "prop": "planEndDate",
+            "required": true,
+            "type": "date-picker",
+            "labelWidth": "140px",
+            "col": {
+              "span": 10
+            }
+          },
+          {
+            "label": "任务完成内容：",
+            "prop": "taskCompleteContent",
+            "required": true,
+            "type": "textarea",
+            "col": {
+              "span": 24
+            },
+            "autosize": {
+              "minRows": 3
+            }
+          },
+          {
+            "label": "困难及问题：",
+            "prop": "difficultAndProblem",
+            "type": "textarea",
+            "autosize": {
+              "minRows": 3
+            },
+            "required": true,
+            "col": {
+              "span": 24
+            }
+          },
+          {
+            "label": "任务分解：",
+            "prop": "taskExplain",
+            "type": "table",
+            "data": [],
+            "options": {},
+            "col": {
+              "span": 24
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

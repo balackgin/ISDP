@@ -1,0 +1,90 @@
+{
+  "tableConfig": {
+    "name": "project-list",
+    "maxHeight": "500",
+    "highlightCurrentRow": true,
+    "emptyText": "",
+    "inputConfig": {
+      "props": [
+        "staffName",
+        "projectRoleName",
+        "projectDuty",
+        "staffTel",
+        "staffEmail",
+        "memo"
+      ]
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "prop": "index",
+        "align": "left",
+        "width": 50
+      },
+      {
+        "label": "职能",
+        "prop": "projectRoleName",
+        "align": "left",
+        "form": {
+          "type": "select",
+          "size": "small",
+          "select": [],
+          "config": {
+            "filterable": true,
+            "allowCreate": false,
+            "remote": false,
+            "size": "small"
+          }
+        }
+      },
+      {
+        "label": "姓名",
+        "prop": "staffName",
+        "align": "left",
+        "form": {
+          "type": "select",
+          "size": "small",
+          "select": [],
+          "config": {
+            "filterable": true,
+            "allowCreate": false,
+            "remote": true,
+            "size": "small"
+          }
+        }
+      },
+      {
+        "label": "职责",
+        "prop": "projectDuty"
+      },
+      {
+        "label": "联系方式",
+        "prop": "staffTel"
+      },
+      {
+        "label": "邮箱地址",
+        "prop": "staffEmail",
+        "align": "left"
+      },
+      {
+        "label": "备注",
+        "prop": "memo",
+        "align": "left"
+      },
+      {
+        "label": "操作",
+        "align": "left",
+        "type": "action-icons",
+        "width": 80,
+        "icons": [
+          {
+            "name": "remove",
+            "title": "删除",
+            "className": "text-danger",
+            "text": "删除"
+          }
+        ]
+      }
+    ]
+  }
+}

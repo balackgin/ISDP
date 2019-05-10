@@ -1,0 +1,410 @@
+.nisdp-layout-wrap {
+  .layout-header-wrap {
+    padding: 0;
+  }
+  .main-wrap {
+    padding: 32px 42px;
+  }
+}
+.nISDP-wrap {
+  height: 100%;
+  min-height: 100%; 
+  //公用按钮样式
+  .commonBtn {
+    display: inline-block;
+    width: 92px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #bababa;
+    color: #6c6c6c;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 1px;
+  }
+  .commonCancelBtn {
+    margin-right: 12px;
+  }
+  .commonBtn.commonConfirmBtn {
+    color: #ffffff;
+    background-color: #f42020;
+    border: none;
+  }
+  .commonBtn.commonCancelBtn:hover {
+    color: #ffffff;
+    background-color: #ff3535;
+  }
+  .commonBtn.commonConfirmBtn:hover {
+    color: #ffffff;
+    background-color: #ff3535;
+  }
+  .commonBtn.commonConfirmBtn:active {
+    color: #ffffff;
+    background-color: #e20000;
+  }
+
+  .commonBtn .commonCancelBtn:active {
+    color: #ffffff;
+    background-color: #e20000;
+  }
+
+  .el-checkbox {
+    .el-checkbox__input,
+    .el-checkbox__label {
+      line-height: 18px;
+    }
+    .el-checkbox__input {
+      top: 2px;
+      .el-checkbox__inner {
+        // border-color: #7c7c7c;
+        border: 2px solid #7c7c7c;
+        border-radius: 0;
+        background-color: #fff;
+      }
+      &.is-indeterminate {
+        .el-checkbox__inner {
+          background-color: transparent;
+          &::after {
+            content: none;
+          }
+        }
+      }
+      &.is-indeterminate {
+        .el-checkbox__inner {
+          background-color: #409eff;
+          border-color: #409eff;
+        }
+      }
+    }
+    &:hover {
+      .el-checkbox__input {
+        .el-checkbox__inner {
+          border-color: #f42020;
+        }
+      }
+    }
+    &.is-checked {
+      .el-checkbox__input {
+        .el-checkbox__inner {
+          @color: #f42020;
+          position: relative;
+          border-color: @color;
+          background-color: transparent;
+          &::before {
+            content: '';
+            position: absolute;
+            @dis: 2px;
+            top: @dis;
+            left: @dis;
+            @wid: 6px;
+            width: @wid;
+            height: @wid;
+            transform: none;
+            display: block;
+            background-color: @color;
+          }
+          &::after {
+            content: none;
+          }
+        }
+      }
+      .el-checkbox__label {
+        color: #333;
+      }
+    }
+    &.is-disabled {
+      .el-checkbox__input {
+        .el-checkbox__inner {
+          @color: #bbbcbf;
+          border-color: @color;
+          &::before {
+            background-color: @color;
+          }
+        }
+      }
+    }
+  }
+  .el-radio {
+    .el-radio__input {
+      .el-radio__inner {
+        border: 2px solid #7c7c7c;
+        background-color: transparent;
+        &::after {
+          background-color: transparent;
+        }
+      }
+    }
+    &:hover,
+    &.is-checked {
+      .el-radio__input {
+        .el-radio__inner {
+          border-color: #f42020;
+        }
+      }
+    }
+    &.is-checked {
+      .el-radio__input {
+        .el-radio__inner {
+          &::after {
+            @wid: 6px;
+            width: @wid;
+            height: @wid;
+            background-color: #f42020;
+          }
+        }
+      }
+    }
+    &.is-disabled {
+      .el-radio__input {
+        .el-radio__inner {
+          border-color: #bbbcbf;
+        }
+      }
+    }
+  }
+  .el-input {
+    .el-input__inner {
+      @hei: 30px;
+      height: @hei;
+      border: 1px solid rgba(203, 203, 203, 0.66);
+      border-radius: 1px;
+      line-height: @hei;
+      color: #333;
+      background-color: #fff;
+      font-size: 14px;
+      ::placeholder {
+        color: rgba(51, 51, 51, 0.3);
+      }
+      &:focus {
+        border-color: #ff5959;
+      }
+    }
+    &.is-disabled {
+      .el-input__inner {
+        border-color: rgba(215, 215, 215, 0.66);
+        color: rgba(51, 51, 51, 0.6);
+      }
+    }
+    &.is-focus {
+      .el-input__inner {
+        border-color: #ff5959;
+      }
+    }
+    .el-input__icon {
+      line-height: 20px;
+    }
+  }
+
+  .el-button {
+    @hei: 30px;
+    height: @hei;
+    padding: 0 32px;
+    border-radius: 1px;
+    line-height: @hei;
+    font-size: 14px;
+    &--danger {
+      &.is-plain {
+        border: 1px solid #bababa;
+        background-color: transparent;
+        color: #6c6c6c;
+        &.is-disabled {
+          &,
+          &:hover {
+            border-color: #cdcdcd;
+            color: #b4b4b4;
+            background-color: transparent;
+          }
+        }
+      }
+      &:hover {
+        @color: #ff3535;
+        border-color: @color;
+        background-color: @color;
+        color: #fff;
+      }
+      &:active {
+        @color: #e20000;
+        border-color: @color;
+        background-color: @color;
+        color: #fff;
+      }
+      &.is-disabled:not(.is-plain) {
+        &,
+        &:hover {
+          @color: #cdcdcd;
+          border-color: @color;
+          background-color: @color;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .scrollbar,
+  .el-table__body-wrapper {
+    height: 100%;
+    overflow: hidden; // chrome
+    -ms-scrollbar-width: thin;
+    -ms-scrollbar-color: #d9d9d9 #fff; // firefox
+    scrollbar-width: thin;
+    scrollbar-color: #d9d9d9 #fff;
+    &::-webkit-scrollbar {
+      //滚动条整体样式
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      //滚动条里面小方块
+      border-radius: 10px;
+      background-color: #e1e1e1; // visibility: hidden;
+    }
+    &::-webkit-scrollbar-track {
+      //滚动条里面的轨道
+      background-color: #fff;
+    }
+    &:hover {
+      overflow: auto;
+      &::-webkit-scrollbar-thumb {
+        background-color: #d9d9d9; // visibility: visible;
+      }
+    } // IE maybe
+    &:-ms-scrollbar {
+      //滚动条整体样式
+      width: 8px;
+      height: 8px;
+    }
+    &:-ms-scrollbar-thumb {
+      //滚动条里面小方块
+      border-radius: 10px;
+      background-color: #e1e1e1; // visibility: hidden;
+    }
+    &:-ms-scrollbar-track {
+      //滚动条里面的轨道
+      background-color: #fff;
+    }
+    &:hover {
+      overflow: auto;
+      &:-ms-scrollbar-thumb {
+        background-color: #d9d9d9; // visibility: visible;
+      }
+    }
+  }
+  .el-table__body-wrapper {
+    overflow: auto;
+  }
+  .frame {
+    width: 100%;
+    height: 600px;
+    margin-top: 24px;
+  }
+  //表头字体不加粗
+  .el-table th {
+    font-weight: normal;
+  }
+}
+
+.model-select-popup-wrap,
+.el-select-dropdown {
+  .el-select-dropdown__wrap {
+    .el-select-dropdown__list {
+      .el-select-dropdown__item {
+        @hei: 30px;
+        height: @hei;
+        border-radius: 1px;
+        line-height: @hei;
+        background-color: #fff;
+        font-size: 14px;
+        color: #4d4f53;
+        font-weight: 500;
+        &:hover,
+        &.hover {
+          position: relative;
+          box-shadow: 0 0 14px 0 rgba(216, 213, 213, 0.4);
+          background-color: #fff;
+          z-index: 1;
+          color: #f00000;
+        }
+        &:active {
+          box-shadow: 0 0 8px 0 rgba(216, 213, 213, 0.4);
+        }
+      }
+    }
+  }
+}
+.el-button.cancelButtonClass {
+  display: inline-block;
+  width: 76px !important;
+  padding: 7px 15px !important;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #bababa;
+  color: #6c6c6c !important;
+  font-size: 14px;
+  border-radius: 1px;
+}
+.el-button.confirmButtonClass {
+  display: inline-block;
+  width: 76px !important;
+  padding: 7px 15px !important;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #f42020 !important;
+  background-color: #f42020 !important;
+  font-size: 14px;
+  border-radius: 1px;
+}
+.el-button.confirmButtonClass:hover {
+  color: #ffffff;
+  background-color: #ff3535 !important;
+}
+.el-button.confirmButtonClass:active {
+  color: #ffffff;
+  background-color: #e20000 !important;
+}
+.el-button.cancelButtonClass:hover {
+  color: #ffffff !important;
+  background-color: #ff3535;
+}
+
+.el-button.cancelButtonClass:active {
+  color: #ffffff !important;
+  background-color: #e20000;
+}
+//确认框公用样式
+.confirmDialog {
+  width: 550px;
+  height: 332px;
+  .el-message-box__header {
+    box-shadow: 0px 1px 10px 0px rgba(216, 213, 213, 0.5);
+    height: 44px;
+  }
+  .el-message-box__title {
+    font-size: 14px;
+    color: #333333;
+  }
+  .el-message-box__content {
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+  }
+  .tipsIcon {
+    margin-right: 10px;
+  }
+  .tips {
+    color: #333333;
+    font-size: 16px;
+    margin-top: 80px;
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 16px;
+  }
+  .tipInfo {
+    color: #777a80;
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 90px;
+  }
+  .el-message-box__btns {
+    padding: 10px 15px 0px;
+  }
+}

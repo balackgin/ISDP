@@ -1,0 +1,252 @@
+{
+  "formOpts": {
+    "labelPosition": "top",
+    "labelWidth": "",
+    "size": "medium",
+    "disabled": false,
+    "rules": {},
+    "showMessage": false,
+    "inline": false,
+    "row": {
+      "gutter": 10
+    },
+    "col": {}
+  },
+  "formGroup": [
+    {
+      "title": "",
+      "name": "baseinfo",
+      "formItems": [
+        {
+          "label": "申请单位",
+          "prop": "contractCompany",
+          "required": true,
+          "formItemOpts": {
+            "placeholder": "请输入企业全称",
+            "col": {
+              "span": 24
+            }
+          }
+        },
+        {
+          "label": "注册资金(万元)",
+          "prop": "registeredFund",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "营业执照",
+          "prop": "businessLicense",
+          "required": true,
+          "type": "upload-theme3",
+          "formItemOpts": {
+            "showFileList": false,
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "type": "only-col"
+        },
+        {
+          "label": "联系人",
+          "prop": "contactMan",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 8
+            }
+          }
+        },
+        {
+          "label": "邮箱:",
+          "prop": "email",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 8
+            }
+          }
+        },
+        {
+          "label": "联系人电话",
+          "prop": "contactTel",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 8
+            }
+          }
+        },
+        {
+          "label": "通讯地址",
+          "prop": "postalAddress",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 24
+            }
+          }
+        },
+        {
+          "label": "所属类别",
+          "prop": "contractorType",
+          "required": true,
+          "type": "select",
+          "formItemOpts": {
+            "multiple": true,
+            "filterable": true,
+            "collapseTags": true,
+            "col": {
+              "span": 8
+            },
+            "select": [
+              {
+                "label": "内场施工外包",
+                "value": "内场施工外包"
+              },
+              {
+                "label": "外场施工外包",
+                "value": "外场施工外包"
+              },
+              {
+                "label": "运维/维保外包",
+                "value": "运维/维保外包"
+              },
+              {
+                "label": "弱电/安防深化设计",
+                "value": "弱电/安防深化设计"
+              },
+              {
+                "label": "人力外包",
+                "value": "人力外包"
+              },
+              {
+                "label": "监理外包",
+                "value": "监理外包"
+              },
+              {
+                "label": "软件外包",
+                "value": "软件外包"
+              },
+              {
+                "label": "装修外包",
+                "value": "装修外包"
+              },
+              {
+                "label": "服务类外包",
+                "value": "服务类外包"
+              }
+            ]
+          }
+        },
+        {
+          "label": "可承接项目区域",
+          "prop": "projectArea",
+          "required": true,
+          "type": "select",
+          "formItemOpts": {
+            "multiple": true,
+            "filterable": true,
+            "collapseTags": true,
+            "select": [],
+            "col": {
+              "span": 8
+            }
+          }
+        },
+        {
+          "label": "可承接项目类型",
+          "prop": "projectType",
+          "required": true,
+          "type": "select",
+          "formItemOpts": {
+            "filterable": true,
+            "multiple": true,
+            "collapseTags": true,
+            "col": {
+              "span": 8
+            },
+            "select": [
+              {
+                "label": "能源",
+                "value": "能源"
+              },
+              {
+                "label": "公安",
+                "value": "公安"
+              },
+              {
+                "label": "大交通",
+                "value": "大交通"
+              },
+              {
+                "label": "金融",
+                "value": "金融"
+              },
+              {
+                "label": "楼宇",
+                "value": "楼宇"
+              },
+              {
+                "label": "机房",
+                "value": "机房"
+              },
+              {
+                "label": "文教卫",
+                "value": "文教卫"
+              },
+              {
+                "label": "其他",
+                "value": "其他"
+              }
+            ]
+          }
+        },
+        {
+          "label": "开户行",
+          "prop": "bankDeposit",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "开户行账号",
+          "prop": "bankAccountNo",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 6
+            }
+          }
+        },
+        {
+          "label": "推荐人",
+          "prop": "referrer",
+          "formItemOpts": {
+            "col": {
+              "span": 6
+            }
+          }
+        },
+        {
+          "label": "推荐人电话",
+          "prop": "referrerTel",
+          "formItemOpts": {
+            "col": {
+              "span": 6
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

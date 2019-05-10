@@ -1,0 +1,17 @@
+{
+  "opts": {
+    "theme": "layout-head",
+    "menuIcon": true,
+    "trigger": "click"
+  },
+  "btn": {
+    "text": "",
+    "appendIcon": true
+  },
+  "menu": [
+    {
+      "text": "退出",
+      "fnName": "userExit"
+    }
+  ]
+}

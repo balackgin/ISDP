@@ -1,0 +1,103 @@
+{
+  "demo": [{
+    "id": 1,
+    "name": "PM",
+    "title": "PM",
+    "edit": false,
+    "username": 90211,
+    "nickname": "肖途",
+    "parent": "",
+    "child": [{
+        "id": 2,
+        "name": "TMO",
+        "title": "TMO",
+        "edit": false,
+        "parent": "PM",
+        "username": 90211,
+        "nickname": "肖途",
+        "child": [{
+            "id": 5,
+            "name": "DL",
+            "title": "DL",
+            "parent": "TMO",
+            "username": 90211,
+            "nickname": "肖途",
+            "edit": false
+          },
+          {
+            "id": 6,
+            "name": "DL",
+            "title": "DL",
+            "parent": "TMO",
+            "username": 90211,
+            "nickname": "肖途",
+            "edit": false
+          },
+          {
+            "id": 7,
+            "name": "TL",
+            "title": "TL",
+            "parent": "TMO",
+            "username": 90211,
+            "nickname": "肖途",
+            "edit": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "DPM",
+        "title": "DPM",
+        "edit": false,
+        "parent": "PM",
+        "username": 90211,
+        "nickname": "肖途",
+        "child": [{
+            "id": 8,
+            "name": "RPM",
+            "title": "RPM",
+            "parent": "DPM",
+            "username": 90211,
+            "nickname": "肖途",
+            "edit": false
+          },
+          {
+            "id": 9,
+            "name": "RPM",
+            "title": "RPM",
+            "parent": "DPM",
+            "username": 90211,
+            "nickname": "肖途",
+            "edit": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "PMO",
+        "title": "PMO",
+        "parent": "PM",
+        "edit": false,
+        "child": [{
+            "id": 10,
+            "name": "QA",
+            "title": "QA",
+            "parent": "PMO",
+            "username": 90211,
+            "nickname": "肖途",
+            "edit": false
+          },
+          {
+            "id": 11,
+            "name": "CRM",
+            "title": "CRM",
+            "parent": "PMO",
+            "username": 90211,
+            "nickname": "肖途",
+            "edit": false
+          }
+        ]
+      }
+    ]
+  }]
+}

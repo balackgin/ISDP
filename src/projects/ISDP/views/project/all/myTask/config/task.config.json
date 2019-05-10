@@ -1,0 +1,48 @@
+{
+  "tableOpts": {
+    "theme": "isdp",
+    "autoHeight": true,
+    "highlightCurrentRow": true,
+    "emplyText": "暂无数据"
+  },
+  "columns": [
+    {
+      "label": "序号",
+      "type": "index",
+      "columnOpts": {
+        "width": 80,
+        "align": "center"
+      }
+    },
+    {
+      "label": "任务名称",
+      "prop": "msgContent",
+      "type": "link",
+      "columnOpts": {
+        "minWidth": 220
+      }
+    },
+    {
+      "label": "任务类型",
+      "prop": "contentType",
+      "columnOpts": {
+        "width": 200,
+        "align": "center"
+      }
+    },
+    {
+      "label": "发件人",
+      "prop": "senderName",
+      "columnOpts": {
+        "width": 160
+      }
+    },
+    {
+      "label": "发送时间",
+      "prop": "createDate",
+      "columnOpts": {
+        "width": 220
+      }
+    }
+  ]
+}

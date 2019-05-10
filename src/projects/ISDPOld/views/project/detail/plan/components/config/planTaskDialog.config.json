@@ -1,0 +1,36 @@
+{
+  "dialogTableConfig": {
+    "name": "plan-task-feedback-dialog-table",
+    "maxHeight": 500,
+    "highlightCurrentRow": true,
+    "emptyText": "",
+    "columns": [
+      {
+        "label": "支撑人",
+        "prop": "itemPerson",
+        "width": 120
+      },
+      {
+        "label": "计划完成时间",
+        "prop": "planDate",
+        "width": 120,
+        "align": "center"
+      },
+      {
+        "label": "任务描述",
+        "prop": "itemContent"
+      },
+      {
+        "label": "是否完成",
+        "prop": "itemStatus",
+        "width": 80,
+        "align": "center",
+        "type": "obj",
+        "obj": {
+          "false": "否",
+          "true": "是"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "tableConfig": {
+    "name": "project-big-wbs",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": "",
+      "inputProps": {
+        "props": [
+          "index",
+          "jobDescription",
+          "dutyPersonName",
+          "supportPersonName",
+          "planStartDate",
+          "planEndDate",
+          "weight"
+        ],
+        "target": ["dblclick"]
+      }
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "align": "center",
+        "prop": "index",
+        "columnOpts": {
+          "minWidth": 50
+        }
+      },
+      {
+        "label": "任务名称",
+        "prop": "jobDescription",
+        "columnOpts": {
+          "minWidth": 245,
+          "align": "left"
+        }
+      },
+      {
+        "label": "分项责任人",
+        "prop": "dutyPersonName",
+        "columnOpts": {
+          "width": 120,
+          "align": "left",
+          "type": "select"
+        }
+      },
+      {
+        "label": "责任部门",
+        "prop": "dutyDept",
+        "columnOpts": {
+          "minWidth": 200,
+          "align": "left"
+        }
+      },
+      {
+        "label": "支撑人",
+        "prop": "supportPersonName",
+        "columnOpts": {
+          "minWwidth": 120,
+          "align": "left",
+          "type": "select"
+        }
+      },
+      {
+        "label": "计划开始时间",
+        "prop": "planStartDate",
+        "columnOpts": {
+          "width": 100,
+          "align": "left",
+          "type": "date-picker"
+        }
+      },
+      {
+        "label": "预计完成时间",
+        "prop": "planEndDate",
+        "columnOpts": {
+          "width": 100,
+          "align": "left",
+          "type": "date-picker"
+        }
+      },
+      {
+        "label": "实际完成时间",
+        "prop": "actualEndDate",
+        "columnOpts": {
+          "width": 100,
+          "align": "left",
+          "type": "date-picker"
+        }
+      },
+      {
+        "label": "偏差天数",
+        "prop": "deviationDay",
+        "columnOpts": {
+          "width": 80,
+          "align": "left"
+        }
+      },
+      {
+        "label": "计划状态",
+        "prop": "planStatus_ZH",
+        "columnOpts": {
+          "minWidth": 80,
+          "align": "left"
+        }
+      },
+      {
+        "label": "审批状态",
+        "prop": "approvalStatus_ZH",
+        "columnOpts": {
+          "minWidth": 80
+        }
+      },
+      {
+        "label": "权重(%)",
+        "prop": "weight",
+        "columnOpts": {
+          "minWidth": 70,
+          "align": "left"
+        }
+      },
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "columnOpts": {
+          "width": 100,
+          "align": "center",
+          "fixed": "right",
+          "icons": [
+            {
+              "name": "remove",
+              "title": "删除",
+              "className": "text-danger",
+              "text": "删除"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+.feedbackBox {
+  .feedbacBtn {
+    width: 76px !important;
+  }
+  &_nav {
+    height: 30px;
+    margin-top: 24px;
+    &_title {
+      font-family: MicrosoftYaHei-Bold;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      line-height: 30px;
+      letter-spacing: 0px;
+      color: #333333;
+    }
+    &_btn {
+      float: right;
+    }
+  }
+  &_search {
+    margin-top: 20px;
+    &_item {
+      margin-right: 45px;
+      margin-bottom: 20px;
+      display: inline-block;
+      &_label {
+        color: #777a80;
+        font-size: 14px;
+        margin-right: 8px;
+      }
+      &_selectBox {
+        width: 150px;
+        display: inline-block;
+      }
+      &_ipt {
+        width: 150px;
+      }
+    }
+  }
+  &_content {
+    .riskRecordTitle {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .riskNumber {
+      cursor: pointer;
+      color: #3276ff;
+    }
+    .el-table .warning-row {
+      background-image: linear-gradient(#f9f9f9, #f9f9f9),
+        linear-gradient(#f9f9f9, #f9f9f9);
+    }
+    .el-table--enable-row-hover .el-table__body tr:hover>td{
+        background-color: #f1f1f1 !important;
+    }
+    
+  }
+  .el-table__body tr.current-row > td {
+    background-color: #f1f1f1!important;
+  }
+  .el-table th {
+    padding-left: 14px;
+    color: #777a80;
+    font-size: 14px;
+  }
+  .el-table .warning-row {
+    background-image: linear-gradient(#f9f9f9, #f9f9f9),
+      linear-gradient(#f9f9f9, #f9f9f9);
+  }
+  .el-table td {
+    color: #4d4f53;
+    font-size: 14px;
+    padding-left: 14px;
+  }
+  .el-table td,
+  .el-table th.is-leaf {
+    border: none !important;
+  }
+}

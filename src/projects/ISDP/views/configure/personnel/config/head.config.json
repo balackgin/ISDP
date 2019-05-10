@@ -1,0 +1,13 @@
+{
+  "roleList": {
+    "title": "角色列表",
+    "btns": []
+  },
+  "roleEdit": {
+    "title": "角色人员配置",
+    "btns": [{
+      "text": "新增",
+      "fnName": "addNewRow"
+    }]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "detail1": "detail1",
+  "detail2": "formItem",
+  "detail3": [
+    {
+      "listContent": "1"
+    },
+    {
+      "listContent": "2"
+    }
+  ],
+  "detail4": [
+    {
+      "fileName": "1"
+    },
+    {
+      "fileName": "2"
+    }
+  ],
+  "detail5": {
+    "link": "#",
+    "fileName": "fileName"
+  }
+}

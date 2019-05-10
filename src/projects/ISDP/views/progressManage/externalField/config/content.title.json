@@ -1,0 +1,798 @@
+{
+  "tableOpts": {
+    "theme": "isdp",
+    "emplyText": "暂无数据"
+  },
+  "columns": [{
+      "type": "selection",
+      "index": 100,
+      "columnOpts": {
+        "width": 62
+      }
+    },
+    {
+      "label": "序号",
+      "type": "index",
+      "index": 1,
+      "columnOpts": {
+        "width": 80
+      }
+    },
+    {
+      "label": "编号",
+      "prop": "numb",
+      "index": 2,
+      "columnOpts": {
+        "minWidth": 80
+      }
+    },
+    {
+      "label": "辖区",
+      "prop": "area",
+      "index": 3,
+      "columnOpts": {
+        "minWidth": 80
+      }
+    },
+    {
+      "label": "点位名称",
+      "prop": "pointPosition",
+      "index": 4,
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "监控方向",
+      "prop": "monitorDirection",
+      "index": 5,
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "点位属性",
+      "prop": "pointAttribute",
+      "index": 6,
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "新建/利旧",
+      "prop": "createOrUtilize",
+      "index": 10,
+      "columnOpts": {
+        "minWidth": 120
+      }
+    },
+    {
+      "label": "分包商",
+      "prop": "subcontractor",
+      "index": 11,
+      "columnOpts": {
+        "minWidth": 90
+      }
+    },
+    {
+      "label": "点位勘查",
+      "index": 12,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "surveyPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "surveyReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "surveyActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "surveyStaff",
+          "columnOpts": {
+            "minWidth": 110
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "surveyStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "surveyGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "surveyGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "深化设计",
+      "index": 13,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "designPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "designReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "designActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "designStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "designStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "designGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "designGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "基础开挖及浇筑",
+      "index": 14,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "excavatePlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "excavateReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "excavateActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "excavateStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "excavateStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "excavateGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "excavateGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "杆件到货",
+      "index": 15,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "membararrPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "membararrReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "membararrActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "membararrStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "membararrStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "membararrGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "membararrGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "主要设备到货",
+      "index": 16,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "equiparrPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "equiparrReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "equiparrActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "equiparrStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "equiparrStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "equiparrGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "equiparrGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "杆件安装",
+      "index": 17,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "membarinsPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "membarinsReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "membarinsActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "membarinsStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "membarinsStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "membarinsGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "membarinsGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "设备安装",
+      "index": 18,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "equipinsPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "equipinsReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "equipinsActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "equipinsStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "equipinsStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "equipinsGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "equipinsGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "接电",
+      "index": 19,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "eleconnPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "eleconnReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "eleconnActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "eleconnStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "eleconnStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "eleconnGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "eleconnGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "通网",
+      "index": 20,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "netconnPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "netconnReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "netconnActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "netconnStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "netconnStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "netconnGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "netconnGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "调试",
+      "index": 21,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "debugPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "debugReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "debugActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "debugStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "debugStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "debugGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "debugGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "接入",
+      "index": 22,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "joinPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "joinReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "joinActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "joinStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "joinStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "joinGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "joinGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "初验",
+      "index": 23,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "initestPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "initestReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "initestActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "initestStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "initestStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "initestGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "initestGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "试运行",
+      "index": 24,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "testrunPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "testrunReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "testrunActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "testrunStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "testrunStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "testrunGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "testrunGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "终验",
+      "index": 25,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "finaltestPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "finaltestReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "finaltestActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "finaltestStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "finaltestStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "finaltestGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "finaltestGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    },
+    {
+      "label": "运维",
+      "index": 26,
+      "children": [{
+          "label": "计划完成时间",
+          "columnOpts": {
+            "minWidth": 150
+          },
+          "prop": "maintPlanfinishDate"
+        },
+        {
+          "label": "调整计划",
+          "prop": "maintReplanDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "maintActualfinishDate",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "实施人员",
+          "prop": "maintStaff",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        },
+        {
+          "label": "状态",
+          "prop": "maintStatus"
+        },
+        {
+          "label": "GAP",
+          "prop": "maintGap"
+        },
+        {
+          "label": "GAP原因",
+          "prop": "maintGapReason",
+          "columnOpts": {
+            "minWidth": 120
+          }
+        }
+      ]
+    }
+  ]
+}

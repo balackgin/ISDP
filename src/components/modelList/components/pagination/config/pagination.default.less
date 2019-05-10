@@ -1,0 +1,27 @@
+.model-pagination-dropdown {
+  min-width: unset;
+  width: 88px;
+  margin-top: 0;
+  border: 0;
+  box-shadow: 0 0 14px 0 rgba(216, 213, 213, 0.6);
+  border-radius: 1px;
+  /deep/ .model-pagination {
+    .popper__arrow {
+      display: none;
+    }
+    .el-select-dropdown__list {
+      padding: 0;
+      .el-select-dropdown__item {
+        padding: 0 10px;
+        color: #4d4f53;
+        font-size: 14px;
+        &.hover,
+        &.selected,
+        &:hover {
+          color: #f00000;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

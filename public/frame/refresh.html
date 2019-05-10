@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 头部图标 -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="render" content="webkit" />
+  <title>大华股份集成交付一站式平台</title>
+  <script>
+    (function () {
+      try {
+        var parentWin = window.parent.parent,
+          btn = parentWin.document.querySelector('.refreshBtn');
+        btn && btn.click();
+        parentWin.postMessage(location.search, '*');
+      } catch (err) {
+        console.log('refresh error!!!', err && err.toString());
+      }
+    }())
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

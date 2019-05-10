@@ -1,0 +1,74 @@
+{
+  "search": {
+    "formItems": [{
+      "label": "名称",
+      "prop": "roleName"
+    }],
+    "btns": [{
+      "text": "搜索",
+      "name": "search",
+      "type": "danger"
+    }]
+  },
+  "table": {
+    "name": "project-list",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "isTableData": true,
+      "emptyText": ""
+    },
+    "columns": [{
+        "label": "序号",
+        "prop": "index",
+        "columnOpts": {
+          "width": 50,
+          "align": "center"
+        }
+      },
+      {
+        "label": "分类名",
+        "prop": "classifyName",
+        "columnOpts": {
+          "minWidth": 80,
+          "align": "left"
+        }
+      },
+      {
+        "label": "分类描述",
+        "prop": "classifyDisplay",
+        "columnOpts": {
+          "minWidth": 80,
+          "align": "left"
+        }
+      },
+      {
+        "label": "分类选项",
+        "prop": "classifyItem",
+        "type": "select",
+        "columnOpts": {
+          "minWidth": 80,
+          "remote": false,
+          "align": "left"
+        }
+      },
+      {
+        "label": "操作",
+        "prop": "operate",
+        "type": "action-icons",
+        "columnOpts": {
+          "width": 80,
+          "icons": [{
+              "name": "edit",
+              "text": "编辑"
+            },
+            {
+              "name": "remove",
+              "text": "删除"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

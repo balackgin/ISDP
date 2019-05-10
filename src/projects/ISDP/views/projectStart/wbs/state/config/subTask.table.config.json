@@ -1,0 +1,50 @@
+{
+  "tableOpts": {
+    "theme": "isdp"
+  },
+  "columns": [{
+      "label": "状态",
+      "prop": "icon",
+      "type": "html",
+      "columnOpts": {
+        "minWidth": 100,
+        "obj": {
+          "0": "未开始",
+          "1": "进行中",
+          "99": "进行中",
+          "100": "已完成"
+        }
+      }
+    },
+    {
+      "label": "任务名称",
+      "prop": "jobName",
+      "type": "link",
+      "columnOpts": {
+        "minWidth": 140
+      }
+    },
+    {
+      "label": "计划完成时间",
+      "prop": "planEndDate",
+      "columnOpts": {
+        "minWidth": 150
+      }
+    },
+    {
+      "label": "实际完成时间",
+      "prop": "actualEndDate",
+      "columnOpts": {
+        "minWidth": 150
+      }
+    },
+    {
+      "label": "偏差",
+      "prop": "deviationDay",
+      "type": "html",
+      "columnOpts": {
+        "minWidth": 90
+      }
+    }
+  ]
+}

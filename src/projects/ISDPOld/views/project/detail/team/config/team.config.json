@@ -1,0 +1,128 @@
+{
+  "table": {
+    "name": "project-list",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": "",
+      "inputProps": {
+        "props": [
+          "staffName",
+          "projectRoleName",
+          "projectDuty",
+          "staffTel",
+          "staffEmail",
+          "memo"
+        ],
+        "target": ["dblclick"],
+        "type": "callback"
+      }
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "prop": "index",
+        "columnOpts": {
+          "width": 50,
+          "align": "left"
+        }
+      },
+      {
+        "label": "职能",
+        "prop": "projectRoleName",
+        "columnOpts": {
+          "minWidth": 160,
+          "align": "left",
+          "type": "select",
+          "size": "small",
+          "select": [],
+          "formItemOpts": {
+            "filterable": true,
+            "allowCreate": false,
+            "remote": false,
+            "size": "small"
+          }
+        }
+      },
+      {
+        "label": "姓名",
+        "prop": "staffName",
+        "columnOpts": {
+          "align": "left",
+          "type": "select",
+          "size": "small",
+          "select": [],
+          "formItemOpts": {
+            "filterable": true,
+            "allowCreate": false,
+            "remote": true,
+            "size": "small"
+          }
+        }
+      },
+      {
+        "label": "职责",
+        "prop": "projectDuty"
+      },
+      {
+        "label": "联系方式",
+        "prop": "staffTel",
+        "columnOpts": {
+          "minWidth": 130
+        }
+      },
+      {
+        "label": "邮箱地址",
+        "prop": "staffEmail",
+        "columnOpts": {
+          "minWidth": 230,
+          "align": "left"
+        }
+      },
+      {
+        "label": "创建时间",
+        "prop": "crateDate",
+        "columnOpts": {
+          "width": 90,
+          "align": "center"
+        }
+      },
+      {
+        "label": "停用时间",
+        "prop": "stopTime",
+        "columnOpts": {
+          "width": 90,
+          "align": "center"
+        }
+      },
+      {
+        "label": "备注",
+        "prop": "memo",
+        "columnOpts": {
+          "align": "left"
+        }
+      },
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "columnOpts": {
+          "width": 80,
+          "align": "center",
+          "icons": [
+            {
+              "name": "stopBtn",
+              "text": "停用",
+              "className": "text-danger"
+            },
+            {
+              "name": "remove",
+              "title": "删除",
+              "className": "text-danger",
+              "text": "删除"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

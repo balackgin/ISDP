@@ -1,0 +1,93 @@
+{
+  "rolesDialog": {
+    "comments": "企业资质信息  enterpriseCertificateArray",
+    "type": "form",
+    "name": "dialog-addrole",
+    "title": "添加角色",
+    "data": {
+      "roleName": ""
+    },
+    "form": {
+      "labelPosition": "right",
+      "labelWidth": "120px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "group": [{
+      "title": "",
+      "name": "dialog-taskAssignment",
+      "formConfig": [{
+        "label": "权限名称",
+        "prop": "roleName",
+        "required": true,
+        "col": {
+          "span": 12
+        }
+      }]
+    }]
+  },
+  "rolesMemberDialog": {
+    "comments": "企业资质信息  enterpriseCertificateArray",
+    "type": "form",
+    "name": "dialog-addroleMember",
+    "title": "添加角色成员",
+    "isTableData": false,
+    "data": {
+      "nickname": ""
+    },
+    "inputConfig": {
+      "props": [
+        "nickname",
+        "username"
+      ]
+    },
+    "form": {
+      "labelPosition": "right",
+      "labelWidth": "120px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "group": [{
+      "title": "",
+      "name": "dialog-taskAssignment",
+      "formConfig": [{
+          "label": "姓名",
+          "prop": "nickname",
+          "required": true,
+          "type": "select",
+          "select": [],
+          "config": {
+            "filterable": true,
+            "allowCreate": false,
+            "remote": true
+          },
+          "col": {
+            "span": 12
+          }
+        },
+        {
+          "label": "工号",
+          "prop": "username",
+          "disabled": true,
+          "col": {
+            "span": 12
+          }
+        }
+      ]
+    }]
+  }
+}

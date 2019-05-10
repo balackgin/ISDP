@@ -1,0 +1,218 @@
+{
+  "detailForm": {
+    "config": [{
+        "col": {
+          "labelStyle": {
+            "fontSize": "14px",
+            "flexBasis": "64px",
+            "color": "#666"
+          }
+        },
+        "name": "group1",
+        "config": [{
+            "label": "单据编号:",
+            "prop": "documentNum",
+            "col": {
+              "span": 6,
+              "textStyle": {
+                "fontWeight": 500,
+                "fontSize": "14px",
+                "color": "#666"
+              }
+            }
+          },
+          {
+            "label": "申请日期:",
+            "prop": "applicationDate",
+            "col": {
+              "span": 17,
+              "textStyle": {
+                "color": "#666",
+                "fontSize": "14px"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "group2",
+        "config": [{
+            "label": "申请单位:",
+            "prop": "contactor",
+            "col": {
+              "span": 18,
+              "textStyle": {
+                "fontSize": "18px",
+                "fontWeight": "700"
+              }
+            }
+          },
+          {
+            "label": "联系人:",
+            "prop": "contactMan",
+            "col": {
+              "span": 7
+            }
+          },
+          {
+            "label": "联系人电话:",
+            "prop": "contactTel",
+            "col": {
+              "span": 17
+            }
+          },
+          {
+            "label": "工程合同号:",
+            "prop": "projectContractNum",
+            "col": {
+              "span": 7
+            }
+          },
+          {
+            "label": "工程合同名:",
+            "prop": "projectContractName",
+            "col": {
+              "span": 17,
+              "textStyle": {
+                "lineHeight": "32px"
+              }
+            }
+          },
+          {
+            "label": "项目经理",
+            "prop": "projectManager",
+            "col": {
+              "span": 7
+            }
+          },
+          {
+            "label": "项目地址:",
+            "prop": "projectAddress",
+            "col": {
+              "span": 17
+            }
+          },
+          {
+            "label": "建筑面积:",
+            "prop": "buildingArea",
+            "col": {
+              "span": 5
+            }
+          },
+          {
+            "label": "结算方式:",
+            "prop": "payWay",
+            "col": {
+              "span": 6
+            }
+          },
+
+          {
+            "label": "施工起止日期:",
+            "prop": "constractionDate",
+            "col": {
+              "span": 8
+            }
+          },
+          {
+            "label": "施工完成进度:",
+            "prop": "constrationCompleteDegree",
+            "col": {
+              "span": 5
+            }
+          }
+        ]
+      },
+      {
+        "name": "group3",
+        "config": [{
+          "label": "支撑材料:",
+          "prop": "supportMaterials",
+          "type": "list",
+          "col": {
+            "span": 12
+          }
+        }]
+      },
+      {
+        "name": "group4",
+        "config": [{
+          "label": "项目经理意见:",
+          "prop": "projectManagerAdvice",
+          "col": {
+            "span": 12
+          }
+        }]
+      },
+      {
+        "name": "group5",
+        "config": [{
+          "label": "送审造价:",
+          "prop": "trialCost",
+          "col": {
+            "span": 6
+          }
+        }, {
+          "label": "审核造价:",
+          "prop": "auditCost",
+          "col": {
+            "span": 6
+          }
+        }, {
+          "label": "核增造价:",
+          "prop": "incrementCost",
+          "col": {
+            "span": 6
+          }
+        }, {
+          "label": "核减造价:",
+          "prop": "reducteCost",
+          "col": {
+            "span": 6
+          }
+        }, {
+          "label": "是否需要补充合同:",
+          "prop": "isNeedContract",
+          "col": {
+            "span": 6
+          }
+        }, {
+          "label": "外包商评价分数:",
+          "prop": "outsourceEvaluationScore",
+          "col": {
+            "span": 6
+          }
+        }]
+      }
+    ]
+  },
+  "detailTable": {
+    "name": "detail-approval-record",
+    "maxHeight": "500px",
+    "highlightCurrentRow": true,
+    "emptyText": "",
+    "tableConfig": [{
+        "label": "流转节点",
+        "align": "center",
+        "prop": "add",
+        "width": "80px"
+      },
+      {
+        "label": "实际处理人",
+        "prop": "actualDealPerson"
+      },
+      {
+        "label": "意见",
+        "prop": "option"
+      },
+      {
+        "label": "处理结果",
+        "prop": "progressResult"
+      },
+      {
+        "label": "下级节点",
+        "prop": "subordinateNode"
+      }
+    ]
+  }
+}

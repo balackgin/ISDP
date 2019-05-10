@@ -1,0 +1,148 @@
+{
+  "table": {
+    "columns": [
+      {
+        "label": "序号",
+        "type": "index",
+        "align": "center"
+      },
+      {
+        "label": "任务名称",
+        "prop": ""
+      },
+      {
+        "label": "任务要求",
+        "prop": ""
+      },
+      {
+        "label": "任务状态",
+        "prop": ""
+      },
+      {
+        "label": "任务周期",
+        "prop": ""
+      },
+      {
+        "label": "反馈频率",
+        "prop": ""
+      },
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "align": "center",
+        "width": "60px",
+        "icons": [
+          {
+            "text": "反馈",
+            "name": "feedback",
+            "className": "link"
+          }
+        ]
+      }
+    ]
+  },
+  "dialog": {
+    "title": "项目任务反馈单",
+    "width": "",
+    "type": "form",
+    "form": {
+      "labelWidth": "110px",
+      "labelPosition": "right",
+      "size": "small",
+      "row": {
+        "gutter": 20
+      }
+    },
+    "group": [
+      {
+        "formItemConfig": [
+          {
+            "label": "完成进度",
+            "type": "input-search",
+            "search": {
+              "slot": "append",
+              "text": "%"
+            },
+            "col": {
+              "lg": 4,
+              "md": 7
+            }
+          },
+          {
+            "label": "计划完成时间",
+            "type": "date-picker",
+            "col": {
+              "md": 6,
+              "sm": 10
+            }
+          },
+          {
+            "label": "任务完成内容",
+            "type": "textarea",
+            "autosize": {
+              "minRows": 2
+            }
+          },
+          {
+            "label": "困难及问题",
+            "type": "textarea",
+            "autosize": {
+              "minRows": 2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "dialogTable": {
+    "noPadding": true,
+    "columns": [
+      {
+        "label": "支撑人",
+        "prop": "",
+        "type": "formItem",
+        "form": {
+          "prop": "",
+          "type": "select"
+        }
+      },
+      {
+        "label": "计划完成时间",
+        "prop": "",
+        "type": "formItem",
+        "form": {
+          "prop": "",
+          "type": "date-picker"
+        }
+      },
+      {
+        "label": "任务描述",
+        "prop": "",
+        "width": "400px",
+        "type": "formItem"
+      },
+      {
+        "label": "是否完成",
+        "prop": "",
+        "type": "formItem",
+        "form": {
+          "prop": "",
+          "type": "select"
+        }
+      },
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "align": "center",
+        "width": 60,
+        "icons": [
+          {
+            "className": "link",
+            "name": "dialogTableRemove",
+            "text": "删除"
+          }
+        ]
+      }
+    ]
+  }
+}

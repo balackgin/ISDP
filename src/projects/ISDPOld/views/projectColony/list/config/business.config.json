@@ -1,0 +1,164 @@
+{
+  "searchObj": {
+    "opptynum": "",
+    "beginCreatedDate": "",
+    "province": "",
+    "opptyname": ""
+  },
+  "search": {
+    "formItems": [
+      {
+        "label": "项目编号",
+        "prop": "opptynum"
+      },
+      {
+        "label": "项目名称",
+        "prop": "opptyname",
+        "formItemOpts": {
+          "className": "wid100"
+        }
+      },
+      {
+        "label": "创建日期",
+        "prop": "beginCreatedDate",
+        "type": "date-picker"
+      },
+      {
+        "label": "州/省",
+        "prop": "province"
+      }
+    ],
+    "btns": [
+      {
+        "text": "搜索",
+        "name": "search",
+        "type": "danger"
+      }
+    ]
+  },
+  "table": {
+    "name": "project-list",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "type": "index",
+        "columnOpts": {
+          "align": "center"
+        }
+      },
+      {
+        "label": "项目编号",
+        "prop": "opptynum",
+        "type": "link",
+        "columnOpts": {
+          "minWidth": 130,
+          "href": "detailUrl"
+        }
+      },
+      {
+        "label": "项目名称",
+        "prop": "opptyname",
+        "columnOpts": {
+          "minWidth": 150
+        }
+      },
+      {
+        "label": "集成类型",
+        "prop": "integrationType",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "项目等级",
+        "prop": "optyleve",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "甲方客户",
+        "prop": "accountname",
+        "columnOpts": {
+          "minWidth": 200
+        }
+      },
+      {
+        "label": "中标结果",
+        "prop": "bidding",
+        "columnOpts": {
+          "minWidth": 80
+        }
+      },
+      {
+        "label": "中标金额（万元）",
+        "prop": "winAmount",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      },
+      {
+        "label": "中标日期",
+        "prop": "bidTime",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "项目阶段",
+        "prop": "salesstage",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+
+      {
+        "label": "业务归属人",
+        "prop": "lastname",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "业务归属人部门",
+        "prop": "salesdivision",
+        "columnOpts": {
+          "minWidth": 180
+        }
+      },
+      {
+        "label": "行业一级",
+        "prop": "catagory1",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "行业二级",
+        "prop": "catagory2",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "州/省",
+        "prop": "province",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "创建日期",
+        "prop": "createdDate",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      }
+    ]
+  }
+}

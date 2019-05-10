@@ -1,0 +1,106 @@
+{
+  "detailOpts": {
+    "theme": "isdp",
+    "noneLine": true,
+    "labelStyle": {
+      "flexBasis": "100px"
+    },
+    "col": {
+      "lg": 6,
+      "md": 8,
+      "sm": 12
+    }
+  },
+  "detailGroup": [{
+    "detailItems": [{
+        "label": "子任务描述：",
+        "prop": "jobName123",
+        "detailItemOpts": {
+          "col": {
+            "span": 24
+          }
+        }
+      },
+      {
+        "label": "",
+        "prop": "jobDescription",
+        "detailItemOpts": {
+          "col": {
+            "span": 24
+          }
+        }
+      },
+      {
+        "label": "责任人:",
+        "prop": "dutyPersonName",
+        "detailItemOpts": {
+          "col": {
+            "span": 8
+          }
+        }
+      },
+      {
+        "label": "责任部门:",
+        "prop": "dutyDept",
+        "detailItemOpts": {
+          "col": {
+            "span": 16
+          }
+        }
+      },
+      {
+        "label": "计划完成时间:",
+        "prop": "planEndDate",
+        "detailItemOpts": {
+          "col": {
+            "span": 8
+          }
+        }
+      },
+      {
+        "label": "实际完成时间:",
+        "prop": "actualEndDate",
+        "detailItemOpts": {
+          "col": {
+            "span": 8
+          }
+        }
+      },
+      {
+        "label": "延期:",
+        "prop": "deviationDay",
+        "detailItemOpts": {
+          "col": {
+            "span": 8
+          }
+        }
+      },
+      {
+        "label": "延误原因:",
+        "prop": "contractSignDate"
+      },
+      {
+        "label": "",
+        "prop": "expireReason",
+        "detailItemOpts": {
+          "col": {
+            "span": 24
+          }
+        }
+      }, {
+        "label": "相关文件:",
+        "prop": "contractSignDate"
+      },
+      {
+        "label": "",
+        "prop": "deliverableDTOList",
+        "type": "fileList",
+        "detailItemOpts": {
+          "col": {
+            "span": 24
+          }
+        }
+      }
+    ]
+  }]
+}

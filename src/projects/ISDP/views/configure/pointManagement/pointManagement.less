@@ -1,0 +1,81 @@
+
+.pointManagement{
+    
+    &_seachBox{
+        &_item{
+            display: inline-block;
+            margin-right: 20px;
+            &_label{
+                font-size: 14px;
+                color: #82848a;
+            }
+            &_ipt{
+                width: 145px;
+                height: 30px;
+                border: 1px solid #dadada;
+                padding-left: 10px;
+            }
+        }
+        &_btnBox{
+            float: right;
+        }
+        .pointManagementSearch{
+            width: 76px;
+        }
+    }
+    &_content{
+        .disableBtn{
+            cursor:  not-allowed!important;
+            color: #777a80!important;
+        }
+        .handelBtn{
+            cursor: pointer;
+            color: #3276ff;
+            font-size: 14px; 
+            display: inline-block;
+            margin-right: 18px;
+         }
+    }
+    /deep/.el-table--border th, .el-table__fixed-right-patch{
+        border: none;
+    }
+    /deep/.el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed{
+        border: none;
+    }
+    /deep/ .el-table__body tr.current-row > td {
+        background-color: #f1f1f1 !important;
+      }
+    /deep/ .el-table--enable-row-hover .el-table__body tr:hover>td{
+        background-color: #f1f1f1 !important;
+    }    
+    .el-table /deep/ th{
+        padding: 3px!important;
+        padding-left: 14px!important;
+        color: #777a80;
+        font-size: 14px;
+    }
+    .el-table /deep/ .warning-row {
+        background-image: linear-gradient(#f9f9f9, #f9f9f9), 
+        linear-gradient( #f9f9f9,  #f9f9f9);
+    }
+    .el-table /deep/ td{
+        padding-left: 14px;
+        color: #4d4f53;
+        font-size: 14px;
+    }
+    .el-table /deep/ td, .el-table /deep/ th.is-leaf{
+        border: none!important;
+    }
+    .el-table /deep/ .el-table_1_column_7{
+    //    padding-left: 25px;
+        color: #4d4f53;
+       border: none!important;
+    }
+    .el-table /deep/ thead.is-group th{
+        background-color: #ffffff!important;
+    }
+    // pointCoordinat
+    .el-table /deep/ .pointCoordinat th>.cell{
+        text-align: center!important;
+    }
+}

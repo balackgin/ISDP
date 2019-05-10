@@ -1,0 +1,444 @@
+[
+  {
+    "description": "测试接口",
+    "response": {
+      "text": "success"
+    }
+  },
+  {
+    "description": "登录接口",
+    "request": {
+      "uri": "/easywork/api/platform/authentication/login",
+      "method": "post"
+    },
+    "response": {
+      "json": {
+        "resultCode": 200,
+        "resultMessage": "登录成功!",
+        "data": {
+          "token": "8aaf6eefe9034a50b3637e258453f753"
+        }
+      }
+    }
+  },
+  {
+    "description": "注册接口",
+    "request": {
+      "uri": "/easywork/api/platform/authentication/register",
+      "method": "post"
+    },
+    "response": {
+      "json": {
+        "resultCode": 200,
+        "resultMessage": "注册成功!",
+        "data": {
+          "token": "8aaf6eefe9034a50b3637e258453f753"
+        }
+      }
+    }
+  },
+  {
+    "description": "文件上传",
+    "request": {
+      "uri": "/easywork/api/platform/datafile/upload",
+      "method": "post"
+    },
+    "response": {
+      "json": {
+        "resultCode": 200,
+        "resultMessage": "上传成功!",
+        "data": {
+          "id": 1,
+          "sourceName": "高级工程师.pdf",
+          "filePath": "http://10.1.224.146/data/v/0131f/",
+          "fileFullPath": "http://10.1.224.146/data/v/0131f/25763294594939377892334.pdf",
+          "version": 4
+        }
+      }
+    }
+  },
+  {
+    "description": "申请审批单据提交",
+    "request": {
+      "uri": "/easywork/api/platform/Apply",
+      "method": "post"
+    },
+    "response": {
+      "json": {
+        "resultCode": 200,
+        "resultMessage": "提交成功!",
+        "data": {
+          "token": "8aaf6eefe9034a50b3637e258453f753"
+        }
+      }
+    }
+  },
+  {
+    "description": "外包商纳入申请提交",
+    "request": {
+      "uri": "/easywork/api/contractor/approval/contractorapplication",
+      "method": "post"
+    },
+    "response": {
+      "json": {
+        "resultCode": 200,
+        "resultMessage": "提交成功!",
+        "data": {
+          "token": "8aaf6eefe9034a50b3637e258453f753"
+        }
+      }
+    }
+  },
+  {
+    "description": "外包商纳入申请审批",
+    "request": {
+      "uri": "/easywork/api/contractor/approval/approvecontractor",
+      "method": "post"
+    },
+    "response": {
+      "json": {
+        "resultCode": 200,
+        "resultMessage": "提交成功!",
+        "data": {
+          "token": "8aaf6eefe9034a50b3637e258453f753"
+        }
+      }
+    }
+  },
+  {
+    "description": "外包商纳入申请审批列表",
+    "request": {
+      "uri": "/easywork/api/contractor/approval/querycontractorapplicationlist"
+    },
+    "response": {
+      "json": {
+        "resultCode": 200,
+        "resultMessage": "数据获取成功",
+        "count": 55,
+        "approvalList": [
+          {
+            "id": 32,
+            "serialNo": "DH40023367934",
+            "applicationCompany": "小华",
+            "applicant": "李四",
+            "applicantTel": "15912421133",
+            "formType": "外包商纳入申请",
+            "applicationDate": "2018-12-05",
+            "workflowNo": "1454-123",
+            "businessId": 1245
+          },
+          {
+            "id": 33,
+            "serialNo": "DH40023367934",
+            "applicationCompany": "小华",
+            "applicant": "李四",
+            "applicantTel": "15912421133",
+            "formType": "外包商纳入申请",
+            "applicationDate": "2018-12-05",
+            "workflowNo": "1454-123",
+            "businessId": 1245
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "外包商列表",
+    "request": {
+      "uri": "/easywork/api/contractor/contractor/querycontractorlist",
+      "method": "post"
+    },
+    "response": {
+      "json": {
+        "resultCode": 200,
+        "resultMessage": "数据获取成功",
+        "data": {
+          "count": 30,
+          "contractorList": [
+            {
+              "id": 13,
+              "contractor": "大华工程",
+              "contactMan": "李四",
+              "contactTel": "15912421133",
+              "postalAddress": "滨安路1187号",
+              "contractorType": "",
+              "contractorStatus": "认证供应商",
+              "certificationCategory": "",
+              "projectArea": "浙江/杭州",
+              "projectType": "信息工程",
+              "bankDeposit": "工商银行杭州市分行",
+              "bankAccountNo": "7431375336784466",
+              "filingDate": "2018-12-01",
+              "registeredFund": "1000万元",
+              "referrer": "王五",
+              "version": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "description": "外包商纳入申请保存",
+    "request": {
+      "uri": "/easywork/api/contractor/approval/savecontractor",
+      "method": "post"
+    },
+    "response": {
+      "json": {
+        "contractorId": 13,
+        "approvalFormId": 32,
+        "applicationCompany": "大华工程",
+        "contactMan": "李四",
+        "contactTel": "15912421133",
+        "postalAddress": "滨安路1187号",
+        "contractorType": "",
+        "contractorStatus": "认证供应商",
+        "certificationCategory": "",
+        "projectArea": "浙江/杭州",
+        "projectType": "信息工程",
+        "bankDeposit": "工商银行杭州市分行",
+        "bankAccountNo": "7431375336784466",
+        "registeredFund": "1000万元",
+        "referrer": "王五",
+        "approvalVersion": 1,
+        "contractorVersion": 1,
+        "enterpriseQualificationArray": [
+          {
+            "id": 55,
+            "qualificationName": "软件集成资质证书",
+            "qualificationLeve": "软件集成资质3级",
+            "version": 4
+          }
+        ],
+        "certificateArray": [
+          {
+            "id": 55,
+            "certificateNo": "WASSD146325788",
+            "certificateName": "软件集成资质证书",
+            "expireDate": "2020-12-05",
+            "version": 4,
+            "attachmentArray": [
+              {
+                "id": 234,
+                "fileUploadId": 533
+              },
+              {
+                "id": 45,
+                "fileUploadId": 553
+              }
+            ]
+          },
+          {
+            "id": 477,
+            "certificateNo": "WRWD34525788",
+            "certificateName": "信息工程资质证书",
+            "expireDate": "2019-04-05",
+            "attachmentArray": [
+              {
+                "id": 46,
+                "fileUploadId": 753,
+                "version": 4
+              }
+            ],
+            "version": 4
+          }
+        ],
+        "staffArray": [
+          {
+            "id": 4,
+            "staffName": "张三",
+            "duty": "施工监理",
+            "technicalTitle": "高级工程师",
+            "specialty": "软件工程",
+            "idNumber": "45032619840627183x",
+            "attachmentArray": [
+              {
+                "id": 5,
+                "fileUploadId": 473
+              },
+              {
+                "id": 34,
+                "fileUploadId": 43
+              }
+            ],
+            "version": 4
+          }
+        ],
+        "vehicleArray": [
+          {
+            "id": 3,
+            "manufactureInfo": "东风/大连/2001-02-01",
+            "vehicleType": "吊车",
+            "count": 3,
+            "value": 1400000,
+            "version": 1
+          },
+          {
+            "id": 6,
+            "manufactureInfo": "陕汽/西安/2004-02-01",
+            "vehicleType": "货车",
+            "count": 5,
+            "value": 1500000,
+            "version": 1
+          }
+        ],
+        "equipmentArray": [
+          {
+            "id": 56,
+            "equipmentType": "振动棒",
+            "count": 3,
+            "version": 2
+          },
+          {
+            "id": 55,
+            "equipmentType": "穿管机",
+            "count": 4,
+            "version": 2
+          }
+        ],
+        "achievementArray": [
+          {
+            "id": 56,
+            "projectName": "大华监控施工项目",
+            "projectAmount": 450000,
+            "startDate": "2008-05-14",
+            "endDate": "2009-01-14",
+            "constructorCompany": "安邦护卫",
+            "constructorContacter": "王二麻子",
+            "constructorContacterTel": "13356753333",
+            "projectManager": "赵经理",
+            "projectStatus": "结束",
+            "version": 2
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "外包商详细信息",
+    "request": {
+      "uri": "/easywork/api/contractor/contractor/querycontractor",
+      "method": "post"
+    },
+    "response": {
+      "json": {
+        "resultCode": 200,
+        "resultMessage": "数据获取成功",
+        "data": {
+          "id": 13,
+          "contractor": "大华工程",
+          "contactMan": "李四",
+          "contactTel": "15912421133",
+          "postalAddress": "滨安路1187号",
+          "contractorType": "",
+          "contractorStatus": "认证供应商",
+          "certificationCategory": "",
+          "projectArea": "浙江/杭州",
+          "projectType": "信息工程",
+          "bankDeposit": "工商银行杭州市分行",
+          "bankAccountNo": "7431375336784466",
+          "registeredFund": "1000万元",
+          "referrer": "王五",
+          "filingDate": "2018-12-01",
+          "version": 1,
+          "enterpriseQualificationArray": [
+            {
+              "id": 55,
+              "qualificationName": "软件集成资质证书",
+              "qualificationLeve": "软件集成资质3级",
+              "version": 4
+            }
+          ],
+          "certificateArray": [
+            {
+              "id": 55,
+              "certificateNo": "WASSD146325788",
+              "certificateName": "软件集成资质证书",
+              "expireDate": "2020-12-05",
+              "version": 4,
+              "attachmentArray": [
+                {
+                  "id": 234,
+                  "fileUploadId": 533
+                },
+                {
+                  "id": 45,
+                  "fileUploadId": 553
+                }
+              ]
+            },
+            {
+              "id": 477,
+              "certificateNo": "WRWD34525788",
+              "certificateName": "信息工程资质证书",
+              "expireDate": "2019-04-05",
+              "attachmentArray": [
+                {
+                  "id": 46,
+                  "fileUploadId": 753,
+                  "version": 4
+                }
+              ],
+              "version": 4
+            }
+          ],
+          "staffArray": [
+            {
+              "id": 4,
+              "staffName": "张三",
+              "duty": "施工监理",
+              "technicalTitle": "高级工程师",
+              "specialty": "软件工程",
+              "idNumber": "45032619840627183x",
+              "attachmentArray": [
+                {
+                  "id": 5,
+                  "fileUploadId": 473,
+                  "sourceName": "高级工程师.pdf",
+                  "filePath": "http://10.1.224.146/data/v/0131f/",
+                  "fileFullPath": "http://10.1.224.146/data/v/0131f/25763294594939377892334.pdf",
+                  "version": 4
+                }
+              ],
+              "version": 4
+            }
+          ],
+          "vehicleArray": [
+            {
+              "id": 3,
+              "manufactureInfo": "东风/大连/2001-02-01",
+              "vehicleType": "吊车",
+              "count": 3,
+              "value": 1400000,
+              "version": 1
+            }
+          ],
+          "equipmentArray": [
+            {
+              "id": 56,
+              "equipmentType": "振动棒",
+              "count": 3,
+              "version": 2
+            }
+          ],
+          "achievementArray": [
+            {
+              "id": 56,
+              "projectName": "大华监控施工项目",
+              "projectAmount": 450000,
+              "startDate": "2008-05-14",
+              "endDate": "2009-01-14",
+              "constructorCompany": "安邦护卫",
+              "constructorContacter": "王二麻子",
+              "constructorContacterTel": "13356753333",
+              "projectManager": "赵经理",
+              "projectStatus": "结束",
+              "version": 2
+            }
+          ]
+        }
+      }
+    }
+  }
+]

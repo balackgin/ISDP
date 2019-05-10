@@ -1,0 +1,19 @@
+{
+  "navs": {
+    "data": [
+      {
+        "text": "全部项目",
+        "routeName": "ISDPProjectAllDefault"
+      },
+      {
+        "text": "我的任务",
+        "routeName": "ISDPProjectAllMyTask"
+      }
+    ]
+  },
+  "btns": {
+    "back": {
+      "routeName": "ISDPProjectAllDefault"
+    }
+  }
+}

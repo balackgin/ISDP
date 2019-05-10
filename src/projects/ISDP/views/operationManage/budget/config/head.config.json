@@ -1,0 +1,28 @@
+{
+  "title": "项目预算",
+  "btns": [
+    {
+      "text": "线下编辑",
+      "type": "dropdown",
+      "menu": [
+        {
+          "text": "下载模板",
+          "fnName": "headDownload"
+        },
+        {
+          "text": "导入模板",
+          "type": "upload",
+          "uploadType": -1,
+          "formItemOpts": {
+            "api": "/easywork/api/project/budget/import",
+            "name": "excel"
+          }
+        }
+      ]
+    },
+    {
+      "text": "发布",
+      "fnName": "headSubmit"
+    }
+  ]
+}

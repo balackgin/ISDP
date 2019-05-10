@@ -1,0 +1,173 @@
+[
+  {
+    "elementName": "常用模块",
+    "icon": "menu_icon_changyong",
+    "select": true,
+    "elementType": "edit"
+  },
+  {
+    "elementName": "我的项目",
+    "icon": "menu_icon_wodexiangmu",
+    "urlPath": "ISDPProjectAllDefault",
+    "select": true
+  },
+  {
+    "elementName": "我的任务",
+    "icon": "menu_icon_renwu",
+    "urlPath": "ISDPProjectAllMyTask",
+    "select": true
+  },
+  {
+    "elementName": "默认项目",
+    "icon": "menu_icon_morenxiangmu",
+    "urlPath": "ISDPProjectHome",
+    "select": true
+  },
+  {
+    "elementName": "项目立项",
+    "icon": "menu_icon_lixiang",
+    "urlPath": "ISDPProjectStartApproval",
+    "select": true
+  },
+  {
+    "elementName": "项目团队",
+    "icon": "menu_icon_tuandui",
+    "select": true,
+    "children": [
+      {
+        "elementName": "团队配置",
+        "urlPath": "ISDPProjectStartTeam",
+        "select": true
+      },
+      {
+        "elementName": "临时人员配置",
+        "urlPath": "ISDPProjectTemporaryRole",
+        "select": true
+      }
+    ]
+  },
+  {
+    "elementName": "WBS管理",
+    "icon": "menu_icon_WBS",
+    "select": true,
+    "children": [
+      {
+        "elementName": "WBS状态",
+        "urlPath": "ISDPProjectStartWBSState",
+        "select": true
+      },
+      {
+        "elementName": "WBS配置",
+        "urlPath": "ISDPProjectConfigure",
+        "select": true
+      },
+      {
+        "elementName": "WBS制定派发",
+        "urlPath": "ISDPPorjectStartWBSMaintain",
+        "select": true
+      },
+      {
+        "elementName": "WBS任务反馈",
+        "urlPath": "ISDPPorjectStartWBSTask",
+        "select": true
+      }
+    ]
+  },
+  {
+    "elementName": "范围管理",
+    "icon": "menu_icon_fanweii",
+    "select": true,
+    "children": [
+      {
+        "elementName": "点位管理",
+        "urlPath": "ISDPRangenPoint",
+        "select": true
+      }
+    ]
+  },
+  {
+    "elementName": "进度与实施",
+    "icon": "menu_icon_jindu",
+    "select": true,
+    "children": [
+      {
+        "elementName": "整体进度浏览",
+        "urlPath": "ISDPProgressHome",
+        "select": true
+      },
+      {
+        "elementName": "外场计划制定派发",
+        "urlPath": "ISDPProgressExternalField",
+        "select": true
+      },
+      {
+        "elementName": "外场任务反馈",
+        "urlPath": "ISDPProgressExternalFeedback",
+        "select": true
+      }
+    ]
+  },
+  {
+    "elementName": "风险与问题",
+    "icon": "menu_icon_wenti",
+    "select": true,
+    "children": [
+      {
+        "elementName": "问题及风险维护",
+        "urlPath": "ISDPRiskMaintenance",
+        "select": true
+      }
+    ]
+  },
+  {
+    "elementName": "经营管理",
+    "icon": "menu_icon_jingying",
+    "select": true,
+    "children": [
+      {
+        "elementName": "项目预算",
+        "urlPath": "ISDPOperationBudget",
+        "select": true
+      },
+      {
+        "elementName": "问题及风险跟踪",
+        "urlPath": "ISDPOperationFeedback",
+        "elementType": "tab",
+        "select": true
+      }
+    ]
+  },
+  {
+    "elementName": "公共配置",
+    "icon": "menu_icon_xiangmupeizhi",
+    "select": true,
+    "children": [
+      {
+        "elementName": "里程碑设置",
+        "urlPath": "ISDPConfigureMilepost",
+        "select": true
+      },
+      {
+        "elementName": "WBS设置",
+        "urlPath": "ISDPConfigureWBS",
+        "select": true
+      },
+      {
+        "elementName": "权限配置",
+        "select": true,
+        "children": [
+          {
+            "elementName": "角色配置",
+            "urlPath": "ISDPConfigureRole",
+            "select": true
+          },
+          {
+            "elementName": "公共人员配置",
+            "urlPath": "ISDPConfigurePersonnel",
+            "select": true
+          }
+        ]
+      }
+    ]
+  }
+]

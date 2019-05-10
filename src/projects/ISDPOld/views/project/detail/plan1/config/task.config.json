@@ -1,0 +1,91 @@
+{
+  "tableConfig": {
+    "name": "project-list",
+    "maxHeight": 500,
+    "highlightCurrentRow": true,
+    "emptyText": "",
+    "columns": [
+      {
+        "label": "序号",
+        "align": "center",
+        "prop": "index",
+        "width": 50
+      },
+      {
+        "label": "",
+        "type": "expand",
+        "prop": "expand",
+        "width": 30
+      },
+      {
+        "label": "任务名称",
+        "prop": "taskName",
+        "align": "left",
+        "minWidth": 400
+      },
+      {
+        "label": "任务要求",
+        "prop": "taskContent",
+        "align": "left",
+        "minWidth": 350
+      },
+      {
+        "label": "责任人",
+        "prop": "receiverName",
+        "align": "left",
+        "minWidth": 100
+      },
+      {
+        "label": "任务级别",
+        "prop": "taskClassify",
+        "align": "left",
+        "minWidth": 100
+      },
+
+      {
+        "label": "任务状态",
+        "prop": "taskStatus",
+        "align": "left",
+        "minWidth": 150
+      },
+      {
+        "label": "任务周期(天)",
+        "prop": "planDays",
+        "align": "left",
+        "minWidth": 100,
+        "valFn": "deviation"
+      },
+      {
+        "label": "进度(%)",
+        "prop": "taskProgress",
+        "width": 70
+      },
+      {
+        "label": "反馈频率",
+        "prop": "feedbackRule",
+        "align": "center",
+        "minWidth": 100
+      },
+      {
+        "label": "完成程度确认",
+        "prop": "switch",
+        "align": "center",
+        "type": "switch",
+        "minWidth": 100
+      },
+      {
+        "label": "操作",
+        "align": "center",
+        "type": "action-icons",
+        "width": 60,
+        "icons": [
+          {
+            "text": "反馈",
+            "name": "dialogFeedback",
+            "className": "link"
+          }
+        ]
+      }
+    ]
+  }
+}

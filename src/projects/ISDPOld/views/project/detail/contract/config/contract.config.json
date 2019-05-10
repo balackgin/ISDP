@@ -1,0 +1,20 @@
+{
+  "tabs": [
+    {
+      "name": "projectApproval",
+      "title": "项目立项"
+    },
+    {
+      "name": "projectDisclousure",
+      "title": "项目交底"
+    },
+    {
+      "name": "bidding",
+      "title": "招投标"
+    },
+    {
+      "name": "contractReview",
+      "title": "合同评审"
+    }
+  ]
+}

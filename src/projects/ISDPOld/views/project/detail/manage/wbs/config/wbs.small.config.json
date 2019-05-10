@@ -1,0 +1,87 @@
+{
+  "tableConfig": {
+    "name": "project-small-wbs",
+    "maxHeight": "500",
+    "highlightCurrentRow": true,
+    "isTableData": true,
+    "emptyText": "",
+    "inputConfig": {
+      "props": ["jobDescription", "planStartDate", "planEndDate"]
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "align": "center",
+        "prop": "index",
+        "width": 50
+      },
+      {
+        "label": "任务名称",
+        "prop": "jobDescription",
+        "align": "left",
+        "minWidth": 245
+      },
+      {
+        "label": "计划开始时间",
+        "align": "left",
+        "prop": "planStartDate",
+        "width": 120,
+        "form": {
+          "type": "date-picker"
+        }
+      },
+      {
+        "label": "计划完成时间",
+        "align": "left",
+        "prop": "planEndDate",
+        "width": 120,
+        "form": {
+          "type": "date-picker"
+        }
+      },
+      {
+        "label": "实际完成时间",
+        "align": "left",
+        "prop": "actualEndDate",
+        "width": 120,
+        "form": {
+          "type": "date-picker"
+        }
+      },
+      {
+        "label": "偏差天数",
+        "align": "left",
+        "prop": "deviationDay",
+        "minWidth": 80,
+        "valFn": "deviation"
+      },
+      {
+        "label": "偏差问题说明",
+        "prop": "deviationExplain",
+        "minWidth": 200,
+        "type": "textarea",
+        "col": {
+          "span": 24
+        },
+        "autosize": {
+          "minRows": 3
+        }
+      },
+      {
+        "label": "操作",
+        "align": "center",
+        "fixed": "right",
+        "type": "action-icons",
+        "width": 100,
+        "icons": [
+          {
+            "name": "remove",
+            "title": "删除",
+            "className": "text-danger",
+            "text": "删除"
+          }
+        ]
+      }
+    ]
+  }
+}

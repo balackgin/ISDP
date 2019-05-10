@@ -1,0 +1,41 @@
+{
+  "name": "isdp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "pretest": "eslint --fix src",
+    "start": "java -jar ./moco/moco-runner-0.12.0-standalone.jar http -p 60 -c ./moco/api.json",
+    "stop": "tskill java.exe",
+    "publish": "git add .&git commit -m \"feat -90111\"&git pull&git push"
+  },
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "axios": "^0.18.0",
+    "echarts": "^4.2.0-rc.2",
+    "element-ui": "^2.7.2",
+    "js-cookie": "^2.2.0",
+    "nprogress": "^0.2.0",
+    "vue": "^2.5.17",
+    "vue-meta": "^1.5.3",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-plugin-eslint": "^3.0.0",
+    "@vue/cli-plugin-unit-mocha": "^3.0.0",
+    "@vue/cli-service": "^3.0.0",
+    "@vue/eslint-config-prettier": "^3.0.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-plugin-component": "^1.1.1",
+    "eslint-plugin-vue": "^4.7.1",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "prettier": "^1.14.2",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

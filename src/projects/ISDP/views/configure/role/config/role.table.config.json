@@ -1,0 +1,53 @@
+{
+  "tableOpts": {
+    "theme": "isdp",
+    "highlightCurrentRow": true,
+    "inputProps": {
+      "target": ["dblclick"],
+      "props": ["test"]
+    }
+  },
+  "columns": [{
+      "label": "序号",
+      "type": "index",
+      "columnOpts": {
+        "align": "center",
+        "width": 80
+      }
+    },
+    {
+      "label": "角色名称",
+      "prop": "roleName",
+      "columnOpts": {
+        "width": 136,
+        "size": "small",
+        "align": "center"
+      }
+    },
+    {
+      "label": "角色简称",
+      "prop": "roleClassify",
+      "columnOpts": {
+        "align": "center",
+        "width": 120
+      }
+    },
+    {
+      "label": "操作",
+      "type": "action-icons",
+      "columnOpts": {
+        "align": "center",
+        "width": 100,
+        "icons": [{
+            "name": "editTable",
+            "text": "编辑"
+          },
+          {
+            "name": "tableDel",
+            "text": "删除"
+          }
+        ]
+      }
+    }
+  ]
+}

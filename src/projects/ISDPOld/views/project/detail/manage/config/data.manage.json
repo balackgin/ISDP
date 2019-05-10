@@ -1,0 +1,134 @@
+{
+  "manageTab1": {
+    "name": "tab1",
+    "title": "里程碑及WEBS计划",
+    "type": "plan",
+    "stageProgress": [{
+      "name": "startStage",
+      "title": "启动阶段",
+      "planStartDate": "",
+      "planEndDate": "",
+      "checked": [],
+      "progress": [{
+        "value": "项目交底",
+        "planEndDate": ""
+      },
+      {
+        "value": "WBS制定",
+        "planEndDate": ""
+      },
+      {
+        "value": "项目启动会",
+        "planEndDate": ""
+      },
+      {
+        "value": "组织任命",
+        "planEndDate": ""
+      },
+      {
+        "value": "项目预算",
+        "planEndDate": ""
+      },
+      {
+        "value": "集成计划制定",
+        "planEndDate": ""
+      },
+      {
+        "value": "工程外包确定",
+        "planEndDate": ""
+      },
+      {
+        "value": "供应商确定",
+        "planEndDate": ""
+      },
+      {
+        "value": "其他",
+        "planEndDate": ""
+      }]
+    }, {
+      "name": "design",
+      "title": "方案设计",
+      "planStartDate": "",
+      "planEndDate": "",
+      "checked": [],
+      "progress": [
+        {
+          "value": "点位勘查",
+          "planEndDate": ""
+        },
+        {
+          "value": "需求确认",
+          "planEndDate": ""
+        },
+        {
+          "value": "深化设计",
+          "planEndDate": ""
+        },
+        {
+          "value": "其他",
+          "planEndDate": ""
+        }
+      ]
+    }, {
+      "name": "schemeImplementation",
+      "title": "项目实施",
+      "planStartDate": "",
+      "planEndDate": "",
+      "checked": [],
+      "progress": [{
+        "value": "工程商交底",
+        "planEndDate": ""
+      },
+      {
+        "value": "物料下单",
+        "planEndDate": ""
+      },
+      {
+        "value": "外场实施",
+        "planEndDate": ""
+      },
+      {
+        "value": "内场实施",
+        "planEndDate": ""
+      },
+      {
+        "value": "隐蔽工程验收",
+        "planEndDate": ""
+      },
+      {
+        "value": "其他",
+        "planEndDate": ""
+      }]
+    }, {
+      "name": "projectAcceptance",
+      "title": "项目验收",
+      "planStartDate": "",
+      "planEndDate": "",
+      "checked": [],
+      "progress": [{
+        "value": "完工验收",
+        "planEndDate": ""
+      },
+      {
+        "value": "试运行",
+        "planEndDate": ""
+      },
+      {
+        "value": "竣工验收",
+        "planEndDate": ""
+      },
+      {
+        "value": "组织任命",
+        "planEndDate": ""
+      },
+      {
+        "value": "其他",
+        "planEndDate": ""
+      }]
+    }]
+  },
+  "manageTab2": {
+    "name": "tab2",
+    "title": "风险及问题"
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "search": {
+    "formItems": [
+      {
+        "label": "外包商单位名称",
+        "prop": "contractCompany"
+      },
+      {
+        "label": "设计类认证级别",
+        "prop": "designClassify",
+        "type": "select",
+        "formItemOpts": {
+          "select": [
+            {
+              "label": "请选择",
+              "value": ""
+            },
+            {
+              "label": "甲级",
+              "value": "甲级"
+            },
+            {
+              "label": "乙级",
+              "value": "乙级"
+            },
+            {
+              "label": "丙级",
+              "value": "丙级"
+            },
+            {
+              "label": "丁级",
+              "value": "丁级"
+            }
+          ]
+        }
+      },
+      {
+        "label": "施工类认证级别",
+        "prop": "constructClassify",
+        "type": "select",
+        "formItemOpts": {
+          "select": [
+            {
+              "label": "请选择",
+              "value": ""
+            },
+            {
+              "label": "甲级",
+              "value": "甲级"
+            },
+            {
+              "label": "乙级",
+              "value": "乙级"
+            },
+            {
+              "label": "丙级",
+              "value": "丙级"
+            },
+            {
+              "label": "丁级",
+              "value": "丁级"
+            }
+          ]
+        }
+      },
+      {
+        "label": "所属类别",
+        "prop": "contractorType",
+        "type": "select",
+        "formItemOpts": {
+          "select": [
+            {
+              "label": "请选择",
+              "value": ""
+            },
+            {
+              "label": "内场施工外包",
+              "value": "内场施工外包"
+            },
+            {
+              "label": "外场施工外包",
+              "value": "外场施工外包"
+            },
+            {
+              "label": "运维/维保外包",
+              "value": "运维/维保外包"
+            },
+            {
+              "label": "弱电/安防深化设计",
+              "value": "弱电/安防深化设计"
+            },
+            {
+              "label": "人力外包",
+              "value": "人力外包"
+            },
+            {
+              "label": "监理外包",
+              "value": "监理外包"
+            },
+            {
+              "label": "软件外包",
+              "value": "软件外包"
+            },
+            {
+              "label": "装修外包",
+              "value": "装修外包"
+            },
+            {
+              "label": "服务类外包",
+              "value": "服务类外包"
+            }
+          ]
+        }
+      },
+      {
+        "label": "可承接项目区域",
+        "prop": "projectArea",
+        "type": "select",
+        "formItemOpts": {
+          "select": []
+        }
+      },
+      {
+        "label": "添加搜索项",
+        "prop": "addSearchItem",
+        "type": "select",
+        "formItemOpts": {
+          "remote": true,
+          "collapseTags": true,
+          "multiple": true,
+          "select": [
+            {
+              "label": "外包商编号",
+              "value": "serialNo"
+            },
+            {
+              "label": "联系人姓名",
+              "value": "contactMan",
+              "prop": "contactMan"
+            },
+            {
+              "label": "联系人电话",
+              "value": "contactTel"
+            },
+            {
+              "label": "联系人邮箱",
+              "value": "email"
+            }
+          ]
+        }
+      }
+    ],
+    "addItem": {
+      "serialNo": {
+        "label": "外包商编号",
+        "prop": "serialNo"
+      },
+      "contactMan": {
+        "label": "联系人姓名",
+        "prop": "contactMan"
+      },
+      "contactTel": {
+        "label": "联系人电话",
+        "prop": "contactTel"
+      },
+      "email": {
+        "label": "联系人邮箱",
+        "prop": "email",
+        "type": "email"
+      }
+    },
+    "btns": [
+      {
+        "text": "确定",
+        "name": "addSearchItem",
+        "type": "danger"
+      },
+      {
+        "text": "搜索",
+        "name": "search",
+        "type": "danger"
+      }
+    ]
+  },
+  "table": {
+    "name": "project-list",
+    "tableOpts": {
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "外包商编号",
+        "prop": "serialNo",
+        "type": "router-link",
+        "sortable": "custom",
+        "columnOpts": {
+          "minWidth": 120,
+          "name": "managementOutsourcerDetail",
+          "query": {
+            "id": "contractorId"
+          }
+        }
+      },
+      {
+        "label": "外包单位名称",
+        "prop": "applicationCompany",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      },
+      {
+        "label": "设计类认证级别",
+        "prop": "designClassify",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      },
+      {
+        "label": "施工类认证级别",
+        "prop": "constructClassify",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      },
+      {
+        "label": "所属类别",
+        "prop": "contractorType",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      },
+      {
+        "label": "可承接项目区域",
+        "prop": "projectArea",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      },
+      {
+        "label": "联系人姓名",
+        "prop": "contactMan",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      },
+      {
+        "label": "联系人电话",
+        "prop": "contactTel",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      },
+      {
+        "label": "联系人邮箱",
+        "prop": "email",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      }
+    ]
+  }
+}

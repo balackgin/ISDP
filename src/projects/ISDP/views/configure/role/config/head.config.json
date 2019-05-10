@@ -1,0 +1,28 @@
+{
+  "role": {
+    "tabs": [{
+        "label": "全局",
+        "value": "g"
+      },
+      {
+        "label": "项目部",
+        "value": "pd"
+      },
+      {
+        "label": "项目组",
+        "value": "pg"
+      }
+    ],
+    "btn": {
+      "text": "添加",
+      "fnName": "addNewRow"
+    }
+  },
+  "power": {
+    "title": "权限配置",
+    "btns": [{
+      "text": "发布",
+      "fnName": "saveElement"
+    }]
+  }
+}

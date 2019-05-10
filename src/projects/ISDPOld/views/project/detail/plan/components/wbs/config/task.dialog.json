@@ -1,0 +1,179 @@
+{
+  "taskDialog": {
+    "comments": "企业资质信息  enterpriseCertificateArray",
+    "type": "form",
+    "name": "dialog-addrisk",
+    "title": "任务分派",
+    "data": {
+      "taskClassify": "",
+      "overdue": "",
+      "receiverName": "",
+      "receiverNo": "",
+      "feedbackRule": "",
+      "taskContent": ""
+    },
+    "form": {
+      "labelPosition": "right",
+      "labelWidth": "120px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "group": [
+      {
+        "title": "",
+        "name": "dialog-taskAssignment",
+        "formConfig": [
+          {
+            "label": "重要级别",
+            "prop": "taskClassify",
+            "required": true,
+            "type": "select",
+            "select": [
+              {
+                "label": "请选择",
+                "value": ""
+              },
+              {
+                "label": "紧急重要",
+                "value": "紧急重要"
+              },
+              {
+                "label": "紧急",
+                "value": "紧急"
+              },
+              {
+                "label": "重要",
+                "value": "重要"
+              },
+              {
+                "label": "一般",
+                "value": "一般"
+              }
+            ],
+            "col": {
+              "span": 12
+            }
+          },
+          {
+            "label": "任务状态",
+            "prop": "overdue",
+            "required": true,
+            "type": "select",
+            "select": [
+              {
+                "label": "请选择",
+                "value": ""
+              },
+              {
+                "label": "正常",
+                "value": false
+              },
+              {
+                "label": "超期",
+                "value": true
+              }
+            ],
+            "col": {
+              "span": 12
+            }
+          },
+          {
+            "label": "任务接收人",
+            "prop": "receiverName",
+            "readonly": true,
+            "col": {
+              "span": 12
+            }
+          },
+          {
+            "label": "反馈频率",
+            "prop": "feedbackRule",
+            "type": "select",
+            "select": [
+              {
+                "label": "每日",
+                "value": "每日"
+              },
+              {
+                "label": "每周",
+                "value": "每周"
+              },
+              {
+                "label": "每双周",
+                "value": "每双周"
+              }
+            ],
+            "autosize": {
+              "minRows": 3
+            },
+            "required": true,
+            "col": {
+              "span": 12
+            }
+          },
+          {
+            "label": "任务要求",
+            "prop": "taskContent",
+            "type": "textarea",
+            "col": {
+              "span": 24
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "customDialog": {
+    "comments": "自定义模板  customDialog",
+    "type": "form",
+    "name": "dialog-custom",
+    "title": "自定义模板",
+    "data": {
+      "first": "",
+      "second": ""
+    },
+    "form": {
+      "labelPosition": "top",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "group": [
+      {
+        "title": "",
+        "name": "dialog-custom-form",
+        "formConfig": [
+          {
+            "label": "模板一级数量",
+            "prop": "first",
+            "required": true,
+            "col": {
+              "span": 12
+            }
+          },
+          {
+            "label": "模板二级数量",
+            "prop": "second",
+            "required": true,
+            "col": {
+              "span": 12
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

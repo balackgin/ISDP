@@ -1,0 +1,56 @@
+{
+  "tableOpts": {
+    "theme": "multiple-table-header",
+    "maxHeight": "100%",
+    "autoHeight": true
+  },
+  "columns": [
+    {
+      "label": "科目",
+      "prop": "subject",
+      "columnOpts": {
+        "minWidth": 300
+      }
+    },
+    {
+      "label": "概算",
+      "prop": "approximate",
+      "columnOpts": {
+        "minWidth": 100
+      }
+    },
+    {
+      "label": "汇总",
+      "prop": "collectValue",
+      "columnOpts": {
+        "minWidth": 100
+      }
+    },
+    {
+      "label": "预算1.0",
+      "children": [
+        {
+          "label": "预算1.0",
+          "prop": "budget_1",
+          "columnOpts": {
+            "minWidth": 130
+          }
+        },
+        {
+          "label": "差异(概算-预算)",
+          "prop": "diffValue_1",
+          "columnOpts": {
+            "minWidth": 150
+          }
+        },
+        {
+          "label": "差异分析",
+          "prop": "diffReason_1",
+          "columnOpts": {
+            "minWidth": 130
+          }
+        }
+      ]
+    }
+  ]
+}

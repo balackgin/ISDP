@@ -1,0 +1,27 @@
+@color-theme: #0e5fac; //主色系
+@color-bg: #f6f6f6; //背景色
+@color-border--light: #dadada; //边框浅色
+@color-border--deep: #eee; //边框深色
+//动作
+.transition(@time: .8s) {
+  //css3简单动画
+  transition: all @time cubic-bezier(.19, 1, .22, 1);
+}
+
+//阴影
+.shadow(@opacity: .12) {
+  box-shadow: 0 0 16px rgba(0, 0, 0, @opacity);
+}
+
+//图片放大
+.scale(@scale: 1.1) {
+  transform: scale(@scale);
+}
+
+// 上下定位居中
+.center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

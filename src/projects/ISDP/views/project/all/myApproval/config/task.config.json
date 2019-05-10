@@ -1,0 +1,38 @@
+{
+  "tableOpts": {
+    "highlightCurrentRow": true,
+    "emplyText": ""
+  },
+  "columns": [{
+      "label": "任务名称",
+      "prop": "taskName"
+    },
+    {
+      "label": "主导/协助",
+      "prop": "support"
+    },
+    {
+      "label": "是否必须",
+      "prop": "isNeed"
+    },
+    {
+      "label": "进度权重",
+      "prop": "projessImportance"
+    },
+    {
+      "label": "速度延迟的影响",
+      "prop": "speed"
+    },
+    {
+      "label": "操作",
+      "prop": "operat",
+      "type": "action-icons",
+      "columnOpts": {
+        "icons": [{
+          "name": "dealWBS",
+          "text": "去处理"
+        }]
+      }
+    }
+  ]
+}

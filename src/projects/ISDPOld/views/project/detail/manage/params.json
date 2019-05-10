@@ -1,0 +1,40 @@
+{
+  "id":288,
+  "planNoteArray":[
+  {
+  "jobDescription":"1.1",
+  "children":[
+  {
+  "jobDescription":"1.2",
+  "children":[
+  {
+
+  "id":"",
+  "jobDescription":"1.3",
+  "dutyDept":"",
+  "dutyPersonName":"",
+  "dutyPersonNo":"",
+  "planEndDate":"",
+  "planStartDate":"",
+  "supportPersonName":"",
+  "supportPersonNo":"",
+  "weight":0,
+  "isMustFill":null
+  }
+  ]
+  }
+  ]
+  },
+  {
+  "jobDescription":"2.1",
+  "children":[
+  {
+  "jobDescription":"2.2",
+  "children":[
+  {
+  "jobDescription":"3.3"
+  }
+  ]
+  }
+  ]
+}

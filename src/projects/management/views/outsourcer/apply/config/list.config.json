@@ -1,0 +1,87 @@
+{
+  "search": {
+    "formItems": [
+      {
+        "label": "外包商编号",
+        "prop": "serialNo"
+      },
+      {
+        "label": "申请日期",
+        "type": "date-picker",
+        "prop": "applicationDate"
+      },
+      {
+        "label": "推荐人",
+        "prop": "referrer"
+      },
+      {
+        "label": "审批状态",
+        "type": "select",
+        "prop": "approvalStatus",
+        "formItemOpts": {
+          "select": [
+            {
+              "label": "请选择",
+              "value": ""
+            }
+          ]
+        }
+      }
+    ],
+    "btns": [
+      {
+        "text": "搜索",
+        "name": "search",
+        "type": "danger"
+      }
+    ]
+  },
+  "table": {
+    "name": "project-list",
+    "tableOpts": {
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "外包商编号",
+        "prop": "serialNo",
+        "type": "router-link",
+        "columnOpts": {
+          "minWidth": 100,
+          "name": "managementOutsourcerDetail",
+          "query": {
+            "id": "contractorId"
+          }
+        }
+      },
+      {
+        "label": "外包单位名称",
+        "prop": "applicationCompany",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      },
+      {
+        "label": "推荐人",
+        "prop": "referrer"
+      },
+      {
+        "label": "申请日期",
+        "prop": "applicationDate",
+        "columnOpts": {
+          "align": "center",
+          "width": 100
+        }
+      },
+      {
+        "label": "当前审批人",
+        "prop": "handler"
+      },
+      {
+        "label": "审批状态",
+        "prop": "approvalStatus"
+      }
+    ]
+  }
+}

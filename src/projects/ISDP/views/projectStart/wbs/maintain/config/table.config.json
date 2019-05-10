@@ -1,0 +1,115 @@
+{
+  "tableOpts": {
+    "theme": "isdp",
+    "autoHeight": true,
+    "inputProps": {
+      "useForm": true
+    }
+  },
+  "columns": [{
+      "label": "任务组",
+      "prop": "projectModuleCN",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "子任务",
+      "prop": "jobName",
+      "type": "link",
+      "columnOpts": {
+        "minWidth": 140
+      }
+    },
+    {
+      "label": "主导/协助",
+      "prop": "leadingOrAssist",
+      "columnOpts": {
+        "minWidth": 120
+      }
+    },
+    {
+      "label": "必选",
+      "prop": "isMustFill",
+      "type": "obj",
+      "columnOpts": {
+        "obj": {
+          "0": "否",
+          "1": "是"
+        }
+      }
+    },
+    {
+      "label": "工作任务描述",
+      "prop": "jobDescription",
+      "columnOpts": {
+        "minWidth": 200
+      }
+    },
+    {
+      "label": "责任人",
+      "prop": "dutyPersonName",
+      "columnOpts": {
+        "minWidth": 110,
+        "type": "select",
+        "formItemOpts": {
+          "filterable": true,
+          "remoteKey": "displayName",
+          "remoteVal": "val"
+        }
+      }
+    },
+    {
+      "label": "状态",
+      "prop": "planStatusCN",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "计划完成时间",
+      "prop": "planEndDate",
+      "columnOpts": {
+        "type": "date-picker",
+        "minWidth": 140
+      }
+    },
+    {
+      "label": "GAP(天)",
+      "prop": "deviationDay",
+      "type": "html",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "进度",
+      "prop": "progressScore"
+    },
+    {
+      "label": "操作",
+      "type": "action-icons",
+      "columnOpts": {
+        "minWidth": 130,
+        "fixed": "right",
+        "icons": [{
+            "text": "派发",
+            "name": "handleClickForTableDistribute"
+          },
+          {
+            "text": "编辑",
+            "name": "handleClickForTableEdit"
+          },
+          {
+            "text": "关闭",
+            "name": "handleClickForTableClose"
+          },
+          {
+            "text": "驳回",
+            "name": "handleClickForTableReject"
+          }
+        ]
+      }
+    }
+  ]
+}

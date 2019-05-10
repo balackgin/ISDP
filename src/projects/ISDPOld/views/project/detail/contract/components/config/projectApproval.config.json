@@ -1,0 +1,355 @@
+{
+  "detail": {
+    "detailOpts": {
+      "noneLine": true,
+      "noWrap": true,
+      "tooltip": true
+    },
+    "detailGroup": [
+      {
+        "detailItems": [
+          {
+            "label": "工程合同编号:",
+            "prop": "contractNo",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "客户合同编号:",
+            "prop": "customerContractNo",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "工程合同名称:",
+            "prop": "contractName",
+            "detailItemOpts": {
+              "col": {
+                "span": 12
+              }
+            }
+          },
+          {
+            "label": "业务实体:",
+            "prop": "businessEntity",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "立项时间:",
+            "prop": "projectTime",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "客户:",
+            "prop": "customer",
+            "detailItemOpts": {
+              "col": {
+                "span": 12
+              }
+            }
+          },
+          {
+            "label": "集成项目类型:",
+            "prop": "projectClassify",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "项目所在省份:",
+            "prop": "projectProvince",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "商机名称:",
+            "prop": "opportunityName",
+            "detailItemOpts": {
+              "col": {
+                "span": 12
+              }
+            }
+          },
+          {
+            "label": "项目交付阶段:",
+            "prop": "projectPhase",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "项目交付模式:",
+            "prop": "projectModel",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              },
+              "objData": {
+                "LARGE": "大项目",
+                "SMALL": "小项目"
+              }
+            }
+          },
+          {
+            "label": "项目交付等级:",
+            "prop": "projectLevel",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "项目交付状态:",
+            "prop": "projectStatus",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "类型:",
+            "prop": "contractClassify",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "是否维保项目:",
+            "prop": "isMaintenanceProject",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              },
+              "objData": {
+                "Y": "是",
+                "N": "否"
+              }
+            }
+          },
+          {
+            "label": "合同签订时间:",
+            "prop": "contractSignDate",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "合同终止时间:",
+            "prop": "contractEndDate",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "项目经理:",
+            "prop": "projectManagerName",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "项目经理所在部门:",
+            "prop": "projectManagerDept",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "业务归属人:",
+            "prop": "businessOwnerName",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "归属人部门:",
+            "prop": "businessOwnerDept",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "合同跟踪人:",
+            "prop": "contractTrackerName",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "跟踪人部门:",
+            "prop": "contractTrackerDept",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "售前技术工程师:",
+            "prop": "preTechName",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "要求发货时间:",
+            "prop": "requiredShipmentDate",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "行业类型:",
+            "prop": "industryType",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "产品类型:",
+            "prop": "productType",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "产品子类型:",
+            "prop": "productSubtype",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "是否同步到ERP:",
+            "prop": "isSyncERP",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              },
+              "objData": {
+                "Y": "是",
+                "N": "否"
+              }
+            }
+          },
+          {
+            "label": "合同原始金额:",
+            "prop": "contractAmountOriginal",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "合同最新金额:",
+            "prop": "contractAmountLatest",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "货币:",
+            "prop": "currency",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "付款方式:",
+            "prop": "paymentForm",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "付款描述:",
+            "prop": "paymentDescription",
+            "detailItemOpts": {
+              "col": {
+                "span": 12
+              }
+            }
+          },
+          {
+            "label": "质保期(月):",
+            "prop": "warrantyPeriod",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              }
+            }
+          },
+          {
+            "label": "是否租赁合同:",
+            "prop": "isTenancyContract",
+            "detailItemOpts": {
+              "col": {
+                "span": 6
+              },
+              "objData": {
+                "Y": "是",
+                "N": "否"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "outsourcer": {
+    "name": "outsourcer",
+    "session": {},
+    "startRoute": "outsourcerApply",
+    "login": "outsourcerLogin",
+    "loginConfig": {
+      "title": "大华外包商平台",
+      "allowRegister": true
+    }
+  },
+  "management": {
+    "name": "management",
+    "session": {},
+    "startRoute": "managementOutsourcerApply",
+    "login": "managementLogin",
+    "loginConfig": {
+      "title": "外包商管理平台",
+      "allowRegister": false
+    }
+  },
+  "ISDP": {
+    "name": "ISDP",
+    "session": {},
+    "startRoute": "ISDPProjectAllDefault",
+    "login": "ISDPLogin",
+    "loginConfig": {
+      "title": "集成项目交付管理平台",
+      "allowRegister": false
+    }
+  },
+  "OISDP": {
+    "name": "OISDP",
+    "session": {},
+    "startRoute": "ISDPOldProjectList",
+    "login": "OISDPLogin",
+    "loginConfig": {
+      "title": "集成项目交付管理平台",
+      "allowRegister": false
+    }
+  },
+  "sys": {
+    "name": "sys",
+    "session": {},
+    "startRoute": "permissionRoles",
+    "login": "sysLogin",
+    "loginConfig": {
+      "title": "集成项目交付管理平台",
+      "allowRegister": false
+    }
+  },
+  "orderVis": {
+    "name": "orderVis",
+    "session": {},
+    "startRoute": "orderVis",
+    "login": "orderVisLogin",
+    "loginConfig": {
+      "title": "订单可视化",
+      "allowRegister": false
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "tableOpts": {
+    "theme": "isdp"
+  },
+  "columns": [
+    {
+      "label": "",
+      "prop": "0",
+      "type": "html",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "点位勘查",
+      "prop": "1",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "深化设计",
+      "prop": "2",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "杆件到货",
+      "prop": "3",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "设备到货",
+      "prop": "4",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "基础开挖及浇筑",
+      "prop": "5",
+      "columnOpts": {
+        "minWidth": 150
+      }
+    },
+    {
+      "label": "杆件安装",
+      "prop": "6",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "设备安装",
+      "prop": "7",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "接电",
+      "prop": "8",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "通网",
+      "prop": "9",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "调试",
+      "prop": "10",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "接入",
+      "prop": "11",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "初验",
+      "prop": "12",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "试运行",
+      "prop": "13",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "终验",
+      "prop": "14",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    },
+    {
+      "label": "运维",
+      "prop": "15",
+      "columnOpts": {
+        "minWidth": 110
+      }
+    }
+  ]
+}

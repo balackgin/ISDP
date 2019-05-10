@@ -1,0 +1,52 @@
+{
+  "rolemember": [{
+      "status": "已启用",
+      "index": 1,
+      "role": "项目管理员",
+      "nickname": "张三",
+      "email": "邮箱地址",
+      "tel": "28282828"
+    },
+    {
+      "status": "已启用",
+      "index": 2,
+      "role": "项目管理员",
+      "nickname": "张三",
+      "email": "邮箱地址",
+      "tel": "28282828"
+    },
+    {
+      "status": "已启用",
+      "index": 3,
+      "role": "项目管理员",
+      "nickname": "张三",
+      "email": "邮箱地址",
+      "tel": "28282828"
+    }
+  ],
+  "rolelist": [{
+      "status": "已启用",
+      "index": 1,
+      "rolename": "项目管理员",
+      "nickname": "张三",
+      "email": "邮箱地址",
+      "tel": "28282828"
+    },
+    {
+      "status": "已启用",
+      "index": 2,
+      "role": "项目管理员",
+      "rolename": "张三",
+      "email": "邮箱地址",
+      "tel": "28282828"
+    },
+    {
+      "status": "已启用",
+      "index": 3,
+      "role": "项目管理员",
+      "rolename": "张三",
+      "email": "邮箱地址",
+      "tel": "28282828"
+    }
+  ]
+}

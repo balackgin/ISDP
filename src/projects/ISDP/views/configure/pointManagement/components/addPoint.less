@@ -1,0 +1,73 @@
+.addAttachmentDialog /deep/ .el-dialog {
+    width: 512px !important;
+  }
+  .addAttachmentDialog /deep/ .el-dialog__body {
+    padding: 20px 0 4px 0px !important;
+  }
+  .addAttachmentDialog /deep/ .el-dialog__header {
+    padding: 0 0 0 14px;
+    background-image: linear-gradient(#ffffff, #ffffff),
+      linear-gradient(#ffffff, #ffffff);
+    background-blend-mode: normal, normal;
+    box-shadow: 0px 1px 10px 0px rgba(216, 213, 213, 0.5);
+    border-radius: 2px;
+    height: 44px;
+    line-height: 44px;
+    /deep/ .el-dialog__headerbtn {
+      top: 12px;
+    }
+    /deep/ .el-dialog__title {
+      font-size: 14px;
+      color: #333333;
+    }
+  }
+  .addAttachmentDialog {
+    .errorTips {
+      color: #f00000;
+      font-size: 12px;
+      padding-left: 100px;
+    }
+    &_content {
+      padding-left: 74px;
+      border-bottom: 1px solid #e3e3e3;
+      padding-bottom: 35px;
+      &_item {
+        margin-top: 15px;
+        &_radioBox {
+          margin-left: 36px;
+        }
+        &_label {
+          display: inline-block;
+          width: 100px;
+          font-family: MicrosoftYaHei;
+          font-size: 14px;
+          color: #777a80;
+          .requireIcon {
+            margin-right: 5px;
+            color: red;
+          }
+        }
+        &_selectBox {
+          width: 250px;
+          display: inline-block;
+          /deep/ .el-input__icon {
+            line-height: 30px;
+          }
+          /deep/ .el-input__inner {
+            height: 30px;
+            line-height: 30px;
+          }
+        }
+      }
+      .contentIpt {
+        padding-left: 10px;
+        width: 250px;
+        height: 30px;
+        background-image: linear-gradient(#ffffff, #ffffff),
+          linear-gradient(#ffffff, #ffffff);
+        background-blend-mode: normal, normal;
+        border-radius: 1px;
+        border: solid 1px rgba(203, 203, 203, 0.66);
+      }
+    }
+  }

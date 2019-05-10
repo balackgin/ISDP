@@ -1,0 +1,117 @@
+[{
+   "groupName": "商务组",
+   "id":"1",
+   "children": [{
+        "name": "项目交底",
+        "path": ""
+    },{
+        "name": "项目启动",
+        "path": ""
+    },{
+        "name": "项目沟通机制",
+        "path": ""
+    },{
+        "name": "取电取网等工作确认及合同签订",
+        "path": ""
+    },{
+        "name": "第三方检测机构确定及合同签订",
+        "path": ""
+    },{
+        "name": "制定工程上流程",
+        "path": ""
+    },{
+        "name": "明确验收方式及流程",
+        "path": ""
+    },{
+        "name": "项目验收",
+        "path": ""
+    },{
+        "name": "项目回款进度计划",
+        "path": ""
+    }] 
+},{
+    "groupName": "解决方案组",
+    "id":"2",
+    "children": [{
+         "name": "项目交底",
+         "path": ""
+     },{
+         "name": "项目启动",
+         "path": ""
+     },{
+         "name": "深化设计",
+         "path": ""
+     },{
+         "name": "整体解决方案确认",
+         "path": ""
+     },{
+         "name": "软件功能深化方案",
+         "path": ""
+     },{
+         "name": "预算编制",
+         "path": ""
+     },{
+         "name": "整体解决方案确认",
+         "path": ""
+     }] 
+ },{
+    "groupName": "交付组",
+    "id":"3",
+    "children": [{
+         "name": "项目交底",
+         "path": ""
+     },{
+         "name": "项目启动",
+         "path": ""
+     }] 
+ },{
+    "groupName": "采购组",
+    "id":"4",
+    "children": [{
+         "name": "项目交底",
+         "path": ""
+     },{
+         "name": "项目启动",
+         "path": ""
+     }] 
+ },{
+    "groupName": "财经法务组",
+    "id":"5",
+    "children": [{
+         "name": "项目交底",
+         "path": ""
+     },{
+         "name": "项目启动",
+         "path": ""
+     }] 
+ },{
+    "groupName": "供应链组",
+    "id":"6",
+    "children": [{
+         "name": "项目交底",
+         "path": ""
+     },{
+         "name": "项目启动",
+         "path": ""
+     }] 
+ },{
+    "groupName": "项目运维",
+    "id":"7",
+    "children": [{
+         "name": "项目交底",
+         "path": ""
+     },{
+         "name": "项目启动",
+         "path": ""
+     }] 
+ },{
+    "groupName": "交付运维组",
+    "id":"8",
+    "children": [{
+         "name": "项目交底",
+         "path": ""
+     },{
+         "name": "项目启动",
+         "path": ""
+     }] 
+ }]

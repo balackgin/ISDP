@@ -1,0 +1,50 @@
+{
+  "dialogForm": {
+    "name": "project-survey-task-dialog-form",
+    "form": {
+      "labelWidth": "130px",
+      "labelPosition": "right",
+      "showMessage": false,
+      "row": {
+        "gutter": 20
+      }
+    },
+    "group": [{
+      "formItemConfig": [{
+          "label": "所属平台:",
+          "prop": "feedbackDate",
+          "type": "select",
+          "col": {
+            "span": 6
+          },
+          "select": [{
+              "label": "ISDP",
+              "value": "ISDP"
+            },
+            {
+              "label": "外包商",
+              "value": "外包商"
+            }
+          ]
+        },
+        {
+          "label": "任务完成内容:",
+          "prop": "feedbackAll",
+          "required": true,
+          "type": "input",
+          "col": {
+            "span": 6
+          }
+        },
+        {
+          "label": "困难及问题:",
+          "prop": "memo",
+          "type": "input",
+          "col": {
+            "span": 6
+          }
+        }
+      ]
+    }]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "name": "nReportInProgress",
+  "style": {
+    "width": "100%",
+    "height": "500px"
+  },
+  "echart": {
+    "name": "nReportInProgress",
+    "tooltip": {
+      "trigger": "axis",
+      "axisPointer": {
+        "type": "clin",
+        "crossStyle": {
+          "color": "#ccc"
+        }
+      }
+    },
+    "toolboxTest": {
+      "feature": {
+        "dataView": { "show": true, "readOnly": false },
+        "magicType": { "show": true, "type": ["line", "bar"] },
+        "restore": { "show": true },
+        "saveAsImage": { "show": true }
+      }
+    },
+    "legend": {
+      "data": ["计划内点位数量", "实际完成数量", "完成率"],
+      "right": "10%",
+      "itemHeight": 14,
+      "inactiveColor": "#ddd"
+    },
+    "xAxis": [
+      {
+        "show": true,
+        "type": "category",
+        "nameLocation": "center",
+        "data": [
+          "点位勘查",
+          "深化设计",
+          "杆件到货",
+          "设备到货",
+          "基础开挖及浇筑",
+          "杆件安装",
+          "设备安装",
+          "接电",
+          "通网",
+          "调试",
+          "接入",
+          "初验",
+          "试运行",
+          "终验",
+          "运维"
+        ],
+        "axisPointer": {
+          "type": "shadow"
+        },
+        "axisLabel": {
+          "show": true,
+          "width": "70px",
+          "margin": 12,
+          "fontSize": 12,
+          "interval": 0,
+          "align": "center"
+        }
+      }
+    ],
+    "yAxis": [
+      {
+        "type": "value",
+        "name": "",
+        "min": 0,
+        "max": 200,
+        "interval": 40,
+        "axisLabel": {
+          "formatter": "{value}"
+        }
+      },
+      {
+        "type": "value",
+        "name": "",
+        "min": 0,
+        "max": 100,
+        "interval": 10,
+        "axisLabel": {
+          "formatter": "{value} %"
+        }
+      }
+    ],
+    "series": [
+      {
+        "name": "计划内点位数量",
+        "type": "bar",
+        "itemStyle": {
+          "color": "#505B74"
+        },
+        "barWidth": 14,
+        "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "name": "实际完成数量",
+        "type": "bar",
+        "itemStyle": {
+          "color": "#FD4646"
+        },
+        "barWidth": 14,
+        "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "name": "完成率",
+        "type": "line",
+        "symbol": "circle",
+        "symbolSize": 8,
+        "itemStyle": {
+          "color": "#9E9E9E",
+          "borderWidth": 2,
+          "borderColor": "#fff"
+        },
+        "lineStyle": {
+          "width": 0.5,
+          "color": "#DBDBDB"
+        },
+        "hoverAnimation": false,
+        "yAxisIndex": 1,
+        "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "tableConfig": {
+    "name": "project-list",
+    "maxHeight": "500",
+    "highlightCurrentRow": true,
+    "emptyText": "",
+    "columns": [{
+        "label": "姓名",
+        "prop": "displayName",
+        "align": "left",
+        "columnOpts": {
+          "minWidth": 80
+        }
+      },
+      {
+        "label": "工号",
+        "prop": "userName",
+        "align": "center",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "操作",
+        "prop": "roleOperate",
+        "fixed": "right",
+        "type": "action-icons",
+        "columnOpts": {
+          "width": 160,
+          "icons": [{
+            "name": "removeRoles",
+            "text": "删除"
+          }]
+        }
+      }
+    ]
+  }
+}

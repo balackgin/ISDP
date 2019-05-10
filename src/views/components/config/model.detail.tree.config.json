@@ -1,0 +1,76 @@
+[
+  {
+    "label": "detailOpts",
+    "children": [
+      {
+        "label": "col",
+        "children": [
+          {
+            "label": "span 【Number】"
+          },
+          {
+            "label": "sm 【Number】"
+          },
+          {
+            "label": "md 【Number】"
+          },
+          {
+            "label": "lg 【Number】"
+          }
+        ]
+      },
+      {
+        "label": "row",
+        "children": [
+          {
+            "label": "gutter 【Number】"
+          }
+        ]
+      },
+      {
+        "label": "inputProps",
+        "children": [
+          {
+            "label": "target 【Array/String】"
+          },
+          {
+            "label": "props 【Array/String】"
+          },
+          {
+            "label": "useForm 【Boolean】"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "detailGroup",
+    "children": [
+      {
+        "label": "detailGroupOpts",
+        "children": [
+          {
+            "label": "row 【Object】"
+          },
+          {
+            "label": "col 【Object】"
+          }
+        ]
+      },
+      {
+        "label": "formItems",
+        "children": [
+          {
+            "label": "label"
+          },
+          {
+            "label": "prop"
+          },
+          {
+            "label": "detailOpts 【Object】"
+          }
+        ]
+      }
+    ]
+  }
+]

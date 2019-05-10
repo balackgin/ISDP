@@ -1,0 +1,176 @@
+{
+  "qualifications": {
+    "name": "certificate-qualifications",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "align": "center",
+        "type": "index"
+      },
+      {
+        "label": "资质证书名称",
+        "prop": "certificateName"
+      },
+      {
+        "label": "证书编号",
+        "prop": "certificateNo"
+      },
+      {
+        "label": "截止有效期",
+        "prop": "expireDate"
+      },
+      {
+        "label": "证书附件",
+        "prop": "attachmentArray",
+        "type": "arr-img-link",
+        "columnOpts": {
+          "fileName": "fileName",
+          "fileUrl": "url",
+          "target": "_blank"
+        }
+      }
+    ]
+  },
+  "personnel": {
+    "name": "certificate-personnel",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "align": "center",
+        "type": "index"
+      },
+      {
+        "label": "姓名",
+        "prop": "staffName"
+      },
+      {
+        "label": "职务",
+        "prop": "duty"
+      },
+      {
+        "label": "职称",
+        "prop": "technicalTitle"
+      },
+      {
+        "label": "专业",
+        "prop": "specialty"
+      },
+      {
+        "label": "身份证号码",
+        "prop": "idNumber",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      },
+      {
+        "label": "证件附件",
+        "prop": "attachmentArray",
+        "type": "arr-img-link",
+        "columnOpts": {
+          "fileName": "fileName",
+          "fileUrl": "url",
+          "target": "_blank"
+        }
+      }
+    ]
+  },
+  "vehicle": {
+    "name": "certificate-vehicle",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "align": "center",
+        "type": "index"
+      },
+      {
+        "label": "车辆名称",
+        "prop": "vehicleType"
+      },
+      {
+        "label": "型号/出厂日期",
+        "prop": "manufactureInfo",
+        "columnOpts": {
+          "minWidth": 130
+        }
+      },
+      {
+        "label": "数量",
+        "prop": "count"
+      },
+      {
+        "label": "价值(万元)",
+        "prop": "value"
+      }
+    ]
+  },
+  "achievement": {
+    "name": "certificate-achievement",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "align": "center",
+        "type": "index"
+      },
+      {
+        "label": "项目名称",
+        "prop": "projectName"
+      },
+      {
+        "label": "项目金额(万元)",
+        "prop": "projectAmount",
+        "columnOpts": {
+          "minWidth": 116
+        }
+      },
+      {
+        "label": "实施周期",
+        "prop": "cycle",
+        "columnOpts": {
+          "minWidth": 186
+        }
+      },
+      {
+        "label": "建设单位",
+        "prop": "constructorCompany"
+      },
+      {
+        "label": "建设单位联系人",
+        "prop": "constructorContacter",
+        "columnOpts": {
+          "minWidth": "110px"
+        }
+      },
+      {
+        "label": "联系人电话",
+        "prop": "constructorContacterTel",
+        "columnOpts": {
+          "minWidth": 110
+        }
+      },
+      {
+        "label": "项目经理",
+        "prop": "projectManager"
+      }
+    ]
+  }
+}

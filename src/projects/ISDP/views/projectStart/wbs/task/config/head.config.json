@@ -1,0 +1,17 @@
+{
+  "childTask": {
+    "title": "子任务"
+  },
+  "taskInfomation": {
+    "title": "任务详情",
+    "btns": []
+  },
+  "fileUpload": {
+    "title": "交付件上传",
+    "btns": [{
+      "fnName": "handleClickForFileUpload",
+      "text": "添加",
+      "type": "iconAdd"
+    }]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "table": {
+    "name": "project-survey-task-list",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "type": "index"
+      },
+      {
+        "label": "任务名称",
+        "prop": "taskName",
+        "columnOpts": {
+          "minWidth": 160
+        }
+      },
+      {
+        "label": "任务要求",
+        "prop": "taskContent"
+      },
+      {
+        "label": "任务级别",
+        "prop": "taskClassify",
+        "columnOpts": {
+          "width": 80
+        }
+      },
+      {
+        "label": "任务状态",
+        "prop": "taskStatus",
+        "columnOpts": {
+          "width": 80
+        }
+      },
+      {
+        "label": "任务周期(天)",
+        "prop": "planDays",
+        "columnOpts": {
+          "width": 100
+        }
+      },
+      {
+        "label": "反馈频率",
+        "prop": "feedbackRule",
+        "columnOpts": {
+          "width": 80
+        }
+      },
+      {
+        "label": "进度",
+        "prop": "taskProgress",
+        "width": 70
+      },
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "width": 60,
+        "icons": [
+          {
+            "name": "taskFeedback",
+            "text": "反馈"
+          }
+        ]
+      }
+    ]
+  }
+}

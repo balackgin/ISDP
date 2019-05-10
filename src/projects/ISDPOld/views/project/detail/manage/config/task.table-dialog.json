@@ -1,0 +1,59 @@
+{
+  "tableConfig": {
+    "name": "project-feedback",
+    "maxHeight": "500",
+    "highlightCurrentRow": true,
+    "emptyText": "",
+    "column": [
+      {
+        "label": "支撑人",
+        "prop": "supportPersonName",
+        "type": "select",
+        "select":[
+          {
+            "label": "请选择",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "label": "计划完成时间",
+        "prop": "planEndDate",
+        "type": "date-picker"
+      },
+      {
+        "label": "任务描述",
+        "prop": "taskDesc",
+        "type": "input"
+      },
+      {
+        "label": "是否完成",
+        "prop": "isComplete",
+        "type": "select",
+        "select": [
+          {
+            "label": "是",
+            "value": true
+          },
+          {
+            "label": "否",
+            "value": false
+          }
+        ]
+      },
+      {
+        "label": "操作",
+        "prop": "operat",
+        "type": "action-icons",
+        "icons": [
+          {
+            "name": "remove",
+            "title": "删除",
+            "className": "text-danger",
+            "text": "删除"
+          }
+        ]
+      }
+    ]
+  }
+}

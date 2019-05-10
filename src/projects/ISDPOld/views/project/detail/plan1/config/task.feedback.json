@@ -1,0 +1,111 @@
+{
+  "taskFeedback": {
+    "remark": "任务反馈弹窗",
+    "title": "任务反馈",
+    "type": "form",
+    "name": "taskFeedbackDialog",
+    "formData": {
+      "level": "",
+      "status": "正常",
+      "person": "",
+      "feedback": "",
+      "requirement": ""
+    },
+    "form": {
+      "labelWidth": "110px",
+      "labelPosition": "right",
+      "size": "small",
+      "showMessage": false
+    },
+    "group": [
+      {
+        "title": "",
+        "formItemConfig": [
+          {
+            "label": "完成进度",
+            "prop": "level",
+            "col": {
+              "span": 12
+            },
+            "type": "select",
+            "select": [
+              {
+                "label": "请选择",
+                "value": ""
+              },
+              {
+                "label": "紧急",
+                "value": "紧急"
+              },
+              {
+                "label": "一般",
+                "value": "一般"
+              }
+            ]
+          },
+          {
+            "label": "任务状态",
+            "prop": "status",
+            "col": {
+              "span": 12
+            },
+            "type": "select",
+            "select": [
+              {
+                "label": "正常",
+                "value": "正常"
+              },
+              {
+                "label": "超期",
+                "value": "超期"
+              }
+            ]
+          },
+          {
+            "label": "任务接收人",
+            "prop": "person",
+            "col": {
+              "span": 12
+            },
+            "readonly": true
+          },
+          {
+            "label": "反馈频率",
+            "prop": "feedback",
+            "col": {
+              "span": 12
+            },
+            "type": "select",
+            "select": [
+              {
+                "label": "请选择",
+                "value": ""
+              },
+              {
+                "label": "每日",
+                "value": "每日"
+              },
+              {
+                "label": "每周",
+                "value": "每周"
+              },
+              {
+                "label": "每双周",
+                "value": "每双周"
+              },
+              {
+                "label": "每月",
+                "value": "每月"
+              }
+            ]
+          },
+          {
+            "label": "任务要求",
+            "prop": "requirement",
+            "type": "textarea"
+          }
+        ]
+      }
+    ]
+  }
+}

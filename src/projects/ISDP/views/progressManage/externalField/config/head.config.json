@@ -1,0 +1,40 @@
+{
+  "role": {
+    "title": "外场计划制定派发",
+    "btns": [{
+      "text": "添加",
+      "type": "iconAdd",
+      "fnName": "addNewRow"
+    }]
+  },
+  "power": {
+    "title": "外场计划制定派发",
+    "btns": [{
+        "text": "线下编辑",
+        "type": "dropdown",
+        "menu": [{
+            "text": "下载模板",
+            "fnName": "exportChildPlanExcel"
+          },
+          {
+            "text": "上传模板",
+            "type": "upload",
+            "uploadType": -1,
+            "formItemOpts": {
+              "api": "/easywork/api/taskman/outfieldsubplan/importExcel",
+              "name": "excel"
+            }
+          }
+        ]
+      },
+      {
+        "text": "发布",
+        "fnName": "issueChildPlan"
+      },
+      {
+        "text": "派发",
+        "fnName": "distributeChildPlanRedact"
+      }
+    ]
+  }
+}

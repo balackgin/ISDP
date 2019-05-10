@@ -1,0 +1,108 @@
+{
+  "table": {
+    "name": "project-list",
+    "tableOpts": {
+      "width": "100%",
+      "highlightCurrentRow": true,
+      "theme": "isdp",
+      "emptyText": "",
+      "inputProps": {
+        "props": ["nickname", "role", "email", "tel", "status"],
+        "target": ["dblclick"],
+        "type": "callback",
+        "useForm": true
+      }
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "type": "index",
+        "columnOpts": {
+          "width": 80,
+          "align": "center"
+        }
+      },
+      {
+        "label": "姓名",
+        "prop": "displayName",
+        "columnOpts": {
+          "align": "center",
+          "type": "select",
+          "size": "small",
+          "select": [],
+          "minWidth": 100,
+          "formItemOpts": {
+            "filterable": true,
+            "allowCreate": false,
+            "remote": true,
+            "size": "small"
+          }
+        }
+      },
+      {
+        "label": "工号",
+        "prop": "userName",
+        "columnOpts": {
+          "align": "center",
+          "disabled": true,
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "联系方式",
+        "prop": "tel",
+        "columnOpts": {
+          "minWidth": 110,
+          "align": "center",
+          "formItemOpts": {
+            "size": "small"
+          }
+        }
+      },
+      {
+        "label": "部门",
+        "prop": "depName",
+        "columnOpts": {
+          "minWidth": 200,
+          "align": "center",
+          "disabled": true,
+          "formItemOpts": {
+            "size": "small"
+          }
+        }
+      },
+      {
+        "label": "邮箱地址",
+        "prop": "email",
+        "columnOpts": {
+          "minWidth": 260,
+          "align": "center",
+          "formItemOpts": {
+            "size": "small"
+          }
+        }
+      },
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "columnOpts": {
+          "width": 120,
+          "align": "center",
+          "icons": [
+            {
+              "name": "editForMember",
+              "text": "编辑",
+              "className": "text-danger"
+            },
+            {
+              "name": "removeForMember",
+              "title": "删除",
+              "className": "text-danger",
+              "text": "删除"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+.orderBox{
+    min-width: 1440px;
+    &_header{
+        width:100%;
+        height:40px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 1px 0px 0px rgba(228,232,235,1);
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height:40px; 
+        margin-bottom: 2px;
+        &_logo{
+            width: 80px;
+            height: 24px;
+        }
+        &_title{
+            color: #393939;
+            font-weight: 600;
+            font-size: 18px;
+            margin-left: 12px;
+        }
+        &_bound{
+            float: right;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    }
+    &_content{
+        background: #ffffff;
+        padding-left: 10px;
+        padding-right: 10px;
+        &_title{
+            width:64px;
+            height:44px;
+            line-height: 44px;
+            font-size:14px;
+            font-weight:bold;
+            color:#000000;
+            text-align: center;
+            border-bottom: 2px solid #D50000;
+        }
+        &_searchBox{
+            min-height: 96px;
+            padding-top: 15px;
+            padding-left: 24px;
+            padding-right: 15px;
+            min-width: 1416px;
+            &_item{
+                display: inline-block;
+                height: 28px;
+                margin-bottom: 10px;
+                margin-right: 12px;
+                &_label{
+                    color: #000000;
+                    font-size: 12px;
+                    font-weight:400;
+                    margin-right: 8px;
+                }
+                &_ipt{
+                    display: inline-block;
+                    width: 180px;
+                }
+            }
+            &_clearBtn{
+                color: #D50000;
+                font-size: 14px;
+                cursor: pointer;
+                margin-left: 68px;
+            }
+            &_searchBtn{
+                width:128px;
+                display: inline-block;
+                color: #ffffff;
+                text-align: center;
+                line-height: 28px;
+                height:28px;
+                cursor: pointer;
+                background:#D50000;
+                border-radius:4px;
+                font-size: 14px;
+                margin-left: 3px;
+            }
+        }
+    }
+}

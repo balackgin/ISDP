@@ -1,0 +1,233 @@
+{
+  "comments": "企业资质信息  enterpriseCertificateArray",
+  "type": "form",
+  "name": "dialog-addrisk",
+  "title": "添加问题风险",
+  "data": {
+    "importanceLevel": "",
+    "happenDate": "",
+    "submitPersonName": "",
+    "problemClassify": "",
+    "status": "",
+    "dutyPersonName": "",
+    "dutyDept": "",
+    "problemDesc": "",
+    "memo": "",
+    "solution": "",
+    "planStartDate": "",
+    "planEndDate": "",
+    "actualEndDate": ""
+  },
+  "form": {
+    "labelPosition": "right",
+    "labelWidth": "130px",
+    "size": "medium",
+    "disabled": false,
+    "rules": {},
+    "showMessage": false,
+    "inline": false,
+    "row": {
+      "gutter": 10
+    },
+    "col": {}
+  },
+  "group": [
+    {
+      "title": "",
+      "name": "dialog-addrisk",
+      "formConfig": [
+        {
+          "label": "重要级别:",
+          "prop": "importanceLevel",
+          "required": true,
+          "type": "select",
+          "select": [
+            {
+              "label": "紧急重要",
+              "value": "urgentImportance"
+            },
+            {
+              "label": "紧急",
+              "value": "urgent"
+            },
+            {
+              "label": "重要",
+              "value": "importance"
+            },
+            {
+              "label": "一般",
+              "value": "commonly"
+            }
+          ],
+          "col": {
+            "span": 8
+          }
+        },
+        {
+          "label": "发生时间:",
+          "prop": "happenDate",
+          "required": true,
+          "type": "date-picker",
+          "col": {
+            "span": 8
+          }
+        },
+        {
+          "label": "提交人:",
+          "prop": "submitPersonName",
+          "required": true,
+          "type": "select",
+          "select": [
+            {
+              "label": "请选择",
+              "value": "请选择"
+            }
+          ],
+          "col": {
+            "span": 8
+          }
+        },
+        {
+          "label": "问题类型:",
+          "prop": "problemClassify",
+          "type": "select",
+          "select": [
+            {
+              "label": "新问题",
+              "value": "新问题"
+            },
+            {
+              "label": "遗留问题",
+              "value": "遗留问题"
+            },
+            {
+              "label": "引入问题",
+              "value": "引入问题"
+            },
+            {
+              "label": "第三方问题",
+              "value": "第三方问题"
+            }
+          ],
+          "autosize": {
+            "minRows": 3
+          },
+          "required": true,
+          "col": {
+            "span": 8
+          }
+        },
+        {
+          "label": "当前状态:",
+          "prop": "status",
+          "type": "select",
+          "select": [
+            {
+              "label": "请选择",
+              "value": ""
+            },
+            {
+              "label": "Open",
+              "value": "Open"
+            },
+            {
+              "label": "ReOpen",
+              "value": "ReOpen"
+            },
+            {
+              "label": "Pending",
+              "value": "Pending"
+            },
+            {
+              "label": "Validated",
+              "value": "Validated"
+            },
+            {
+              "label": "Closed",
+              "value": "Closed"
+            }
+          ],
+          "autosize": {
+            "minRows": 3
+          },
+          "required": true,
+          "col": {
+            "span": 8
+          }
+        },
+        {
+          "label": "责任人:",
+          "prop": "dutyPersonName",
+          "required": true,
+          "type": "select",
+          "select": [
+            {
+              "label": "请选择",
+              "value": "请选择"
+            }
+          ],
+          "col": {
+            "span": 8
+          }
+        },
+        {
+          "label": "问题描述:",
+          "prop": "problemDesc",
+          "type": "textarea",
+          "autosize": {
+            "minRows": 3
+          },
+          "required": true,
+          "col": {
+            "span": 24
+          }
+        },
+        {
+          "label": "进展、解决方案描述:",
+          "prop": "solution",
+          "type": "textarea",
+          "autosize": {
+            "minRows": 3
+          },
+          "col": {
+            "span": 24
+          }
+        },
+        {
+          "label": "计划开始时间:",
+          "prop": "planStartDate",
+          "required": true,
+          "type": "date-picker",
+          "col": {
+            "span": 8
+          }
+        },
+        {
+          "label": "计划完成时间:",
+          "prop": "planEndDate",
+          "type": "date-picker",
+          "required": true,
+          "col": {
+            "span": 8
+          }
+        },
+        {
+          "label": "实际完成时间:",
+          "prop": "actualEndDate",
+          "type": "date-picker",
+          "col": {
+            "span": 8
+          }
+        },
+        {
+          "label": "备注:",
+          "prop": "memo",
+          "type": "textarea",
+          "col": {
+            "span": 24
+          }
+        }
+      ]
+    }
+  ]
+}

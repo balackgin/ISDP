@@ -1,0 +1,59 @@
+{
+  "back": {
+    "title": "退回",
+    "width": "",
+    "btns": [{
+        "text": "取消",
+        "fnName": "beforeClose"
+      },
+      {
+        "text": "确定",
+        "type": "danger",
+        "fnName": "handleForSubmit"
+      }
+    ]
+  },
+  "relay": {
+    "title": "转发",
+    "width": "",
+    "btns": [{
+        "text": "取消",
+        "fnName": "beforeClose"
+      },
+      {
+        "text": "确定",
+        "type": "danger",
+        "fnName": "handleForSubmit"
+      }
+    ]
+
+  },
+  "overTime": {
+    "title": "超期",
+    "width": "540px",
+    "btns": [{
+        "text": "取消",
+        "fnName": "beforeClose"
+      },
+      {
+        "text": "确定",
+        "type": "danger",
+        "fnName": "handleForSubmit"
+      }
+    ]
+  },
+  "upload": {
+    "title": "添加交付件",
+    "width": "540px",
+    "btns": [{
+        "text": "取消",
+        "fnName": "beforeClose"
+      },
+      {
+        "text": "确定",
+        "type": "danger",
+        "fnName": "handleForSubmit"
+      }
+    ]
+  }
+}

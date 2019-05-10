@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="render" content="webkit" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0 user-scalable=no" /> -->
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="cache" content="no-cache">
+  <!-- <meta name="revised" content="2018-12-27"> -->
+  <meta name="author" content="90111,v_xia_wenxing@dahuatech.com">
+  <meta name="keywords" content="大华,交付,一站式平台,大华股份集成交付一站式平台">
+  <meta name="description" content="大华股份集成交付一站式平台">
+  <link rel="shortcut icon" href="<%= BASE_URL %>favicon.ico">
+  <!-- <link rel="shortcut icon" href="./favicon.png"> -->
+
+  <title>大华股份集成交付一站式平台</title>
+  <!--[if lt IE 10]>
+    <link rel="stylesheet" href="./ie9.css">
+  <![endif]-->
+  <style type="text/css">
+    #Loading {
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+      z-index: 100;
+    }
+
+    @-webkit-keyframes ball-beat {
+      50% {
+        opacity: 0.2;
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+
+    @keyframes ball-beat {
+      50% {
+        opacity: 0.2;
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+
+    .ball-beat>div {
+      background-color: #279fcf;
+      width: 15px;
+      height: 15px;
+      border-radius: 100% !important;
+      margin: 2px;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      display: inline-block;
+      -webkit-animation: ball-beat 0.7s 0s infinite linear;
+      animation: ball-beat 0.7s 0s infinite linear;
+    }
+
+    .ball-beat>div:nth-child(2n-1) {
+      -webkit-animation-delay: 0.35s !important;
+      animation-delay: 0.35s !important;
+    }
+
+    .browser-type {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      min-height: 250px;
+
+      margin-top: -125px;
+      margin-left: -200px;
+      z-index: 9999;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6), 0 0 8px 0 rgba(232, 237, 250, 0.6);
+    }
+
+    .browser-type.hide {
+      display: none;
+    }
+
+    .browser-type .header {
+      height: 60px;
+      padding: 0 30px;
+      line-height: 60px;
+      font-size: 16px;
+      border-bottom: 1px solid rgba(221, 221, 221, 0.836);
+    }
+
+    .browser-type .browser-name,
+    .browser-type .browser-version {
+      padding: 0 30px;
+      line-height: 40px;
+      min-height: 80px;
+      font-size: 14px;
+    }
+
+    .browser-type .warning {
+      min-height: 60px;
+      padding: 0 30px;
+      line-height: 30px;
+      font-size: 12px;
+    }
+
+    .browser-type .btn-group {
+      height: 60px;
+      line-height: 60px;
+      border-top: 1px solid rgba(221, 221, 221, 0.836);
+      text-align: right;
+    }
+
+    .browser-type .btn-group .btn {
+      display: inline-block;
+      width: 52px;
+      height: 32px;
+      cursor: pointer;
+      margin-right: 8px;
+      line-height: 32px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .browser-type .btn.submit {
+      color: #FFF;
+      background-color: #F56C6C;
+      border-color: #F56C6C;
+    }
+
+    .browser-type .btn.submit:hover {
+      color: #FFF;
+      background-color: #f42020;
+      border-color: #f42020;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="browser-type hide">
+    <div class="header">温馨提示</div>
+    <div class="browser-name">您当前使用的浏览器：</div>
+    <div class="warning">您的浏览器版本太低，保险起见，请使用最新谷歌浏览器或火狐浏览器。</div>
+    <div class="btn-group">
+      <span class="btn submit" onclick="showBrowserWarning(true)">确定</span>
+    </div>
+  </div>
+
+  <noscript>
+    <strong>We're sorry but partners doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="Loading">
+    <div class="loader-inner ball-beat">
+      <div></div>
+      <div></div>
+      <div></div>
+      <p>loading.........</p>
+    </div>
+  </div>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+<script>
+  var explorer = window.navigator.userAgent.toLocaleLowerCase(),
+    browserType = null,
+    browserVersion = null,
+    showBrowserType = false;
+  switch (true) {
+    case explorer.match(/msie/) !== null || explorer.match(/trident/ !== null):
+      browserType = 'IE浏览器';
+      browserVersion = explorer.match(/msie (\d+)/) !== null ?
+        explorer.match(/msie (\d+)/)[1] :
+        explorer.match(/rv:(\d+)/)[1];
+      showBrowserType = false;
+      break;
+    case explorer.match(/firefox/) !== null:
+      browserType = '火狐浏览器';
+      browserVersion = explorer.match(/rv:(\d+)/)[1];
+      showBrowserType = +browserVersion > 50 ? true : false;
+      break;
+      // case explorer.match(/maxthon/) !== null:
+      //   browserType = '遨游浏览器';
+      //   browserVersion = explorer.match(/maxthon\/(\d+)/)[1];
+      //   showBrowserType = +browserVersion > 50 ? true : false;
+      //   break;
+    case explorer.match(/chrome/) !== null:
+      var is360 = _mime('type', 'application/vnd.chromium.remoting-viewer');
+
+      function _mime(option, value) {
+        var mimeTypes = window.navigator.mimeTypes;
+        for (var mt in mimeTypes) {
+          if (mimeTypes[mt][option] === value) {
+            return true;
+          }
+        }
+        return false;
+      }
+      browserType = is360 ? '360浏览器' : '谷歌浏览器';
+      browserVersion = explorer.match(/chrome\/(\d+)/)[1];
+      showBrowserType = !is360 && +browserVersion > 60 ? true : false;
+      break;
+      // case explorer.match(/tencenttraveler/) !== null:
+      //   browserType = 'QQ浏览器';
+      //   browserVersion = explorer.match(/rv:(\d+)/)[1];
+      //   break;
+      // case explorer.match(/safari/) !== null:
+      //   browserType = 'Safari浏览器';
+      //   browserVersion = explorer.match(/version\/(\d+)/)[1];
+      //   break;
+    default:
+      showBrowserType = false;
+      break;
+  }
+
+  function showBrowserWarning(bool) {
+    var browserTypeEle = document.getElementsByClassName('browser-type')[0],
+      browserName = document.getElementsByClassName('browser-name')[0],
+      warnName = document.getElementsByClassName('warning')[0];
+    if (!bool) {
+      browserTypeEle.className = 'browser-type';
+      browserName.innerHTML = !browserType ? '该浏览器不在开发测试范围...' :
+        '您当前使用的浏览器是：' + browserType + ' ' + browserVersion;
+      warnName.innerHTML = !browserType ? '请使用最新的谷歌浏览器或者火狐浏览器！' :
+        '您的浏览器版本太低，保险起见，请使用最新谷歌浏览器或火狐浏览器。';
+    } else {
+      browserTypeEle.className = 'browser-type hide';
+    }
+  }
+
+  showBrowserWarning(showBrowserType);
+</script>
+
+</html>

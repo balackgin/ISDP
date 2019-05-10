@@ -1,0 +1,407 @@
+{
+  "qualifications": {
+    "name": "table-qualifications",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "columnOpts": {
+          "align": "center",
+          "width": 50,
+          "icons": [
+            {
+              "name": "qualificationsRemove",
+              "title": "删除",
+              "className": "fa fa-times text-danger",
+              "text": ""
+            }
+          ]
+        }
+      },
+      {
+        "label": "序号",
+        "align": "center",
+        "type": "index"
+      },
+      {
+        "label": "资质证书名称",
+        "prop": "certificateName",
+        "columnOpts": {
+          "width": 120
+        }
+      },
+      {
+        "label": "证书编号",
+        "prop": "certificateNo"
+      },
+      {
+        "label": "截止有效期",
+        "prop": "expireDate",
+        "columnOpts": {
+          "width": 90
+        }
+      },
+      {
+        "label": "证书附件",
+        "prop": "attachmentArray",
+        "type": "arr-img-link",
+        "columnOpts": {
+          "fileUrl": "url",
+          "fileName": "fileName"
+        }
+      }
+    ]
+  },
+  "personnel": {
+    "name": "table-personnel",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "columnOpts": {
+          "align": "center",
+          "width": 50,
+          "icons": [
+            {
+              "name": "personnelRemove",
+              "title": "删除",
+              "className": "fa fa-times text-danger",
+              "text": ""
+            }
+          ]
+        }
+      },
+      {
+        "label": "序号",
+        "align": "center",
+        "type": "index"
+      },
+      {
+        "label": "姓名",
+        "prop": "staffName"
+      },
+      {
+        "label": "职务",
+        "prop": "duty"
+      },
+      {
+        "label": "职称",
+        "prop": "technicalTitle"
+      },
+      {
+        "label": "专业",
+        "prop": "specialty"
+      },
+      {
+        "label": "身份证号码",
+        "prop": "idNumber",
+        "columnOpts": {
+          "minWidth": 166
+        }
+      },
+      {
+        "label": "证件附件",
+        "prop": "attachmentArray",
+        "type": "arr-img-link",
+        "columnOpts": {
+          "fileUrl": "url",
+          "fileName": "fileName"
+        }
+      }
+    ]
+  },
+  "vehicle": {
+    "name": "table-vehicle",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "columnOpts": {
+          "align": "center",
+          "width": 50,
+          "icons": [
+            {
+              "name": "vehicleRemove",
+              "title": "删除",
+              "className": "fa fa-times text-danger",
+              "text": ""
+            }
+          ]
+        }
+      },
+      {
+        "label": "序号",
+        "align": "center",
+        "type": "index"
+      },
+      {
+        "label": "车辆名称",
+        "prop": "vehicleType"
+      },
+      {
+        "label": "型号/出厂日期",
+        "prop": "manufactureInfo",
+        "columnOpts": {
+          "minWidth": 130
+        }
+      },
+      {
+        "label": "数量",
+        "prop": "count"
+      },
+      {
+        "label": "价值(万元)",
+        "prop": "value"
+      }
+    ]
+  },
+  "achievement": {
+    "name": "table-achievement",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "columnOpts": {
+          "align": "center",
+          "width": 50,
+          "icons": [
+            {
+              "name": "achievementRemove",
+              "title": "删除",
+              "className": "fa fa-times text-danger",
+              "text": ""
+            }
+          ]
+        }
+      },
+      {
+        "label": "序号",
+        "align": "center",
+        "type": "index"
+      },
+      {
+        "label": "项目名称",
+        "prop": "projectName"
+      },
+      {
+        "label": "项目金额(万元)",
+        "prop": "projectAmount",
+        "columnOpts": {
+          "minWidth": 110
+        }
+      },
+      {
+        "label": "实施周期",
+        "prop": "cycle",
+        "columnOpts": {
+          "minWidth": 180
+        }
+      },
+      {
+        "label": "建设单位",
+        "prop": "constructorCompany"
+      },
+      {
+        "label": "建设单位联系人",
+        "prop": "constructorContacter",
+        "columnOpts": {
+          "minWidth": 110
+        }
+      },
+      {
+        "label": "联系人电话",
+        "prop": "constructorContacterTel",
+        "columnOpts": {
+          "minWidth": 110
+        }
+      },
+      {
+        "label": "项目经理",
+        "prop": "projectManager"
+      }
+    ]
+  },
+  "equipment": {
+    "columns": [
+      {
+        "id": "",
+        "equipmentType": "设备总数量",
+        "text": "设备总数量",
+        "equipmentCount": "",
+        "version": ""
+      },
+      {
+        "id": "",
+        "equipmentType": "切割机",
+        "text": "切割机",
+        "equipmentCount": "",
+        "version": ""
+      },
+      {
+        "id": "",
+        "equipmentType": "发电机",
+        "text": "发电机",
+        "equipmentCount": "",
+        "version": ""
+      },
+      {
+        "id": "",
+        "equipmentType": "冲击钻",
+        "text": "冲击钻",
+        "equipmentCount": "",
+        "version": ""
+      },
+      {
+        "id": "",
+        "equipmentType": "风镐",
+        "text": "风镐",
+        "equipmentCount": "",
+        "version": ""
+      },
+      {
+        "id": "",
+        "equipmentType": "振动棒",
+        "text": "振动棒",
+        "equipmentCount": "",
+        "version": ""
+      },
+      {
+        "id": "",
+        "equipmentType": "打夯机",
+        "text": "打夯机",
+        "equipmentCount": "",
+        "version": ""
+      },
+      {
+        "id": "",
+        "equipmentType": "穿管机",
+        "text": "穿管机",
+        "equipmentCount": "",
+        "version": ""
+      },
+      {
+        "id": "",
+        "equipmentType": "其他",
+        "text": "其他",
+        "equipmentCount": "",
+        "version": ""
+      }
+    ]
+  },
+  "enterpriseQualificationArray": [
+    {
+      "name": "computed",
+      "outsideFormItem": {
+        "type": "checkbox",
+        "prop": "computedChecked",
+        "checkbox": [
+          {
+            "label": "计算机信息系统集成企业资质"
+          }
+        ]
+      },
+      "innerFormItem": {
+        "type": "select",
+        "prop": "computed",
+        "select": [
+          {
+            "label": "1",
+            "value": "1"
+          },
+          {
+            "label": "2",
+            "value": "2"
+          },
+          {
+            "label": "3",
+            "value": "3"
+          },
+          {
+            "label": "4",
+            "value": "4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "architecture",
+      "outsideFormItem": {
+        "type": "checkbox",
+        "prop": "architectureChecked",
+        "checkbox": [
+          {
+            "label": "建筑智能化工程专业承包企业资质"
+          }
+        ]
+      },
+      "innerFormItem": {
+        "type": "select",
+        "prop": "architecture",
+        "select": [
+          {
+            "label": "1",
+            "value": "1"
+          },
+          {
+            "label": "2",
+            "value": "2"
+          },
+          {
+            "label": "3",
+            "value": "3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "security",
+      "outsideFormItem": {
+        "type": "checkbox",
+        "prop": "securityChecked",
+        "checkbox": [
+          {
+            "label": "安防工程企业资质"
+          }
+        ]
+      },
+      "innerFormItem": {
+        "type": "select",
+        "prop": "security",
+        "select": [
+          {
+            "label": "1",
+            "value": "1"
+          },
+          {
+            "label": "2",
+            "value": "2"
+          },
+          {
+            "label": "3",
+            "value": "3"
+          }
+        ]
+      }
+    }
+  ]
+}

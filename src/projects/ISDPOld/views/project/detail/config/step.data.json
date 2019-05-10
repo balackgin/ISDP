@@ -1,0 +1,95 @@
+{
+  "progressItems": [{
+      "steps": [{
+        "title": "项目立项",
+        "link": "#",
+        "status": "op",
+        "level": 1,
+        "hoverList": [{
+          "txt": "海洋",
+          "link": "#"
+        }],
+        "complete": true
+      }]
+    },
+    {
+      "steps": [{
+        "status": "normal",
+        "level": 1,
+        "title": "项目交底",
+        "link": "#",
+        "hoverList": [{
+          "txt": "海洋",
+          "link": "#"
+        }],
+        "complete": true
+      }]
+    },
+    {
+
+      "steps": [{
+        "title": "项目团队",
+        "link": "#",
+        "status": "normal",
+        "level": 1,
+        "hoverList": [{
+          "txt": "海洋",
+          "link": "#"
+        }],
+        "complete": true
+      }]
+    },
+    {
+      "steps": [{
+          "status": "normal",
+          "level": 2,
+          "title": "WBS计划",
+          "link": "#",
+          "hoverList": [{
+            "txt": "海洋",
+            "link": "#"
+          }],
+          "complete": false
+        },
+        {
+          "status": "normal",
+          "level": 2,
+          "title": "WBS计划",
+          "link": "#",
+          "hoverList": [{
+            "txt": "海洋",
+            "link": "#"
+          }],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "steps": [{
+        "status": "normal",
+        "level": 1,
+        "title": "里程碑",
+        "link": "#",
+        "hoverList": [{
+          "txt": "海洋",
+          "link": "#"
+        }],
+        "complete": false
+      }]
+
+    },
+    {
+      "steps": [{
+        "status": "end",
+        "level": 1,
+        "title": "任务分派",
+        "link": "#",
+        "complete": false,
+        "hoverList": [{
+          "txt": "海洋",
+          "link": "#"
+        }]
+      }]
+    }
+  ]
+}

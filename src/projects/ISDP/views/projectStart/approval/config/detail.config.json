@@ -1,0 +1,220 @@
+{
+  "detailOpts": {
+    "theme": "isdp",
+    "noneLine": true,
+    "labelStyle": {
+      "flexBasis": "126px"
+    },
+    "col": {
+      "lg": 6,
+      "md": 8,
+      "sm": 12
+    }
+  },
+  "detailGroup": [
+    {
+      "detailItems": [
+        {
+          "label": "工程合同编号:",
+          "prop": "contractNo",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "客户合同编号:",
+          "prop": "customerContractNo",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "客户名称:",
+          "prop": "customer",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "业务实体:",
+          "prop": "businessEntity",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "工程合同名称:",
+          "prop": "contractName",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "商机名称:",
+          "prop": "opportunityName",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "合同类型:",
+          "prop": "contractClassify"
+        },
+        {
+          "label": "合同签订时间:",
+          "prop": "contractSignDate"
+        },
+        {
+          "label": "合同终止时间:",
+          "prop": "contractEndDate"
+        },
+        {
+          "label": "是否租赁合同:",
+          "prop": "isTenancyContract",
+          "detailItemOpts": {
+            "objData": {
+              "Y": "是",
+              "N": "否"
+            }
+          }
+        },
+        {
+          "label": "立项时间:",
+          "prop": "projectTime"
+        },
+        {
+          "label": "集成项目类型:",
+          "prop": "projectClassify"
+        },
+        {
+          "label": "项目所在省份:",
+          "prop": "projectProvince"
+        },
+        {
+          "label": "是否维保项目:",
+          "prop": "isMaintenanceProject",
+          "detailItemOpts": {
+            "objData": {
+              "Y": "是",
+              "N": "否"
+            }
+          }
+        },
+        {
+          "label": "行业类型:",
+          "prop": "industryType"
+        },
+        {
+          "label": "产品类型:",
+          "prop": "productType"
+        },
+        {
+          "label": "产品子类型:",
+          "prop": "productSubtype"
+        },
+        {
+          "label": "是否同步到EPR:",
+          "prop": "isSyncERP",
+          "detailItemOpts": {
+            "objData": {
+              "Y": "是",
+              "N": "否"
+            }
+          }
+        },
+        {
+          "label": "项目交付阶段:",
+          "prop": "projectPhase"
+        },
+        {
+          "label": "项目交付模式:",
+          "prop": "projectModel",
+          "detailItemOpts": {
+            "objData": {
+              "LARGE": "大项目",
+              "L": "大项目",
+              "SMALL": "小项目",
+              "S": "小项目"
+            }
+          }
+        },
+        {
+          "label": "项目交付等级:",
+          "prop": "projectLevel"
+        },
+        {
+          "label": "项目交付状态:",
+          "prop": "projectStatus"
+        },
+        {
+          "label": "项目经理:",
+          "prop": "projectManagerName"
+        },
+        {
+          "label": "项目经理所在部门:",
+          "prop": "projectManagerDept"
+        },
+        {
+          "label": "业务归属人:",
+          "prop": "businessOwnerName"
+        },
+        {
+          "label": "归属人部门:",
+          "prop": "businessOwnerDept"
+        },
+        {
+          "label": "合同跟踪人:",
+          "prop": "contractTrackerName"
+        },
+        {
+          "label": "跟踪人部门:",
+          "prop": "contractTrackerDept"
+        },
+        {
+          "label": "售前技术工程师:",
+          "prop": "preTechName"
+        },
+        {
+          "label": "需求发货时间:",
+          "prop": "requiredShipmentDate"
+        },
+        {
+          "label": "合同原始金额:",
+          "prop": "contractAmountOriginal"
+        },
+        {
+          "label": "合同最新金额:",
+          "prop": "contractAmountLatest"
+        },
+        {
+          "label": "货币类型:",
+          "prop": "currency"
+        },
+        {
+          "label": "付款方式:",
+          "prop": "paymentForm"
+        },
+        {
+          "label": "付款描述:",
+          "prop": "paymentDescription"
+        },
+        {
+          "label": "质保期:",
+          "prop": "warrantyPeriod"
+        }
+      ]
+    }
+  ]
+}

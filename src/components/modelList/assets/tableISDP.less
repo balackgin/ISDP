@@ -1,0 +1,180 @@
+.text() {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.theme-isdp-wrap {
+  /deep/ .model-table {
+    border: 0;
+    &::before {
+      content: none;
+    }
+    .el-table__header-wrapper {
+      .el-table__header {
+        tr {
+          th {
+            // padding: 12px 24px;
+            padding: 0;
+            border: 0;
+            color: #777a80;
+            background-color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: left;
+            .cell {
+              padding: 12px 24px;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+    .el-table__body {
+      .el-table__row {
+        td {
+          // padding: 0 24px;
+          padding: 0;
+          border: 0;
+          color: #4d4f53;
+          font-size: 14px;
+          text-align: left;
+          min-width: 80px;
+          .cell {
+            // padding: 13px 24px;
+            padding: 13px 24px;
+          }
+          .action-icons-wrap {
+            .icon-item {
+              color: #3276ff;
+              font-size: 14px;
+              text-decoration: underline;
+              & ~ .icon-item {
+                margin-left: 6px;
+              }
+            }
+          }
+          .model-form-item-wrap {
+            margin-bottom: 0;
+            .el-input__inner {
+              height: 30px;
+            }
+          }
+          .inline-text {
+            // width: 100%;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            // white-space: nowrap;
+            .text();
+          }
+          .link {
+            color: rgb(86, 94, 206);
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+        &:nth-child(2n + 1) {
+          td {
+            background-color: #f9f9f9;
+          }
+        }
+        &:hover,
+        &.current-row {
+          td {
+            background-color: #ddd;
+          }
+        }
+      }
+    }
+  }
+}
+.multiple-table-header {
+  @borderLeft: 1px solid #030303;
+  /deep/ .model-table {
+    border: 0;
+    .el-table__header-wrapper {
+      .el-table__header {
+        tr {
+          th {
+            padding: 12px 24px;
+            border: 0 !important;
+            color: #4d4f53;
+            background-color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: left;
+            white-space: nowrap;
+            .cell {
+              padding: 0;
+              white-space: nowrap;
+            }
+            & ~ th {
+              border: 0;
+            }
+          }
+          &:first-child th ~ th,
+          th.firstMulTableHead {
+            border-left: @borderLeft;
+          }
+          .mulTableHead {
+            padding-top: 0;
+            font-size: 14px;
+            color: #777a80;
+          }
+        }
+      }
+    }
+    .el-table__body {
+      .el-table__row {
+        display: table-row !important;
+        td {
+          padding: 10px 24px;
+          min-width: 80px;
+          border: 0 !important;
+          color: #4d4f53;
+          font-size: 14px;
+          .cell {
+            padding: 0;
+            white-space: nowrap;
+          }
+          .el-table__expand-icon {
+            display: none;
+          }
+          & ~ td {
+            border-left: @borderLeft;
+          } // &.level_0 {
+          // }
+          &.level_1 {
+            padding-left: 48px;
+          }
+          &.level_2 {
+            padding-left: 74px;
+          }
+          .inline-text {
+            // width: 100%;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            // white-space: nowrap;
+            .text();
+          }
+          .link {
+            color: rgb(86, 94, 206);
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+        &:nth-child(2n + 1) {
+          td {
+            background-color: #f9f9f9;
+          }
+        }
+        &:hover,
+        &.current-row {
+          td {
+            background-color: #ddd;
+          }
+        }
+      }
+    }
+  }
+}

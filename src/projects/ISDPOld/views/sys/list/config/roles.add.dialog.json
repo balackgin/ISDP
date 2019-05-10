@@ -1,0 +1,95 @@
+{
+  "rolesDialog": {
+    "comments": "企业资质信息  enterpriseCertificateArray",
+    "type": "form",
+    "name": "dialog-addRoles",
+    "title": "添加角色权限",
+    "data": {
+      "roleName": ""
+    },
+    "formOpts": {
+      "labelPosition": "right",
+      "labelWidth": "120px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "formGroup": [{
+      "title": "",
+      "name": "dialog-addRoles",
+      "formItems": [{
+        "label": "权限名称",
+        "prop": "roleName",
+        "required": true,
+        "formItemOpts": {
+          "col": {
+            "span": 12
+          }
+        }
+      }]
+    }]
+  },
+  "rolesMemberDialog": {
+    "comments": "企业资质信息  enterpriseCertificateArray",
+    "type": "form",
+    "name": "dialog-addroleMember",
+    "title": "添加角色成员",
+    "isTableData": false,
+    "data": {
+      "nickname": "",
+      "username": ""
+    },
+    "inputConfig": {
+      "props": ["nickname", "username"]
+    },
+    "formOpts": {
+      "labelPosition": "right",
+      "labelWidth": "120px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "formGroup": [{
+      "title": "",
+      "name": "dialog-addroleMember",
+      "formItems": [{
+          "label": "姓名",
+          "prop": "nickname",
+          "required": true,
+          "type": "select",
+          "formItemOpts": {
+            "remote": true,
+            "filterable": true,
+            "clearable": true,
+            "select": [],
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "工号",
+          "prop": "username",
+          "formItemOpts": {
+            "disabled": true,
+            "col": {
+              "span": 12
+            }
+          }
+        }
+      ]
+    }]
+  }
+}

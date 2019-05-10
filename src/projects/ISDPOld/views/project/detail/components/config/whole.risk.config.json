@@ -1,0 +1,271 @@
+{
+  "listConfig": {
+    "searchObj": {
+      "submitPersonName": "",
+      "problemDesc": "",
+      "status": "",
+      "planStartDate": "",
+      "planEndDate": "",
+      "importanceLevel": "",
+      "date": []
+    },
+    "search": {
+      "formItems": [
+        {
+          "label": "状态",
+          "prop": "status",
+          "type": "select",
+          "formItemOpts": {
+            "className": "form-item-wid",
+            "select": [
+              {
+                "label": "请选择",
+                "value": ""
+              },
+              {
+                "label": "Closed",
+                "value": "Closed"
+              },
+              {
+                "label": "Open",
+                "value": "Open"
+              },
+              {
+                "label": "ReOpen",
+                "value": "ReOpen"
+              },
+              {
+                "label": "Validated",
+                "value": "Validated"
+              },
+              {
+                "label": "Pending",
+                "value": "Pending"
+              }
+            ]
+          }
+        },
+        {
+          "label": "内容",
+          "prop": "problemDesc"
+        },
+        {
+          "label": "级别",
+          "type": "select",
+          "prop": "importanceLevel",
+          "formItemOpts": {
+            "className": "form-item-wid",
+            "select": [
+              {
+                "value": "",
+                "label": "请选择"
+              },
+              {
+                "value": "urgentImportance",
+                "label": "紧急重要"
+              },
+              {
+                "value": "urgent",
+                "label": "紧急"
+              },
+              {
+                "value": "importance",
+                "label": "重要"
+              },
+              {
+                "value": "commonly",
+                "label": "一般"
+              }
+            ]
+          }
+        },
+        {
+          "label": "提交人",
+          "prop": "submitPersonName",
+          "formItemOpts": {
+            "className": "form-item-wid"
+          }
+        },
+        {
+          "label": "计划起始日期",
+          "prop": "date",
+          "type": "date-range",
+          "formItemOpts": {
+            "startTime": "计划开始时间",
+            "endTime": "计划结束时间"
+          }
+        }
+      ],
+      "btns": [
+        {
+          "text": "搜索",
+          "name": "search",
+          "type": "danger"
+        },
+        {
+          "text": "添加风险问题",
+          "name": "add",
+          "type": "danger"
+        }
+      ]
+    },
+    "table": {
+      "name": "project-list",
+      "tableOpts": {
+        "maxHeight": "500",
+        "highlightCurrentRow": true,
+        "emptyText": ""
+      },
+      "columns": [
+        {
+          "label": "序号",
+          "type": "index",
+          "columnOpts": {
+            "align": "center",
+            "width": 50
+          }
+        },
+        {
+          "label": "重要级别",
+          "prop": "importanceLevel",
+          "type": "obj",
+          "columnOpts": {
+            "minWidth": 100,
+            "align": "left",
+            "obj": {
+              "commonly": "一般",
+              "importance": "重要",
+              "urgent": "紧急",
+              "urgentImportance": "紧急重要"
+            }
+          }
+        },
+        {
+          "label": "当前状态",
+          "prop": "status",
+          "columnOpts": {
+            "minWidth": 80,
+            "align": "left"
+          }
+        },
+        {
+          "label": "发生时间",
+          "prop": "happenDate",
+          "columnOpts": {
+            "minWidth": 100,
+            "align": "center"
+          }
+        },
+        {
+          "label": "提交人",
+          "prop": "submitPersonName",
+          "columnOpts": {
+            "minWidth": 100,
+            "align": "left"
+          }
+        },
+        {
+          "label": "问题描述",
+          "prop": "problemDesc",
+          "columnOpts": {
+            "minWidth": 200,
+            "align": "left"
+          }
+        },
+        {
+          "label": "进展、解决方案描述",
+          "prop": "solution",
+          "columnOpts": {
+            "minWidth": 200,
+            "align": "left"
+          }
+        },
+        {
+          "label": "责任人",
+          "prop": "dutyPersonName",
+          "columnOpts": {
+            "minWidth": 100,
+            "align": "left"
+          }
+        },
+        {
+          "label": "责任部门",
+          "prop": "dutyDept",
+          "columnOpts": {
+            "minWidth": 160,
+            "align": "left"
+          }
+        },
+        {
+          "label": "计划开始时间",
+          "prop": "planStartDate",
+          "columnOpts": {
+            "minWidth": 100,
+            "align": "center"
+          }
+        },
+        {
+          "label": "计划完成时间",
+          "align": "center",
+          "prop": "planEndDate",
+          "minWidth": 100
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "actualEndDate",
+          "columnOpts": {
+            "minWidth": 100,
+            "align": "center"
+          }
+        },
+        {
+          "label": "问题类型",
+          "prop": "problemClassify",
+          "columnOpts": {
+            "minWidth": 100,
+            "align": "left"
+          }
+        },
+        {
+          "label": "备注",
+          "prop": "memo",
+          "columnOpts": {
+            "minWidth": 150,
+            "align": "left"
+          }
+        },
+        {
+          "label": "偏差天数",
+          "prop": "deviationDay",
+          "columnOpts": {
+            "minWidth": 80,
+            "align": "left"
+          },
+          "valFn": "deviation"
+        },
+        {
+          "label": "操作",
+          "type": "action-icons",
+          "columnOpts": {
+            "width": 100,
+            "align": "center",
+            "icons": [
+              {
+                "name": "edit",
+                "title": "编辑",
+                "text": "编辑",
+                "className": "text-danger"
+              },
+              {
+                "name": "remove",
+                "title": "删除",
+                "text": "删除",
+                "className": "text-danger"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

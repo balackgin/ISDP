@@ -1,0 +1,40 @@
+{
+  "tableOpts": {
+    "highlightCurrentRow": true,
+    "maxHeight": 350,
+    "emplyText": ""
+  },
+  "columns": [{
+      "label": "编号",
+      "prop": "number"
+    },
+    {
+      "label": "辖区",
+      "prop": "area"
+    },
+    {
+      "label": "点位名称",
+      "prop": "spaceName"
+    },
+    {
+      "label": "监控方向",
+      "prop": "monitoringDirection"
+    },
+    {
+      "label": "点位属性",
+      "prop": "spaceAttr"
+    },
+    {
+      "label": "操作",
+      "prop": "operat",
+      "type": "action-icons",
+      "columnOpts": {
+        "icons": [{
+          "name": "dealSubplan",
+          "text": "去处理"
+        }]
+      }
+    }
+  ]
+
+}

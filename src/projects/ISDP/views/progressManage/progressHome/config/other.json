@@ -1,0 +1,64 @@
+[
+  {
+    "text": "点位勘查",
+    "name": "survey",
+    "desc": "计划数: Plannum,完成数:survey"
+  },
+  {
+    "text": "深化设计",
+    "name": "design"
+  },
+  {
+    "text": "杆件到货",
+    "name": "membararr"
+  },
+  {
+    "text": "设备到货",
+    "name": "equiparr"
+  },
+  {
+    "text": "基础开挖及浇筑",
+    "name": "excavate"
+  },
+  {
+    "text": "杆件安装",
+    "name": "membarins"
+  },
+  {
+    "text": "设备安装",
+    "name": "equipins"
+  },
+  {
+    "text": "接电",
+    "name": "eleconn"
+  },
+  {
+    "text": "通网",
+    "name": "netconn"
+  },
+
+  {
+    "text": "调试",
+    "name": "debug"
+  },
+  {
+    "text": "接入",
+    "name": "join"
+  },
+  {
+    "text": "初验",
+    "name": "initest"
+  },
+  {
+    "text": "试运行",
+    "name": "testrun"
+  },
+  {
+    "text": "终验",
+    "name": "finaltest"
+  },
+  {
+    "text": "运维",
+    "name": "maint"
+  }
+]

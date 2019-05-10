@@ -1,0 +1,78 @@
+{
+  "searchObj": {
+    "name": "",
+    "date": "",
+    "status": ""
+  },
+  "formItems": [
+    {
+      "label": "合同名称",
+      "prop": "name"
+    },
+    {
+      "label": "申请日期",
+      "type": "date-picker",
+      "prop": "date"
+    },
+    {
+      "label": "审批状态",
+      "type": "select",
+      "prop": "status",
+      "select": [
+        {
+          "label": "请选择",
+          "value": ""
+        },
+        {
+          "label": "待审批"
+        },
+        {
+          "label": "审批中"
+        },
+        {
+          "label": "已审批"
+        }
+      ]
+    }
+  ],
+  "btns": [
+    {
+      "text": "搜索",
+      "name": "search",
+      "type": "danger"
+    }
+  ],
+  "tableConfig": {
+    "name": "project-list",
+    "maxHeight": "500px",
+    "highlightCurrentRow": true,
+    "emptyText": "",
+    "columns": [
+      {
+        "label": "序号",
+        "type": "index",
+        "align": "center"
+      },
+      {
+        "label": "单据编号",
+        "prop": ""
+      },
+      {
+        "label": "申请日期",
+        "prop": ""
+      },
+      {
+        "label": "工程合同名称",
+        "prop": ""
+      },
+      {
+        "label": "审核造价",
+        "prop": ""
+      },
+      {
+        "label": "审批状态",
+        "prop": ""
+      }
+    ]
+  }
+}

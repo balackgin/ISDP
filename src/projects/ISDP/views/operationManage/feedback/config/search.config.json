@@ -1,0 +1,294 @@
+{
+    "statusArr": [
+        {
+            "label": "全部",
+            "value": ""
+        },
+        {
+            "label": "等待提交",
+            "value": "SUBMITTING"
+        },
+        {
+            "label": "等待分析",
+            "value": "WAITING"
+        },
+        {
+            "label": "等待反馈",
+            "value": "PENDING"
+        },
+        {
+            "label": "遗留挂起",
+            "value": "UNFINISHED_CLOSED"
+        },
+        {
+            "label": "等待关闭",
+            "value": "WAIT_CLOSE"
+        },
+        {
+            "label": "完成关闭",
+            "value": "FINISHED_CLOSED"
+        }
+    ],
+    "importanceLevelArr": [
+        {
+            "label": "全部",
+            "value": ""
+        },
+        {
+            "label": "高",
+            "value": "HIGH"
+        },
+        {
+            "label": "中",
+            "value": "MIDDLE"
+        },
+        {
+            "label": "低",
+            "value": "LOW"
+        },
+        {
+            "label": "NA",
+            "value": "NA"
+        }
+    ],
+    "urgentLevelArr": [
+        {
+            "label": "全部",
+            "value": ""
+        },
+        {
+            "label": "高",
+            "value": "HIGH"
+        },
+        {
+            "label": "中",
+            "value": "MIDDLE"
+        },
+        {
+            "label": "低",
+            "value": "LOW"
+        },
+        {
+            "label": "NA",
+            "value": "NA"
+        }
+    ],
+    "proposeDeptArr": [
+        {
+            "label": "全部",
+            "value": ""
+        },
+        {
+            "label": "商务",
+            "value": "BUSINESS"
+        },
+        {
+            "label": "法务",
+            "value": "EGAL"
+        },
+        {
+            "label": "解决方案",
+            "value": "SOLUTION"
+        },
+        {
+            "label": "交付",
+            "value": "DELIVERY"
+        },
+        {
+            "label": "软件交付",
+            "value": "SOFTWARE_DELIVERY"
+        },
+        {
+            "label": "产品研发",
+            "value": "PROD_DESIGN"
+        },
+        {
+            "label": "经营",
+            "value": "MANAGING"
+        },
+        {
+            "label": "供应链",
+            "value": "SUPPLY_CHAIN"
+        },
+        {
+            "label": "采购",
+            "value": "PURCHASE"
+        },
+        {
+            "label": "交付运营",
+            "value": "DELIVERY_OPERATE"
+        }
+    ],
+    "proposeDeptObj": {
+        "BUSINESS": "商务",
+        "EGAL": "法务",
+        "SOLUTION": "解决方案",
+        "DELIVERY": "交付",
+        "SOFTWARE_DELIVERY": "软件交付",
+        "PROD_DESIGN": "产品研发",
+        "MANAGING": "经营",
+        "SUPPLY_CHAIN": "供应链",
+        "PURCHASE": "采购",
+        "DELIVERY_OPERATE": "交付运营"
+    },
+    "businessAreaArr": [
+        {
+            "label": "全部",
+            "value": ""
+        },
+        {
+            "label": "商务",
+            "value": "BUSINESS"
+        },
+        {
+            "label": "交付",
+            "value": "DELIVERY"
+        },
+        {
+            "label": "解决方案",
+            "value": "SOLUTION"
+        },
+        {
+            "label": "软件交付",
+            "value": "SOFTWARE_DELIVERY"
+        },
+        {
+            "label": "供应链",
+            "value": "SUPPLY_CHAIN"
+        },
+        {
+            "label": "法务",
+            "value": "LEGAL"
+        },
+        {
+            "label": "采购",
+            "value": "PURCHASE"
+        },
+        {
+            "label": "经营",
+            "value": "MANAGING"
+        },
+        {
+            "label": "产品研发",
+            "value": "PROD_DESIGN"
+        },
+        {
+            "label": "交付运营",
+            "value": "DELIVERY_OPERATE"
+        }
+    ],
+    "classificationArr": [
+        {
+            "label": "综合",
+            "value": "TOGETHER",
+            "children": []
+        },
+        {
+            "label": "范围",
+            "value": "RANGE",
+            "children": [
+                {
+                    "label": "范围变更",
+                    "value": "RANGE_CHANGE"
+                }
+            ]
+        },
+        {
+            "label": "质量",
+            "value": "QUALITY",
+            "children": [
+                {
+                    "label": "质量事故",
+                    "value": "QUALITY_ACCIDENG"
+                },
+                {
+                    "label": "质量标准变更",
+                    "value": "STANDARD_CHANGE"
+                }
+            ]
+        },
+        {
+            "label": "经营",
+            "value": "OPRATION",
+            "children": [
+                {
+                    "label": "成本超支",
+                    "value": "COST_EXCEED"
+                },
+                {
+                    "label": "收入缩减",
+                    "value": "INCONE_REDUCE"
+                }
+            ]
+        },
+        {
+            "label": "分包采购",
+            "value": "PURCHASE",
+            "children": []
+        },
+        {
+            "label": "计划",
+            "value": "PLAN",
+            "children": []
+        },
+        {
+            "label": "资源",
+            "value": "RESOURCE",
+            "children": []
+        },
+        {
+            "label": "沟通",
+            "value": "COMMUNIACATION",
+            "children": []
+        },
+        {
+            "label": "客户满意度",
+            "value": "SATISFACTION",
+            "children": []
+        }
+    ],
+    "classificationObj": {
+        "TOGETHER": "综合",
+        "RANGE": "范围",
+        "QUALITY": "质量",
+        "OPRATION": "经营",
+        "PURCHASE": "分包采购",
+        "PLAN": "计划",
+        "COMMUNIACATION": "沟通",
+        "SATISFACTION": "客户满意度",
+        "RESOURCE": "资源"
+    },
+    "subClassObj": {
+        "RANGE_CHANGE": "范围变更",
+        "QUALITY_ACCIDENG": "质量事故",
+        "STANDARD_CHANGE": "质量标准变更",
+        "INCONE_REDUCE": "收入缩减",
+        "COST_EXCEED": "成本超支"
+    },
+    "urgentLevelObj": {
+        "HIGH": "高",
+        "MIDDLE": "中",
+        "LOW": "低",
+        "NA": "NA"
+    },
+    "statusObj": {
+        "SUBMITTING": "等待提交",
+        "WAITING": "等待分析",
+        "PENDING": "等待反馈",
+        "UNFINISHED_CLOSED": "遗留挂起",
+        "WAIT_CLOSE": "等待关闭",
+        "FINISHED_CLOSED": "完成关闭"
+    },
+    "businessAreaObj": {
+        "BUSINESS": "商务",
+        "LEGAL": "法务",
+        "SOLUTION": "解决方案",
+        "DELIVERY": "交付",
+        "SOFTWARE_DELIVERY": "软件交付",
+        "PROD_DESIGN": "产品研发",
+        "MANAGING": "经营",
+        "SUPPLY_CHAIN": "供应链",
+        "PURCHASE": "采购",
+        "DELIVERY_OPERATE": "交付运营"
+    }
+}

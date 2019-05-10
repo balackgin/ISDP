@@ -1,0 +1,77 @@
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.container-fluid {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.tc {
+  text-align: center;
+}
+.min-h500 {
+  min-height: 500px;
+}
+.fz32 {
+  font-size: 32px;
+}
+.fz16 {
+  font-size: 16px;
+}
+.fz24 {
+  font-size: 24px;
+}
+.primary-hover {
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.primary-hover:hover {
+  color: #0e5fac !important;
+}
+.move-up {
+  transition: all 0.4s;
+}
+.move-up:hover {
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+.pagination {
+  float: right;
+}
+.pagination .el-pagination.is-background .btn-next,
+.pagination .el-pagination.is-background .btn-prev,
+.pagination .el-pagination.is-background .el-pager li {
+  background: #fff;
+}

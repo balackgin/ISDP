@@ -1,0 +1,13 @@
+{
+  "title": "项目立项",
+  "btns": [
+    {
+      "text": "确认项目模式",
+      "fnName": "confirmProjectModel"
+    },
+    {
+      "text": "变更项目模式",
+      "fnName": "changeProjectModel"
+    }
+  ]
+}

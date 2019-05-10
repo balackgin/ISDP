@@ -1,0 +1,35 @@
+{
+  "tableOpts": {
+    "theme": "isdp"
+  },
+  "columns": [{
+      "label": "项目模块",
+      "prop": "projectModuleCN",
+      "columnOpts": {
+        "minWidth": 120
+      }
+    },
+    {
+      "label": "进度",
+      "prop": "progress",
+      "columnOpts": {
+        "minWidth": 90
+      }
+    },
+    {
+      "label": "状态",
+      "prop": "cumulativeDelay",
+      "type": "html",
+      "columnOpts": {
+        "minWidth": 80
+      }
+    },
+    {
+      "label": "权重",
+      "prop": "totalWeight",
+      "columnOpts": {
+        "minWidth": 80
+      }
+    }
+  ]
+}

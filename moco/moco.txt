@@ -1,0 +1,2 @@
+"start": "java -jar ./moco/moco-runner-0.12.0-standalone.jar http -p 60 -c ./moco/api.json",
+    "stop": "tskill java.exe"

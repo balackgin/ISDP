@@ -1,0 +1,298 @@
+[
+  {
+    "title": "商务组",
+    "children": [
+      {
+        "title": "项目交底",
+        "name": "test"
+      },
+      {
+        "title": "项目启动",
+        "name": "test1"
+      },
+      {
+        "title": "项目沟通机制",
+        "name": "test2"
+      },
+      {
+        "title": "取电取网等工作面确认及合同签订",
+        "name": "test3"
+      },
+      {
+        "title": "指定工程商流程",
+        "name": "test4"
+      },
+      {
+        "title": "明确验收方式及流程",
+        "name": "test5"
+      },
+      {
+        "title": "项目验收",
+        "name": "test6"
+      },
+      {
+        "title": "项目回款进度计划",
+        "name": "test7"
+      }
+    ]
+  },
+  {
+    "title": "解决方案组",
+    "children": [
+      {
+        "title": "项目交底",
+        "name": "test"
+      },
+      {
+        "title": "项目启动",
+        "name": "test1"
+      },
+      {
+        "title": "项目沟通机制",
+        "name": "test2"
+      },
+      {
+        "title": "取电取网等工作面确认及合同签订",
+        "name": "test3"
+      },
+      {
+        "title": "指定工程商流程",
+        "name": "test4"
+      },
+      {
+        "title": "明确验收方式及流程",
+        "name": "test5"
+      },
+      {
+        "title": "项目验收",
+        "name": "test6"
+      },
+      {
+        "title": "项目回款进度计划",
+        "name": "test7"
+      }
+    ]
+  },
+  {
+    "title": "交付组",
+    "children": [
+      {
+        "title": "项目交底",
+        "name": "test"
+      },
+      {
+        "title": "项目启动",
+        "name": "test1"
+      },
+      {
+        "title": "项目沟通机制",
+        "name": "test2"
+      },
+      {
+        "title": "取电取网等工作面确认及合同签订",
+        "name": "test3"
+      },
+      {
+        "title": "指定工程商流程",
+        "name": "test4"
+      },
+      {
+        "title": "明确验收方式及流程",
+        "name": "test5"
+      },
+      {
+        "title": "项目验收",
+        "name": "test6"
+      },
+      {
+        "title": "项目回款进度计划",
+        "name": "test7"
+      }
+    ]
+  },
+  {
+    "title": "采购组",
+    "children": [
+      {
+        "title": "项目交底",
+        "name": "test"
+      },
+      {
+        "title": "项目启动",
+        "name": "test1"
+      },
+      {
+        "title": "项目沟通机制",
+        "name": "test2"
+      },
+      {
+        "title": "取电取网等工作面确认及合同签订",
+        "name": "test3"
+      },
+      {
+        "title": "指定工程商流程",
+        "name": "test4"
+      },
+      {
+        "title": "明确验收方式及流程",
+        "name": "test5"
+      },
+      {
+        "title": "项目验收",
+        "name": "test6"
+      },
+      {
+        "title": "项目回款进度计划",
+        "name": "test7"
+      }
+    ]
+  },
+  {
+    "title": "财经法务组",
+    "children": [
+      {
+        "title": "项目交底",
+        "name": "test"
+      },
+      {
+        "title": "项目启动",
+        "name": "test1"
+      },
+      {
+        "title": "项目沟通机制",
+        "name": "test2"
+      },
+      {
+        "title": "取电取网等工作面确认及合同签订",
+        "name": "test3"
+      },
+      {
+        "title": "指定工程商流程",
+        "name": "test4"
+      },
+      {
+        "title": "明确验收方式及流程",
+        "name": "test5"
+      },
+      {
+        "title": "项目验收",
+        "name": "test6"
+      },
+      {
+        "title": "项目回款进度计划",
+        "name": "test7"
+      }
+    ]
+  },
+  {
+    "title": "供应链组",
+    "children": [
+      {
+        "title": "项目交底",
+        "name": "test"
+      },
+      {
+        "title": "项目启动",
+        "name": "test1"
+      },
+      {
+        "title": "项目沟通机制",
+        "name": "test2"
+      },
+      {
+        "title": "取电取网等工作面确认及合同签订",
+        "name": "test3"
+      },
+      {
+        "title": "指定工程商流程",
+        "name": "test4"
+      },
+      {
+        "title": "明确验收方式及流程",
+        "name": "test5"
+      },
+      {
+        "title": "项目验收",
+        "name": "test6"
+      },
+      {
+        "title": "项目回款进度计划",
+        "name": "test7"
+      }
+    ]
+  },
+  {
+    "title": "项目运维",
+    "children": [
+      {
+        "title": "项目交底",
+        "name": "test"
+      },
+      {
+        "title": "项目启动",
+        "name": "test1"
+      },
+      {
+        "title": "项目沟通机制",
+        "name": "test2"
+      },
+      {
+        "title": "取电取网等工作面确认及合同签订",
+        "name": "test3"
+      },
+      {
+        "title": "指定工程商流程",
+        "name": "test4"
+      },
+      {
+        "title": "明确验收方式及流程",
+        "name": "test5"
+      },
+      {
+        "title": "项目验收",
+        "name": "test6"
+      },
+      {
+        "title": "项目回款进度计划",
+        "name": "test7"
+      }
+    ]
+  },
+  {
+    "title": "交付运营组",
+    "children": [
+      {
+        "title": "项目交底",
+        "name": "test"
+      },
+      {
+        "title": "项目启动",
+        "name": "test1"
+      },
+      {
+        "title": "项目沟通机制",
+        "name": "test2"
+      },
+      {
+        "title": "取电取网等工作面确认及合同签订",
+        "name": "test3"
+      },
+      {
+        "title": "指定工程商流程",
+        "name": "test4"
+      },
+      {
+        "title": "明确验收方式及流程",
+        "name": "test5"
+      },
+      {
+        "title": "项目验收",
+        "name": "test6"
+      },
+      {
+        "title": "项目回款进度计划",
+        "name": "test7"
+      }
+    ]
+  }
+]

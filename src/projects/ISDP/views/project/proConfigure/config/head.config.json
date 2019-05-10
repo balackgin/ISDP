@@ -1,0 +1,29 @@
+{
+  "btns": [
+    {
+      "text": "发布",
+      "fnName": "configureHeadSubmit"
+    }
+  ],
+  "hide": {
+    "text": "线下编辑",
+    "type": "dropdown",
+    "menu": [
+      {
+        "text": "下载模板",
+        "fnName": "configureHeadDownload"
+      },
+      {
+        "text": "导入模板",
+        "type": "upload",
+        "uploadType": -1,
+        "fnName": "configureHeadImport",
+        "formItemOpts": {
+          "apiPath": "/easywork/api/project",
+          "api": "/easywork/api/project/planNote/configure/importExcel",
+          "name": "excel"
+        }
+      }
+    ]
+  }
+}

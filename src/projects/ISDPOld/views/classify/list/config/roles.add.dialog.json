@@ -1,0 +1,85 @@
+{
+  "dialogTable": {
+    "name": "project-survey-task-dialog-list",
+    "maxHeight": 500,
+    "tableOpts": {
+      "noPadding": true,
+      "isTableData": true,
+      "highlightCurrentRow": false,
+      "emptyText": ""
+    },
+    "columns": [{
+        "label": "分类选项键名",
+        "prop": "codeValue",
+        "type": "formItem",
+        "required": true
+      },
+      {
+        "label": "分类选项键值",
+        "prop": "codeKey",
+        "type": "formItem",
+        "required": true
+      },
+      {
+        "label": "排列顺序",
+        "prop": "codeOrder",
+        "type": "formItem",
+        "required": true
+      },
+      {
+        "label": "操作",
+        "prop": "operate",
+        "type": "action-icons",
+        "align": "left",
+        "columnOpts": {
+          "width": 60
+        },
+        "icons": [{
+          "name": "handleClickForDialogRemove",
+          "text": "删除"
+        }]
+      }
+    ]
+  },
+  "dialogForm": {
+    "name": "project-survey-task-dialog-form",
+    "formItems": [{
+        "label": "应用分类",
+        "prop": "appClassify",
+        "type": "select",
+        "formItemOpts": {
+          "className": "noMargin",
+          "col": {
+            "span": 6
+          },
+          "select": [{
+              "label": "ISDP平台",
+              "value": "ISDP"
+            },
+            {
+              "label": "外包商平台",
+              "value": "外包商平台"
+            }
+          ]
+        },
+        "required": true
+      },
+      {
+        "label": "分类名:",
+        "prop": "classifyName",
+        "required": true,
+        "col": {
+          "span": 6
+        }
+      },
+      {
+        "label": "分类描述:",
+        "prop": "classifyDisplay",
+        "required": true,
+        "col": {
+          "span": 6
+        }
+      }
+    ]
+  }
+}

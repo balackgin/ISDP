@@ -1,0 +1,105 @@
+{
+  "table": {
+    "name": "project-list",
+    "tableOpts": {
+      "maxHeight": "500",
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "type": "index",
+        "columnOpts": {
+          "width": 50,
+          "align": "center"
+        }
+      },
+      {
+        "label": "重要级别",
+        "prop": "importanceLevel",
+        "type": "obj",
+        "columnOpts": {
+          "minWidth": 80,
+          "align": "left",
+          "obj": {
+            "commonly": "一般",
+            "importance": "重要",
+            "urgent": "紧急",
+            "urgentImportance": "紧急重要"
+          }
+        }
+      },
+      {
+        "label": "当前状态",
+        "prop": "status",
+        "columnOpts": {
+          "minWidth": 80,
+          "align": "left"
+        }
+      },
+      {
+        "label": "发生时间",
+        "prop": "happenDate",
+        "columnOpts": {
+          "minWidth": 100,
+          "align": "center"
+        }
+      },
+      {
+        "label": "责任人",
+        "prop": "dutyPersonName",
+        "columnOpts": {
+          "minWidth": 80,
+          "align": "left"
+        }
+      },
+      {
+        "label": "责任部门",
+        "prop": "dutyDept",
+        "columnOpts": {
+          "minWidth": 160,
+          "align": "left"
+        }
+      },
+      {
+        "label": "问题描述",
+        "prop": "problemDesc",
+        "align": "left",
+        "minWidth": 200
+      },
+      {
+        "label": "计划开始时间",
+        "prop": "planStartDate",
+        "columnOpts": {
+          "minWidth": 110,
+          "align": "center"
+        }
+      },
+      {
+        "label": "计划完成时间",
+        "prop": "planEndDate",
+        "columnOpts": {
+          "minWidth": 110,
+          "align": "center"
+        }
+      },
+      {
+        "label": "实际完成时间",
+        "prop": "actualEndDate",
+        "columnOpts": {
+          "minWidth": 110,
+          "align": "center"
+        }
+      },
+      {
+        "label": "偏差天数",
+        "prop": "deviationDay",
+        "columnOpts": {
+          "minWidth": 74,
+          "align": "left"
+        }
+      }
+    ]
+  }
+}

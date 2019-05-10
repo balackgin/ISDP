@@ -1,0 +1,109 @@
+[{
+    "text": "全选",
+    "id": -10,
+    "width": "108px",
+    "minWidth": "48px"
+  },
+  {
+    "text": "点位勘测",
+    "id": 12,
+    "width": "134px",
+    "minWidth": "74px"
+  },
+  {
+    "text": "新建/利旧",
+    "id": 10,
+    "width": "134px",
+    "minWidth": "84px"
+  },
+  {
+    "text": "分包商",
+    "id": 11,
+    "width": "122px",
+    "minWidth": "62px"
+  },
+  {
+    "text": "深化设计",
+    "id": 13,
+    "width": "134px",
+    "minWidth": "74px"
+  },
+  {
+    "text": "初验",
+    "id": 23,
+    "width": "108px",
+    "minWidth": "48px"
+  },
+  {
+    "text": "调试",
+    "id": 21,
+    "width": "108px",
+    "minWidth": "48px"
+  },
+  {
+    "text": "基础开挖及浇筑",
+    "id": 14,
+    "width": "178px",
+    "minWidth": "118px"
+  },
+  {
+    "text": "终验",
+    "id": 25,
+    "width": "108px",
+    "minWidth": "48px"
+  },
+  {
+    "text": "通网",
+    "id": 20,
+    "width": "108px",
+    "minWidth": "48px"
+  },
+  {
+    "text": "设备安装",
+    "id": 18,
+    "width": "134px",
+    "minWidth": "74px"
+  },
+  {
+    "text": "杆件安装",
+    "id": 17,
+    "width": "134px",
+    "minWidth": "74px"
+  },
+  {
+    "text": "试运行",
+    "id": 24,
+    "width": "122px",
+    "minWidth": "62px"
+  },
+  {
+    "text": "杆件到货",
+    "id": 15,
+    "width": "134px",
+    "minWidth": "74px"
+  },
+  {
+    "text": "接电",
+    "id": 19,
+    "width": "108px",
+    "minWidth": "48px"
+  },
+  {
+    "text": "接入",
+    "id": 22,
+    "width": "108px",
+    "minWidth": "48px"
+  },
+  {
+    "text": "主要设备到货",
+    "id": 16,
+    "width": "178px",
+    "minWidth": "118px"
+  },
+  {
+    "text": "运维",
+    "id": 26,
+    "width": "108px",
+    "minWidth": "48px"
+  }
+]

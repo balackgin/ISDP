@@ -1,0 +1,43 @@
+{
+  "table": {
+    "name": "project-list",
+    "tableOpts": {
+      "highlightCurrentRow": true,
+      "theme": "isdp",
+      "emptyText": "",
+      "inputProps": {
+        "props": ["rolename"],
+        "target": ["dblclick"],
+        "type": "callback"
+      }
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "type": "index",
+        "columnOpts": {
+          "width": 78,
+          "align": "center"
+        }
+      },
+      {
+        "label": "角色名称",
+        "prop": "roleName",
+        "columnOpts": {
+          "align": "center",
+          "size": "small",
+          "minWidth": 150
+        }
+      },
+      {
+        "label": "角色类型",
+        "prop": "roleClassify",
+        "columnOpts": {
+          "align": "center",
+          "size": "small",
+          "minWidth": 120
+        }
+      }
+    ]
+  }
+}

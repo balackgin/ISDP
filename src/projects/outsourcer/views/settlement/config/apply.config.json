@@ -1,0 +1,108 @@
+{
+  "payForm": {
+    "form": {
+      "labelPosition": "top",
+      "size": "small",
+      "showMessage": false,
+      "row": {
+        "gutter": 10
+      }
+    },
+    "group": [
+      {
+        "title": "",
+        "formItemConfig": [
+          {
+            "label": "工程合同",
+            "prop": "",
+            "type": "select",
+            "col": {
+              "span": 24
+            }
+          },
+          {
+            "label": "项目地址",
+            "prop": "",
+            "readonly": true,
+            "col": {
+              "span": 18
+            }
+          },
+          {
+            "label": "项目经理",
+            "prop": "",
+            "readonly": true,
+            "col": {
+              "span": 6
+            }
+          },
+          {
+            "label": "结算方式",
+            "prop": "",
+            "readonly": true,
+            "col": {
+              "span": 6
+            }
+          },
+          {
+            "label": "工程外包总价",
+            "prop": "",
+            "readonly": true,
+            "col": {
+              "span": 6
+            }
+          },
+          {
+            "type": "only-col",
+            "col": {
+              "span": 24
+            }
+          },
+          {
+            "label": "施工日期起",
+            "prop": "",
+            "type": "date-picker",
+            "col": {
+              "span": 6
+            }
+          },
+          {
+            "label": "止",
+            "prop": "",
+            "type": "date-picker",
+            "col": {
+              "span": 6
+            }
+          },
+          {
+            "label": "施工完成进度",
+            "prop": "",
+            "col": {
+              "span": 6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "payTable": {
+    "columns": [
+      {
+        "label": "序号",
+        "type": "index",
+        "align": "center"
+      },
+      {
+        "label": "资料名称",
+        "prop": "",
+        "width": "260px"
+      },
+      {
+        "label": "附件",
+        "prop": "",
+        "type": "enclosure",
+        "align": "center"
+      }
+    ]
+  }
+}

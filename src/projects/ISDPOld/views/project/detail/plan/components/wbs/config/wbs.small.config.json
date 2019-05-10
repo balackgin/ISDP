@@ -1,0 +1,99 @@
+{
+  "tableConfig": {
+    "name": "project-small-wbs",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": "",
+      "inputProps": {
+        "props": ["jobDescription", "planStartDate", "planEndDate"],
+        "target": ["dblclick"]
+      }
+    },
+
+    "columns": [
+      {
+        "label": "序号",
+        "align": "center",
+        "prop": "index",
+        "columnOpts": {
+          "width": 50
+        }
+      },
+      {
+        "label": "任务名称",
+        "prop": "jobDescription",
+        "columnOpts": {
+          "minWidth": 245,
+          "align": "left"
+        }
+      },
+      {
+        "label": "计划开始时间",
+        "prop": "planStartDate",
+        "columnOpts": {
+          "width": 120,
+          "align": "left",
+          "type": "date-picker"
+        }
+      },
+      {
+        "label": "计划完成时间",
+        "prop": "planEndDate",
+        "columnOpts": {
+          "width": 120,
+          "align": "left",
+          "type": "date-picker"
+        }
+      },
+      {
+        "label": "实际完成时间",
+        "prop": "actualEndDate",
+        "columnOpts": {
+          "width": 120,
+          "align": "left",
+          "type": "date-picker"
+        }
+      },
+      {
+        "label": "偏差天数",
+        "prop": "deviationDay",
+        "columnOpts": {
+          "minWidth": 80,
+          "align": "left"
+        }
+      },
+      {
+        "label": "偏差问题说明",
+        "prop": "deviationExplain",
+        "columnOpts": {
+          "minWidth": 200,
+          "type": "textarea",
+          "col": {
+            "span": 24
+          },
+          "autosize": {
+            "minRows": 3
+          }
+        }
+      },
+      {
+        "label": "操作",
+        "type": "action-icons",
+        "columnOpts": {
+          "width": 100,
+          "align": "center",
+          "fixed": "right",
+          "icons": [
+            {
+              "name": "remove",
+              "title": "删除",
+              "className": "text-danger",
+              "text": "删除"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

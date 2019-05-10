@@ -1,0 +1,314 @@
+[
+  {
+    "title": "在建项目状态",
+    "name": "projectStatus",
+    "echart": {
+      "name": "projectStatus",
+      "tooltip": {
+        "trigger": "item",
+        "formatter": "{a} <br/>{b}: {c} ({d}%)",
+        "confine": true
+      },
+      "legend": {
+        "orient": "vertical",
+        "align": "left",
+        "x": "right",
+        "data": ["正常", "延后"],
+        "itemWidth": 14,
+        "itemHeight": 14,
+        "borderRadius": 0
+      },
+      "series": [
+        {
+          "name": "在建项目状态",
+          "type": "pie",
+          "center": ["50%", "50%"],
+          "radius": ["40%", "70%"],
+          "avoidLabelOverlap": true,
+          "label": {
+            "show": true,
+            "position": "inside",
+            "formatter": "{c}",
+            "fontFamily": "宋体",
+            "color": "#fff"
+          },
+          "labelLine": {
+            "normal": {
+              "show": false
+            }
+          },
+          "hoverOffset": 4,
+          "itemStyle": {
+            "borderWidth": 0
+          },
+          "data": [
+            { "value": 0, "name": "正常" },
+            { "value": 0, "name": "延后" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "在建项目等级分布",
+    "name": "projectLevel",
+    "echart": {
+      "name": "projectLevel",
+      "tooltip": {
+        "trigger": "item",
+        "formatter": "{a} <br/>{b}: {c} ({d}%)",
+        "confine": true
+      },
+      "legend": {
+        "orient": "vertical",
+        "align": "left",
+        "x": "right",
+        "data": ["S级", "A级", "B级", "C级"],
+        "itemWidth": 14,
+        "itemHeight": 14,
+        "borderRadius": 0
+      },
+      "series": [
+        {
+          "name": "在建项目等级分布",
+          "type": "pie",
+          "center": ["50%", "50%"],
+          "radius": ["40%", "70%"],
+          "avoidLabelOverlap": true,
+          "label": {
+            "show": true,
+            "position": "inside",
+            "formatter": "{c}",
+            "fontFamily": "宋体",
+            "color": "#fff"
+          },
+          "labelLine": {
+            "normal": {
+              "show": false
+            }
+          },
+          "hoverOffset": 4,
+          "itemStyle": {
+            "borderWidth": 0
+          },
+          "data": [
+            { "value": 0, "name": "S级" },
+            { "value": 0, "name": "A级" },
+            { "value": 0, "name": "B级" },
+            { "value": 0, "name": "C级" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "合同签订情况",
+    "name": "contractStatus",
+    "echart": {
+      "name": "contractStatus",
+      "tooltip": {
+        "trigger": "item",
+        "formatter": "{a} <br/>{b}: {c} ({d}%)",
+        "confine": true
+      },
+      "legend": {
+        "orient": "vertical",
+        "align": "left",
+        "x": "right",
+        "data": ["已签订", "未签订"],
+        "itemWidth": 14,
+        "itemHeight": 14,
+        "borderRadius": 0
+      },
+      "series": [
+        {
+          "name": "合同签订情况",
+          "type": "pie",
+          "center": ["50%", "50%"],
+          "radius": ["40%", "70%"],
+          "avoidLabelOverlap": true,
+          "label": {
+            "show": true,
+            "position": "inside",
+            "formatter": "{c}",
+            "fontFamily": "宋体",
+            "color": "#fff"
+          },
+          "labelLine": {
+            "normal": {
+              "show": false
+            }
+          },
+          "hoverOffset": 4,
+          "itemStyle": {
+            "borderWidth": 0
+          },
+          "data": [
+            { "value": 0, "name": "已签订" },
+            { "value": 0, "name": "未签订" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "hide": true,
+    "title": "项目预测数量/金额",
+    "name": "projectMoney",
+    "echart": {
+      "name": "projectMoney",
+      "tooltip": {
+        "trigger": "item",
+        "formatter": "{a} <br/>{b}: {c} ({d}%)",
+        "confine": true
+      },
+      "legend": {
+        "orient": "vertical",
+        "align": "left",
+        "x": "right",
+        "data": ["招投标", "合同评审"],
+        "itemWidth": 14,
+        "itemHeight": 14,
+        "borderRadius": 0
+      },
+      "series": [
+        {
+          "name": "项目预测数量/金额",
+          "type": "pie",
+          "center": ["50%", "50%"],
+          "radius": [0, "70%"],
+          "avoidLabelOverlap": true,
+          "label": {
+            "show": true,
+            "position": "inside",
+            "formatter": "{c}",
+            "fontFamily": "宋体",
+            "color": "#fff"
+          },
+          "labelLine": {
+            "normal": {
+              "show": false
+            }
+          },
+          "hoverOffset": 4,
+          "itemStyle": {
+            "borderWidth": 0
+          },
+          "data": [
+            { "value": 15, "name": "招投标", "selected": true },
+            { "value": 10, "name": "合同评审" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "hide": true,
+    "title": "近3个月验收计划",
+    "name": "projectPlan",
+    "echart": {
+      "name": "projectPlan",
+      "barMaxWidth": 40,
+      "tooltip": {
+        "show": true
+      },
+      "legend": {
+        "data": ["计划验收金额(万元)"],
+        "show": true
+      },
+      "grid": {
+        "left": 60
+      },
+      "xAxis": {
+        "type": "category",
+        "axisTick": {
+          "show": false
+        },
+        "data": ["1月", "2月", "3月"]
+      },
+      "yAxis": {
+        "type": "value",
+        "axisTick": {
+          "show": false
+        }
+      },
+      "series": [
+        {
+          "name": "计划验收金额(万元)",
+          "data": [10002, 10002, 10002],
+          "type": "bar",
+          "color": ["#86C7EB"]
+        }
+      ]
+    }
+  },
+  {
+    "hide": true,
+    "title": "验收完成情况",
+    "name": "projectCompleteStatus",
+    "echart": {
+      "name": "projectCompleteStatus",
+      "textStyle": {
+        "align": "center",
+        "width": "100%"
+      },
+      "tooltip": {
+        "show": true
+      },
+      "legend": {
+        "data": ["验收金额(万元)"],
+        "show": true
+      },
+      "grid": {
+        "left": 60
+      },
+      "xAxis": {
+        "type": "category",
+        "axisTick": {
+          "show": false
+        },
+        "data": [
+          "1月",
+          "2月",
+          "3月",
+          "4月",
+          "5月",
+          "6月",
+          "7月",
+          "8月",
+          "9月",
+          "10月",
+          "11月",
+          "12月"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "axisTick": {
+          "show": false
+        }
+      },
+      "series": [
+        {
+          "name": "验收金额(万元)",
+          "data": [
+            10002,
+            6000,
+            10002,
+            10002,
+            5000,
+            10002,
+            10002,
+            10002,
+            10002,
+            10002,
+            10002,
+            10002
+          ],
+          "type": "bar",
+          "color": ["#86C7EB"]
+        }
+      ]
+    }
+  }
+]

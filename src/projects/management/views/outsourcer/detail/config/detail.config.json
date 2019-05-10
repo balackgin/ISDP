@@ -1,0 +1,279 @@
+{
+  "detailOpts": {
+    "col": {
+      "span": 6,
+      "md": 6,
+      "sm": 8
+    }
+  },
+  "detailGroup": [
+    {
+      "detailGroupOpts": {},
+      "detailItems": [
+        {
+          "label": "单据编号:",
+          "prop": "serialNo",
+          "detailItemOpts": {}
+        },
+        {
+          "label": "申请日期:",
+          "prop": "modifyDate"
+        },
+        {
+          "label": "审批状态:",
+          "prop": "approvalStatus",
+          "detailItemOpts": {
+            "col": {
+              "span": 12,
+              "md": 12,
+              "sm": 8
+            }
+          }
+        }
+      ]
+    },
+    {
+      "detailItems": [
+        {
+          "label": "申请单位:",
+          "prop": "contractCompany",
+          "detailItemOpts": {
+            "col": {
+              "span": 24
+            },
+            "testStyle": {
+              "fontWeight": 900
+            }
+          }
+        },
+        {
+          "label": "注册资金(万元):",
+          "prop": "registeredFund",
+          "detailItemOpts": {
+            "col": {
+              "span": 24
+            }
+          }
+        },
+        {
+          "label": "联系人:",
+          "prop": "contactMan",
+          "detailItemOpts": {
+            "col": {
+              "span": 6
+            }
+          }
+        },
+        {
+          "label": "联系人电话:",
+          "prop": "contactTel",
+          "detailItemOpts": {
+            "col": {
+              "span": 6
+            }
+          }
+        },
+        {
+          "label": "联系人邮箱:",
+          "prop": "email",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "通讯地址:",
+          "prop": "postalAddress",
+          "detailItemOpts": {
+            "col": {
+              "span": 24
+            }
+          }
+        },
+        {
+          "label": "所属类别:",
+          "prop": "contractorType",
+          "detailItemOpts": {
+            "col": {
+              "span": 6
+            }
+          }
+        },
+        {
+          "label": "设计类认证等级:",
+          "prop": "designClassify",
+          "type": "edit",
+          "detailItemOpts": {
+            "col": {
+              "span": 6
+            },
+            "type": "select",
+            "select": [
+              {
+                "label": "请选择",
+                "value": ""
+              },
+              {
+                "label": "甲级",
+                "value": "甲级"
+              },
+              {
+                "label": "乙级",
+                "value": "乙级"
+              },
+              {
+                "label": "丙级",
+                "value": "丙级"
+              },
+              {
+                "label": "丁级",
+                "value": "丁级"
+              }
+            ]
+          }
+        },
+        {
+          "label": "施工类认证等级:",
+          "prop": "constructClassify",
+          "type": "input",
+          "detailItemOpts": {
+            "type": "select",
+            "select": [
+              {
+                "label": "请选择",
+                "value": ""
+              },
+              {
+                "label": "甲级",
+                "value": "甲级"
+              },
+              {
+                "label": "乙级",
+                "value": "乙级"
+              },
+              {
+                "label": "丙级",
+                "value": "丙级"
+              },
+              {
+                "label": "丁级",
+                "value": "丁级"
+              }
+            ],
+            "col": {
+              "span": 6
+            }
+          }
+        },
+        {
+          "label": "可承接项目区域:",
+          "prop": "projectArea",
+          "detailItemOpts": {
+            "col": {
+              "span": 6
+            }
+          }
+        },
+        {
+          "label": "可承接项目类型:",
+          "prop": "projectType",
+          "detailItemOpts": {
+            "col": {
+              "span": 6
+            }
+          }
+        },
+        {
+          "label": "开户行",
+          "prop": "bankDeposit",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "开户行账号:",
+          "prop": "bankAccountNo",
+          "detailItemOpts": {
+            "col": {
+              "span": 6
+            }
+          }
+        },
+        {
+          "label": "推荐人:",
+          "prop": "referrer",
+          "detailItemOpts": {
+            "col": {
+              "span": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "detailItems": [
+        {
+          "label": "营业执照:",
+          "prop": "businessLicense",
+          "type": ["list", "file"],
+          "detailItemOpts": {
+            "col": {
+              "span": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "detailItems": [
+        {
+          "label": "人员情况:",
+          "prop": "staffCountArr",
+          "type": "list",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "设备情况:",
+          "prop": "equipmentCountArr",
+          "type": "list",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        }
+      ]
+    },
+    {
+      "detailItems": [
+        {
+          "label": "车辆情况:",
+          "prop": "vehicleCountArr",
+          "type": "list",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "近两年同类业绩:",
+          "prop": "achievementArray",
+          "type": "list",
+          "detailItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

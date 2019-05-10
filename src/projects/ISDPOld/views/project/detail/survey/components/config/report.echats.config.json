@@ -1,0 +1,146 @@
+[
+  {
+    "title": "项目问题数量",
+    "name": "projectNums",
+    "echart": {
+      "name": "projectNums",
+      "tooltip": {
+        "trigger": "item",
+        "formatter": "{a} <br/>{b}: {c} ({d}%)",
+        "confine": true
+      },
+      "legend": {
+        "orient": "vertical",
+        "align": "left",
+        "x": "right",
+        "data": ["open", "Pending", "ReOpen", "Validated"],
+        "itemWidth": 14,
+        "itemHeight": 14,
+        "borderRadius": 0
+      },
+      "series": [
+        {
+          "name": "项目问题数量",
+          "type": "pie",
+          "center": ["50%", "50%"],
+          "radius": ["40%", "70%"],
+          "avoidLabelOverlap": true,
+          "label": {
+            "show": true,
+            "position": "inside",
+            "formatter": "{c}",
+            "fontFamily": "宋体",
+            "color": "#fff"
+          },
+          "labelLine": {
+            "normal": {
+              "show": false
+            }
+          },
+          "hoverOffset": 4,
+          "itemStyle": {
+            "borderWidth": 0
+          },
+          "data": [
+            { "value": 0, "name": "open" },
+            { "value": 0, "name": "Pending" },
+            { "value": 0, "name": "ReOpen" },
+            { "value": 0, "name": "Validated" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "未关闭问题重要程度分布",
+    "name": "projectStatusNums",
+    "echart": {
+      "name": "projectStatusNums",
+      "tooltip": {
+        "trigger": "item",
+        "formatter": "{a} <br/>{b}: {c} ({d}%)",
+        "confine": true
+      },
+      "legend": {
+        "orient": "vertical",
+        "align": "left",
+        "x": "right",
+        "data": ["紧急重要", "重要", "紧急", "一般"],
+        "itemWidth": 14,
+        "itemHeight": 14,
+        "borderRadius": 0
+      },
+      "series": [
+        {
+          "name": "未关闭问题重要程度分布",
+          "type": "pie",
+          "center": ["50%", "50%"],
+          "radius": ["40%", "70%"],
+          "avoidLabelOverlap": true,
+          "label": {
+            "show": true,
+            "position": "inside",
+            "formatter": "{c}",
+            "fontFamily": "宋体",
+            "color": "#fff"
+          },
+          "labelLine": {
+            "normal": {
+              "show": false
+            }
+          },
+          "hoverOffset": 4,
+          "itemStyle": {
+            "borderWidth": 0
+          },
+          "data": [
+            { "value": 0, "name": "紧急重要" },
+            { "value": 0, "name": "紧急" },
+            { "value": 0, "name": "重要" },
+            { "value": 0, "name": "一般" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "hide": true,
+    "title": "任务推进及时率",
+    "name": "taskProcess",
+    "echart": {
+      "name": "taskProcess",
+      "barMaxWidth": 30,
+      "tooltip": {
+        "show": true
+      },
+      "legend": {
+        "data": ["及时率"],
+        "show": true
+      },
+      "grid": {
+        "left": 60
+      },
+      "xAxis": {
+        "type": "category",
+        "axisTick": {
+          "show": false
+        },
+        "data": ["商务组", "售前组", "交付组", "财经法务", "采购组", "支撑组"]
+      },
+      "yAxis": {
+        "type": "value",
+        "axisTick": {
+          "show": false
+        }
+      },
+      "series": [
+        {
+          "name": "及时率",
+          "data": [0, 0, 0, 0, 0, 0],
+          "type": "bar",
+          "color": ["#86C7EB"]
+        }
+      ]
+    }
+  }
+]

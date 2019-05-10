@@ -1,0 +1,46 @@
+{
+  "tableConfig": {
+    "name": "project-list",
+    "maxHeight": "500px",
+    "highlightCurrentRow": true,
+    "emptyText": "",
+    "columns": [{
+        "label": "序号",
+        "type": "index",
+        "align": "center"
+      },
+      {
+        "label": "点位名称",
+        "prop": ""
+      },
+      {
+        "label": "点位编码",
+        "prop": ""
+      },
+      {
+        "label": "子系统类型",
+        "prop": ""
+      },
+      {
+        "label": "项目状态",
+        "prop": ""
+      },
+      {
+        "label": "区域",
+        "prop": ""
+      },
+      {
+        "label": "当前施工人",
+        "prop": ""
+      },
+      {
+        "label": "最近更新时间",
+        "prop": ""
+      },
+      {
+        "label": "状态",
+        "prop": ""
+      }
+    ]
+  }
+}

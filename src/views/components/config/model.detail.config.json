@@ -1,0 +1,55 @@
+{
+  "detailOpts": {
+    "col": {
+      "span": 8
+    }
+  },
+  "detailGroup": [
+    {
+      "detailGroupOpts": {},
+      "detailItems": [
+        {
+          "label": "undifined",
+          "prop": "detail1",
+          "detailItemOpts": {}
+        }
+      ]
+    },
+    {
+      "detailItems": [
+        {
+          "label": "formItem",
+          "prop": "detail2",
+          "type": "formItem"
+        }
+      ]
+    },
+    {
+      "detailItems": [
+        {
+          "label": "list",
+          "prop": "detail3",
+          "type": "list"
+        }
+      ]
+    },
+    {
+      "detailItems": [
+        {
+          "label": "list,file",
+          "prop": "detail4",
+          "type": ["list", "file"]
+        }
+      ]
+    },
+    {
+      "detailItems": [
+        {
+          "label": "fileLink",
+          "prop": "detail5",
+          "type": "fileLink"
+        }
+      ]
+    }
+  ]
+}

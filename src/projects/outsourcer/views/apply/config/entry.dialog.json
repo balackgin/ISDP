@@ -1,0 +1,385 @@
+{
+  "comment": "outside-dialog: options",
+  "qualifications": {
+    "comments": "企业资质信息  enterpriseCertificateArray",
+    "type": "form",
+    "name": "dialog-qualifications",
+    "title": "添加企业资质证书",
+    "data": {
+      "_name": "dialog-qualifications",
+      "_index": 0,
+      "id": "",
+      "certificateNo": "",
+      "certificateName": "",
+      "certificateLeve": "",
+      "expireDate": "",
+      "version": 0,
+      "attachmentArray": []
+    },
+    "formOpts": {
+      "labelPosition": "right",
+      "labelWidth": "120px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "formGroup": [{
+      "title": "",
+      "name": "dialog-qualifications",
+      "formItems": [{
+          "label": "资质证书名称",
+          "prop": "certificateName",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 24
+            }
+          }
+        },
+        {
+          "label": "证书编号",
+          "prop": "certificateNo",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "截止有效期",
+          "prop": "expireDate",
+          "required": true,
+          "type": "date-picker",
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "证书附件",
+          "name": "qualifications-file",
+          "prop": "attachmentArray",
+          "type": "upload-theme2",
+          "formItemOpts": {
+            "name": "file",
+            "autoUpload": true,
+            "showFileList": true,
+            "limit": 5,
+            "col": {
+              "span": 24
+            },
+            "file": {
+              "message": "只能上传jpg/png/psd文件,且不超过50M!",
+              "size": 52428800,
+              "format": ["png", "jpeg", "pdd", "psd", "jpg"],
+              "sizeErrMsg": "文件大小不能超过10M",
+              "formatErrMsg": "只能上传png,jpg,jpeg,psd格式的文件!"
+            }
+          }
+        }
+      ]
+    }]
+  },
+  "personnel": {
+    "comments": "员工信息  staffArray",
+    "type": "form",
+    "name": "dialog-personnel",
+    "title": "添加主要人员详情",
+    "data": {
+      "_name": "dialog-personnel",
+      "_index": 0,
+      "id": "",
+      "staffName": "",
+      "duty": "",
+      "technicalTitle": "",
+      "specialty": "",
+      "idNumber": "",
+      "version": 0,
+      "attachmentArray": []
+    },
+    "formOpts": {
+      "labelPosition": "right",
+      "labelWidth": "106px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "formGroup": [{
+      "title": "",
+      "name": "dialog-personnel",
+      "formItems": [{
+          "label": "姓名",
+          "prop": "staffName",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "职务",
+          "prop": "duty",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "职称",
+          "prop": "technicalTitle",
+          "type": "select",
+
+          "formItemOpts": {
+            "select": [],
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "专业",
+          "prop": "specialty",
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "身份证号码",
+          "prop": "idNumber",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 24
+            }
+          }
+        },
+        {
+          "label": "证书附件",
+          "prop": "attachmentArray",
+          "name": "personnel-file",
+          "type": "upload-theme2",
+          "formItems": {
+            "name": "file",
+            "autoUpload": true,
+            "showFileList": true,
+            "file": {
+              "message": "只能上传jpg/png/psd文件,且不超过50M!",
+              "size": 52428800,
+              "format": ["png", "jpeg", "pdd", "psd", "jpg"],
+              "sizeErrMsg": "文件大小不能超过10M",
+              "formatErrMsg": "只能上传png,jpg,jpeg,psd格式的文件!"
+            },
+            "col": {
+              "span": 12
+            }
+          }
+        }
+      ]
+    }]
+  },
+  "vehicle": {
+    "type": "form",
+    "name": "dialog-vehicle",
+    "title": "添加主要车辆详情",
+    "data": {
+      "_name": "dialog-vehicle",
+      "_index": 0,
+      "id": "",
+      "manufactureInfo": "",
+      "vehicleType": "",
+      "count": "",
+      "value": "",
+      "version": 0
+    },
+    "formOpts": {
+      "labelPosition": "right",
+      "labelWidth": "120px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "formGroup": [{
+      "title": "",
+      "name": "dialog-vehicle",
+      "formItems": [{
+          "label": "车辆名称",
+          "prop": "vehicleType",
+          "type": "select",
+          "required": true,
+          "formItemOpts": {
+            "filterable": true,
+            "allowCreate": true,
+            "select": [],
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "型号/出厂日期",
+          "prop": "manufactureInfo",
+          "formItemOpts": {
+            "col": {
+              "span": 24
+            }
+          }
+        },
+        {
+          "label": "数量",
+          "prop": "count",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "价值(万元)",
+          "prop": "value",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        }
+      ]
+    }]
+  },
+  "achievement": {
+    "type": "form",
+    "name": "dialog-achievement",
+    "title": "添加业绩详情",
+    "data": {
+      "_name": "dialog-achievement",
+      "_index": 0,
+      "id": "",
+      "projectName": "",
+      "projectAmount": "",
+      "cycle": [],
+      "startDate": "",
+      "endDate": "",
+      "constructorCompany": "",
+      "constructorContacter": "",
+      "constructorContacterTel": "",
+      "projectManager": "",
+      "projectStatus": "",
+      "version": 0
+    },
+    "formOpts": {
+      "labelPosition": "right",
+      "labelWidth": "140px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "formGroup": [{
+      "title": "",
+      "name": "dialog-achievement",
+      "formItems": [{
+          "label": "项目名称",
+          "prop": "projectName",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 24
+            }
+          }
+        },
+        {
+          "label": "项目金额(万元)",
+          "prop": "projectAmount",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "实施周期",
+          "prop": "cycle",
+          "type": "date-range",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "建设单位",
+          "prop": "constructorCompany",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 24
+            }
+          }
+        },
+        {
+          "label": "建设单位联系人",
+          "prop": "constructorContacter",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "联系人电话",
+          "prop": "constructorContacterTel",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        },
+        {
+          "label": "项目经理",
+          "prop": "projectManager",
+          "required": true,
+          "formItemOpts": {
+            "col": {
+              "span": 12
+            }
+          }
+        }
+      ]
+    }]
+  }
+}

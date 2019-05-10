@@ -1,0 +1,266 @@
+[
+  {
+    "index": "商务",
+    "childrenId": "aa",
+    "level": 1,
+    "_len": "all",
+    "id": 1,
+    "icons": [
+      {
+        "name": "remove",
+        "title": "删除",
+        "className": "text-danger",
+        "text": "删除"
+      }
+    ],
+    "_span": {
+      "config": [
+        {
+          "index": 0,
+          "len": 11,
+          "type": "merge-row",
+          "align": "left"
+        }
+      ]
+    }
+  },
+  {
+    "index": "一",
+    "dutyPerson": "项目启动",
+    "taskName": "客户沟通机制",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "progress": "进度",
+    "problemMessage": "planEndDate",
+    "parentId": "aa",
+    "childrenId": "bb",
+    "level": 2,
+    "id": 2,
+    "icons": [
+      {
+        "name": "remove",
+        "title": "删除",
+        "className": "text-danger",
+        "text": "删除"
+      }
+    ],
+    "_span": {
+      "config": [
+        {
+          "index": 1,
+          "len": 10,
+          "type": "merge-row",
+          "align": "left"
+        }
+      ]
+    }
+  },
+  {
+    "index": "3",
+    "dutyPerson": 3,
+    "taskName": "客户沟通机制建立",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "progress": "进度",
+    "problemMessage": "planEndDate",
+    "parentId": "bb",
+    "level": 3,
+    "id": 3,
+    "align": "left"
+  },
+  {
+    "index": "二",
+    "dutyPerson": "项目启动",
+    "taskName": "客户沟通机制",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "progress": "进度",
+    "childrenId": "bb2",
+    "problemMessage": "planEndDate",
+    "parentId": "aa",
+    "level": 2,
+    "id": 4,
+    "_span": {
+      "config": [
+        {
+          "index": 1,
+          "len": 10,
+          "type": "merge-row",
+          "align": "left"
+        }
+      ]
+    }
+  },
+  {
+    "index": "3",
+    "dutyPerson": 3,
+    "taskName": "细化报价清单",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "progress": "进度",
+    "problemMessage": "planEndDate",
+    "parentId": "bb2",
+    "level": 3,
+    "id": 5,
+    "align": "left"
+  },
+  {
+    "index": "3",
+    "dutyPerson": 3,
+    "taskName": "甲方客户要求我们提供使用在该项目中的硬件、软件、技术的专利/版权相关文件资料。",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "progress": "进度",
+    "problemMessage": "planEndDate",
+    "parentId": "bb2",
+    "level": 3,
+    "id": 6,
+    "align": "left"
+  },
+  {
+    "index": "3",
+    "dutyPerson": 3,
+    "taskName": "合同评审/无合同启动流程",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "progress": "进度",
+    "problemMessage": "",
+    "parentId": "bb2",
+    "level": 3,
+    "id": 7,
+    "align": "left"
+  },
+  {
+    "index": "销售",
+    "childrenId": "cc",
+    "level": 1,
+    "_len": "all",
+    "id": 8,
+    "icons": [
+      {
+        "name": "remove",
+        "title": "删除",
+        "className": "text-danger",
+        "text": "删除"
+      }
+    ],
+    "_span": {
+      "config": [
+        {
+          "index": 0,
+          "len": 11,
+          "type": "merge-row",
+          "align": "left"
+        }
+      ]
+    }
+  },
+  {
+    "index": "一",
+    "dutyPerson": "项目启动",
+    "taskName": "项目启动",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "childrenId": "dd1",
+    "level": 2,
+    "progress": "进度",
+    "problemMessage": "",
+    "parentId": "cc",
+    "id": 9,
+    "_span": {
+      "config": [
+        {
+          "index": 1,
+          "len": 10,
+          "type": "merge-row",
+          "align": "left"
+        }
+      ]
+    }
+  },
+  {
+    "index": "3",
+    "dutyPerson": 3,
+    "taskName": "项目交底（协助）",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "progress": "进度",
+    "problemMessage": "",
+    "parentId": "dd1",
+    "level": 3,
+    "id": 10,
+    "align": "left"
+  },
+  {
+    "index": "3",
+    "dutyPerson": 3,
+    "taskName": "项目启动会（协助）",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "progress": "进度",
+    "problemMessage": "",
+    "parentId": "dd1",
+    "level": 3,
+    "id": 11,
+    "align": "left"
+  },
+  {
+    "index": "3",
+    "dutyPerson": 3,
+    "taskName": "项目启动会4444（协助）",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "progress": "进度",
+    "problemMessage": "",
+    "parentId": "dd1",
+    "level": 3,
+    "id": 12,
+    "align": "left"
+  },
+  {
+    "index": "3",
+    "dutyPerson": 3,
+    "taskName": "项目启动会1111（协助）",
+    "dutyDepartment": "安全部",
+    "supportPerson": "李峰",
+    "planStartDate": "2018-12-12",
+    "planEndDate": "2018-12-22",
+    "deviationDays": "偏差天数",
+    "progress": "进度",
+    "problemMessage": "planEndDate",
+    "parentId": "dd1",
+    "level": 3,
+    "id": 13,
+    "align": "left"
+  }
+]

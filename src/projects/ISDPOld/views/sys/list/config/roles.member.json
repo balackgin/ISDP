@@ -1,0 +1,21 @@
+[{
+    "index": 1,
+    "rolesname": "售后",
+    "level": 1,
+    "username": "张三",
+    "userno": 123123
+  },
+  {
+    "index": 2,
+    "level": 1,
+    "rolesname": "售前咨询",
+    "username": "李四",
+    "userno": 123123
+  }, {
+    "index": 3,
+    "level": 1,
+    "rolesname": "售中",
+    "username": "王五",
+    "userno": 123123
+  }
+]

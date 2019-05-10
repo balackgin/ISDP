@@ -1,0 +1,17 @@
+{
+  "role": {
+    "title": "项目团队",
+    "btns": [{
+      "text": "添加",
+      "type": "iconAdd",
+      "fnName": "addNewRow"
+    }]
+  },
+  "power": {
+    "title": "",
+    "btns": [{
+      "text": "导出",
+      "fnName": "getTeamTreeExport"
+    }]
+  }
+}

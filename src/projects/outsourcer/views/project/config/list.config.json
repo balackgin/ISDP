@@ -1,0 +1,71 @@
+{
+  "searchObj": {
+    "name": "",
+    "date": "",
+    "status": ""
+  },
+  "formItems": [{
+      "label": "合同名称",
+      "prop": "name"
+    },
+    {
+      "label": "创建日期",
+      "type": "date-picker",
+      "prop": "date"
+    },
+    {
+      "label": "项目状态",
+      "type": "select",
+      "prop": "status",
+      "select": [{
+        "label": "请选择",
+        "value": ""
+      }]
+    }
+  ],
+  "btns": [{
+    "text": "搜索",
+    "name": "search",
+    "type": "danger"
+  }],
+  "tableConfig": {
+    "name": "project-list",
+    "maxHeight": "500px",
+    "highlightCurrentRow": true,
+    "emptyText": "",
+    "columns": [{
+        "label": "序号",
+        "type": "index",
+        "align": "center"
+      },
+      {
+        "label": "工程合同编号",
+        "prop": ""
+      },
+      {
+        "label": "工程合同名称",
+        "prop": ""
+      },
+      {
+        "label": "项目类型",
+        "prop": ""
+      },
+      {
+        "label": "项目状态",
+        "prop": ""
+      },
+      {
+        "label": "项目经理",
+        "prop": ""
+      },
+      {
+        "label": "创建时间",
+        "prop": ""
+      },
+      {
+        "label": "项目施工进度",
+        "prop": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "table": {
+    "name": "project-list",
+    "tableOpts": {
+      "maxHeight": 500,
+      "highlightCurrentRow": true,
+      "emptyText": ""
+    },
+    "columns": [
+      {
+        "label": "序号",
+        "type": "index",
+        "columnOpts": {
+          "align": "center"
+        }
+      },
+      {
+        "label": "单据编号",
+        "prop": "rowId",
+        "type": "link",
+        "columnOpts": {
+          "href": "detailUrl"
+        }
+      },
+      {
+        "label": "商机名称",
+        "prop": "opptyName",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "项目操作类别",
+        "prop": "authName",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "投标业务实体",
+        "prop": "tenderEntity",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "投标结果",
+        "prop": "biddingRe",
+        "columnOpts": {
+          "width": 110
+        }
+      },
+      {
+        "label": "当前待审批人",
+        "prop": "ftaskers",
+        "columnOpts": {
+          "minWidth": 100
+        }
+      },
+      {
+        "label": "审批状态",
+        "prop": "fmulticheckstatus"
+      },
+      {
+        "label": "区域",
+        "prop": "area"
+      },
+
+      {
+        "label": "申请时间",
+        "prop": "bidCreated",
+        "columnOpts": {
+          "minWidth": 90
+        }
+      },
+      {
+        "label": "申请人",
+        "prop": "creator",
+        "columnOpts": {
+          "minWidth": 120
+        }
+      }
+    ]
+  }
+}

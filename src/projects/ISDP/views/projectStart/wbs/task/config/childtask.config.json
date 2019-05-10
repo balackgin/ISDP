@@ -1,0 +1,26 @@
+{
+  "tableOpts": {
+    "theme": "isdp",
+    "inputProps": {
+      "target": ["dblclick"],
+      "props": ["test"]
+    }
+  },
+  "columns": [
+    {
+      "label": "任务名称",
+      "prop": "jobName",
+      "columnOpts": {
+        "align": "left"
+      }
+    },
+    {
+      "label": "状态",
+      "prop": "progressStatus",
+      "columnOpts": {
+        "align": "left",
+        "width": 110
+      }
+    }
+  ]
+}

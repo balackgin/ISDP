@@ -1,0 +1,88 @@
+{
+  "tableOpts": {
+    "theme": "isdp",
+    "autoHeight": true,
+    "inputProps": {
+      "target": ["dblclick"],
+      "props": ["test"]
+    }
+  },
+  "columns": [{
+      "label": "交付件名称",
+      "prop": "name",
+      "columnOpts": {
+        "align": "center",
+        "minWidth": 120
+      }
+    },
+    {
+      "label": "是否必须",
+      "prop": "isMustFill",
+      "type": "obj",
+      "columnOpts": {
+        "minWidth": 110,
+        "align": "center",
+        "obj": {
+          "0": "否",
+          "1": "是"
+        }
+      }
+    },
+    {
+      "label": "是否按模板反馈",
+      "prop": "feedbackByTemplate",
+      "type": "obj",
+      "columnOpts": {
+        "minWidth": 150,
+        "align": "center",
+        "obj": {
+          "0": "否",
+          "1": "是"
+        }
+      }
+    },
+    {
+      "label": "上传状态",
+      "prop": "uploadStatus",
+      "type": "obj",
+      "columnOpts": {
+        "minWidth": 110,
+        "obj": {
+          "0": "未上传",
+          "1": "已上传"
+        }
+      }
+    },
+    {
+      "label": "模板下载",
+      "prop": "download",
+      "type": "action-icons",
+      "columnOpts": {
+        "align": "center",
+        "minWidth": 110,
+        "icons": []
+      }
+    },
+    {
+      "label": "附件上传",
+      "prop": "partFileUpload",
+      "type": "action-icons",
+      "columnOpts": {
+        "align": "center",
+        "minWidth": 110,
+        "icons": []
+      }
+    },
+    {
+      "label": "操作",
+      "prop": "operate",
+      "type": "action-icons",
+      "columnOpts": {
+        "fixed": "right",
+        "align": "center",
+        "minWidth": 110,
+        "icons": []
+      }
+    }
+  ]
+}

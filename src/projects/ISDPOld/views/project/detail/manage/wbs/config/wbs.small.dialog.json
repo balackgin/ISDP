@@ -1,0 +1,215 @@
+{
+  "WBS_SMALL": {
+    "comments": "企业资质信息  enterpriseCertificateArray",
+    "type": "form",
+    "name": "dialog-editWBS",
+    "title": "编辑WBS计划",
+    "data": {
+      "_name": "dialog-editWBS",
+      "_index": 1,
+      "id": "",
+      "projectModule": "",
+      "childTask": "",
+      "taskName": "",
+      "dutyPersonName": "",
+      "dutyDepartment": "",
+      "planStartDate": "",
+      "planEndDate": "",
+      "actualEndDate": "",
+      "supportPerson": "",
+      "deviationDays": "",
+      "progress": ""
+    },
+    "select": [
+      [{
+          "label": "请选择",
+          "value": ""
+        },
+        {
+          "label": "整体组组长",
+          "value": "整体组组长"
+        },
+        {
+          "label": "整体组副组长",
+          "value": "整体组副组长"
+        },
+        {
+          "label": "财务负责人",
+          "value": "财务负责人"
+        },
+        {
+          "label": "法务负责人",
+          "value": "法务负责人"
+        },
+        {
+          "label": "运营负责人",
+          "value": "运营负责人"
+        },
+        {
+          "label": "项目经理(PM)",
+          "value": "项目经理(PM)"
+        },
+        {
+          "label": "销售负责人",
+          "value": "销售负责人"
+        },
+        {
+          "label": "解决方案负责人",
+          "value": "解决方案负责人"
+        },
+        {
+          "label": "供应链负责人",
+          "value": "供应链负责人"
+        },
+        {
+          "label": "采购负责人",
+          "value": "采购负责人"
+        }
+      ],
+      [{
+          "label": "请选择",
+          "value": ""
+        },
+        {
+          "label": "项目经理(PM)",
+          "value": "项目经理(PM)"
+        },
+        {
+          "label": "项目经理助理(PCM)",
+          "value": "项目经理助理(PCM)"
+        },
+        {
+          "label": "技术负责人(TD)",
+          "value": "技术负责人(TD)"
+        },
+        {
+          "label": "技术支持工程师",
+          "value": "技术支持工程师"
+        },
+        {
+          "label": "解决方案工程师",
+          "value": "解决方案工程师"
+        },
+        {
+          "label": "软件交付经理",
+          "value": "软件交付经理"
+        },
+        {
+          "label": "软件交付技术支持工程师",
+          "value": "软件交付技术支持工程师"
+        },
+        {
+          "label": "外场负责人",
+          "value": "外场负责人"
+        },
+        {
+          "label": "内场负责人",
+          "value": "内场负责人"
+        },
+        {
+          "label": "物料员",
+          "value": "物料员"
+        },
+        {
+          "label": "项目仓管员",
+          "value": "项目仓管员"
+        },
+        {
+          "label": "安全员",
+          "value": "安全员"
+        },
+        {
+          "label": "质量员",
+          "value": "质量员"
+        },
+        {
+          "label": "资料员",
+          "value": "资料员"
+        },
+        {
+          "label": "造价工程师",
+          "value": "造价工程师"
+        },
+        {
+          "label": "内部监理",
+          "value": "内部监理"
+        }
+      ]
+    ],
+    "form": {
+      "labelPosition": "right",
+      "labelWidth": "120px",
+      "size": "medium",
+      "disabled": false,
+      "rules": {},
+      "showMessage": false,
+      "inline": false,
+      "row": {
+        "gutter": 10
+      },
+      "col": {}
+    },
+    "group": [{
+      "title": "",
+      "name": "dialog-editWBS",
+      "formConfig": [{
+          "label": "子任务",
+          "prop": "parentNoteId",
+          "icons": "projectModule",
+          "required": true,
+          "type": "select",
+          "select": [],
+          "col": {
+            "span": 12
+          }
+        },
+        {
+          "label": "任务名称",
+          "prop": "taskName",
+          "required": true,
+          "col": {
+            "span": 24
+          }
+        },
+        {
+          "label": "计划开始时间",
+          "prop": "planStartDate",
+          "type": "date-picker",
+          "required": true,
+          "col": {
+            "span": 12
+          }
+        },
+        {
+          "label": "预计完成时间",
+          "prop": "planEndDate",
+          "required": true,
+          "type": "date-picker",
+          "col": {
+            "span": 12
+          }
+        },
+        {
+          "label": "实际完成时间",
+          "prop": "actualEndDate",
+          "type": "date-picker",
+          "disabled": true,
+          "col": {
+            "span": 12
+          }
+        },
+        {
+          "label": "偏差问题说明",
+          "prop": "deviationExplain",
+          "type": "textarea",
+          "col": {
+            "span": 24
+          },
+          "autosize": {
+            "minRows": 3
+          }
+        }
+      ]
+    }]
+  }
+}

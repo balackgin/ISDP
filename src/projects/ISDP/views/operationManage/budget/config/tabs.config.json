@@ -1,0 +1,19 @@
+{
+  "navs": {
+    "data": [
+      {
+        "text": "项目预算",
+        "routeName": "ISDPOperationBudget"
+      },
+      {
+        "text": "问题及风险跟踪",
+        "routeName": "ISDPOperationFeedback"
+      }
+    ]
+  },
+  "btns": {
+    "back": {
+      "routeName": "ISDPOperationBudget"
+    }
+  }
+}
